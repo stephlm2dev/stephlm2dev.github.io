@@ -44,10 +44,6 @@ _site/
 .jekyll-metadata
 
 
-### CoffeeScript ###
-*.js
-
-
 ### Sass ###
 .sass-cache/
 *.css.map

@@ -5,6 +5,7 @@ body {
   display: flex;
   min-height: 100vh;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .projects_me {
@@ -23,7 +24,6 @@ body {
   display: flex;
   align-items: center;
   margin: 20px 10px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 100;
 }
 
@@ -39,7 +39,6 @@ body {
 
 .projects_title {
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   color: #ecf0f1; /* Variable: color */
   letter-spacing: 2px;
@@ -55,7 +54,6 @@ body {
 
 .projects li {
   margin: 5px 0;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 100;
 }
 
@@ -80,13 +78,56 @@ body {
 .content h1 {
   flex: 0 0 100%;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 100;
 }
 
 .project {
   flex: 0 0 80%;
   background-color: white;
-  height: 100vh;
   margin-bottom: 40px;
+  padding: 20px ;
+}
+
+.project h2 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.project_technos {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project_technos img {
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.project_description {
+  text-align: justify;
+  font-weight: 100;
+}
+
+.project_infos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  font-weight: bold;
+  justify-content: space-around;
+}
+
+.project_links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project_links a {
+  flex: 0 0 15%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border-color: #ea2f10;
+  background-color: #f04124;
+  padding: 10px 20px;
+  font-size: 0.8125rem;
 }

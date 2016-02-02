@@ -1,0 +1,62 @@
+/* General */
+
+/* Structure */
+body {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.projects_me {
+  flex: 0 0 20%; /* Variable: size */
+  background-color: #34495e; /* Variable: color */
+}
+
+.content {
+  flex: 0 0 80%; /* Variable: size */
+  background-color: #ecf0f1; /* Variable: color */
+}
+
+/* Left sidebar */
+.me {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 20px 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
+
+.me img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.me section span {
+  display: block;
+}
+
+.me .identity {
+  color: #ecf0f1; /* Variable: color */
+}
+
+/* Main content */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content h1 {
+  flex: 0 0 100%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
+
+.project {
+  flex: 0 0 80%;
+  background-color: white;
+  height: 100vh;
+  margin-bottom: 40px;
+}

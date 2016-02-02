@@ -34,10 +34,40 @@ body {
 
 .me section span {
   display: block;
+  color: #ecf0f1; /* Variable: color */
 }
 
-.me .identity {
+.projects_title {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
   color: #ecf0f1; /* Variable: color */
+  letter-spacing: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.projects {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 25px;
+}
+
+.projects li {
+  margin: 5px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+}
+
+.projects a {
+  color: #ecf0f1; /* Variable: color */
+  text-decoration: none;
+  transition: left 0.3s ease;
+}
+
+.projects a:hover {
+  position: relative;
+  left: 0.5em;
 }
 
 /* Main content */

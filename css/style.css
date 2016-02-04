@@ -51,6 +51,7 @@ body {
   list-style: none;
   margin-top: 10px;
   padding-left: 25px;
+  margin-bottom: 30px;
 }
 
 .projects li {
@@ -67,6 +68,12 @@ body {
 .projects a:hover {
   position: relative;
   left: 0.5em;
+}
+
+.go-gallery {
+  display: block;
+  width: 50%;
+  margin: auto;
 }
 
 /* Main content */
@@ -137,7 +144,7 @@ body {
   justify-content: space-between;
 }
 
-.project_links a, .me_links a {
+.project_links a, .me_links a, .go-gallery {
   flex: 0 0 15%;
   text-align: center;
   color: #fff;

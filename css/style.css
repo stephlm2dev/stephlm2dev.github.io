@@ -82,6 +82,12 @@ body {
   font-weight: 100;
 }
 
+.content h1 a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* For projects */
 .project {
   flex: 0 0 80%;
   background-color: white;
@@ -131,7 +137,7 @@ body {
   justify-content: space-between;
 }
 
-.project_links a {
+.project_links a, .me_links a {
   flex: 0 0 15%;
   text-align: center;
   color: #fff;
@@ -140,4 +146,39 @@ body {
   background-color: #f04124;
   padding: 10px 20px;
   font-size: 0.8125rem;
+}
+
+/* For profile */
+.contact_me {
+  text-align: center;
+}
+
+.contact_me .icon {
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+  border-radius: 100%;
+  border: solid 1px rgba(51, 51, 51, 0.45); /* Variable: color */
+  font-size: 1.5em;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 2em;
+  margin: 0 5px;
+}
+
+.contact_me .label {
+  display: none;
+}
+
+.icon.twitter { color: #55acee;  }
+.icon.github { color: #666666; }
+.icon.linkedin { color: #0077b5; }
+.icon.mail { color: #9e9e9e; }
+.icon.deviantart{ color: #05cc47; }
+
+.me_links {
+  display: flex;
+  justify-content: center;
 }

@@ -70,7 +70,7 @@ body {
   left: 0.5em;
 }
 
-.go-gallery {
+.projects_me .go-gallery {
   display: block;
   width: 50%;
   margin: auto;
@@ -95,14 +95,14 @@ body {
 }
 
 /* For projects */
-.project, .profile, .gallery {
+.home, .project, .profile, .gallery {
   flex: 0 0 80%;
   background-color: white;
   margin-bottom: 40px;
   padding: 20px ;
 }
 
-.project h2, .profile h2, .gallery h2 {
+.home h2, .project h2, .profile h2, .gallery h2 {
   margin-top: 5px;
   text-align: center;
 }

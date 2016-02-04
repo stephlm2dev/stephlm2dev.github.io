@@ -107,6 +107,7 @@ body {
 
 /* For projects */
 .home, .project, .profile, .gallery {
+  align-self: flex-start;
   flex: 0 0 80%;
   background-color: white;
   margin-bottom: 40px;
@@ -225,4 +226,21 @@ body {
 .home_description span {
   display: block;
   text-align: right;
+}
+
+/* For mobile, tablets ... */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+}
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+/* Desktop and more */
+@media screen and (min-width: 992px) {
+
 }

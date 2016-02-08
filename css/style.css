@@ -232,7 +232,30 @@ body {
 
 /* Mobile */
 @media screen and (max-width: 767px) {
+  body {
+    flex-wrap: wrap;
+  }
 
+  .me {
+    margin: 10px;
+  }
+
+  .projects_me {
+    flex: 0 0 100%;
+  }
+
+  .projects_list {
+    display: none;
+  }
+
+  .content {
+    flex: 0 0 100%;
+  }
+
+  .content article {
+    margin-top: 20px;
+  }
+  .
 }
 
 /* Tablets */

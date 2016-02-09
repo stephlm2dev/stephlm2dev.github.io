@@ -8,6 +8,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  background-color: #ecf0f1;
 }
 
 .projects_me {
@@ -201,7 +202,6 @@ body {
   justify-content: center;
 }
 
-
 /* For gallery */
 .a_gallery {
   display: flex;
@@ -234,6 +234,8 @@ body {
 @media screen and (max-width: 767px) {
   body {
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
   }
 
   .me {

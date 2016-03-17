@@ -168,6 +168,12 @@ body {
   justify-content: space-between;
 }
 
+.project_links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .project_links a, .me_links a, .go-gallery {
   flex: 0 0 15%;
   text-align: center;
@@ -273,23 +279,35 @@ body {
     margin-top: 20px;
   }
 
-  .project_infos {
+  .project_infos, .me_infos {
     flex-direction: column;
   }
 
-  .project_infos li {
+  .project_infos li, .me_infos li {
     margin-bottom: 5px;
   }
 
   .project_links a {
-    flex: 0 0 25%;
+    flex: 0 0 35%;
+  }
+
+  .me_links a {
+    flex: 1 1 100%;
   }
   .
 }
 
 /* Tablets */
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  .projects_me {
+    height: 100vh;
+    position: fixed;
+  }
 
+  .content {
+    position: relative;
+    left: 20%;
+  }
 }
 
 /* Desktop and more */

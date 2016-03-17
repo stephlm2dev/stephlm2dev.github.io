@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/stephlm2dev/stephlm2dev.github.io#readme",
   "devDependencies": {
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-connect": "^2.3.1"
   }
 }

@@ -1,0 +1,68 @@
+/* For projects */
+.home, .project, .profile, .gallery {
+  align-self: flex-start;
+  flex: 0 0 80%;
+  background-color: white;
+  margin-bottom: 40px;
+  padding: 20px ;
+}
+
+.home h2, .project h2, .profile h2, .gallery h2 {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.project_technos {
+  text-align: center;
+  margin-bottom: 30px;
+
+  img {
+    margin: 0 5px;
+    border-radius: 50%;
+  }
+
+}
+
+.home_description, .project_description, .me_description {
+  text-align: justify;
+  font-weight: 100;
+}
+
+.project_infos, .me_infos {
+  list-style: none;
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+}
+
+.project_infos li span, .me_infos li span {
+  display: block;
+  font-size: 0.90rem;
+}
+
+.infos_title {
+  font-weight: bold;
+}
+
+.project_links {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.project_links a, .me_links a, .go-gallery {
+  flex: 0 0 15%;
+  text-align: center;
+  color: #fff;
+  border-color: #ea2f10;
+  background-color: #f04124;
+  padding: 10px 20px;
+  font-size: 0.8125rem;
+}

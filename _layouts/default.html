@@ -5,16 +5,88 @@
 
   <body>
 
-    {% include header.html %}
+    <aside class="projects_me">
+      {% include header.html %}
+    </aside>
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
 
-    {% include footer.html %}
+    <section role="main" class="content">
+      <button name="menu_toggle" type="button" class="toggle_menu">Menu</button>
+      <h1 class="hidden">
+        <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </h1>
 
+      <article class="home">
+        <h2>Bienvenue</h2>
+
+        <div class="home_description">
+          {{ content }}
+        </div>
+
+      </article>
+
+      <!-- {% include footer.html %} -->
+    </section>
   </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section role="main" class="content">
+      <button name="menu_toggle" type="button" class="toggle_menu">Menu</button>
+      <h1 class="hidden"> <a href="index.html"> Portfolio de Schmidely Stéphane </a> </h1>
+      <article class="home">
+        <h2>Bienvenue</h2>
+
+        <div class="home_description">
+          <p>
+            Ce site présente les différents projets (web essentiellement) sur
+            lesquels j'ai été amené à travailler. Vous retrouverez dans
+            chacun des projets, une description ainsi que différentes
+            informations telles que la durée du projet, les technologies
+            utilisées, la date de réalisation ... Ils seront aussi généralement
+            accompagnés d'un lien vers le site web ainsi que vers la gallerie.
+          </p>
+
+          <p>
+            Dans la gallerie, vous pourrez retrouver les différentes captures
+            d'écran ainsi que les prototypes de chacun des projets effectués
+            accompagnés d'une description.
+          </p>
+
+          <p>
+            N'hésitez pas à faire un tour sur ma page de profil pour en
+            apprendre plus sur mes motivations, mes passions et pourquoi pas me
+            contacter pour que l'on puisse échanger.
+          </p>
+
+          <span>Bonne visite</span>
+        </div>
+
+      </article>
+
+    </section>

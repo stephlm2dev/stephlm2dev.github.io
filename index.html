@@ -2,22 +2,26 @@
 layout: default
 ---
 
-<div class="home">
+<p>
+  Ce site présente les différents projets (web essentiellement) sur
+  lesquels j'ai été amené à travailler. Vous retrouverez dans
+  chacun des projets, une description ainsi que différentes
+  informations telles que la durée du projet, les technologies
+  utilisées, la date de réalisation ... Ils seront aussi généralement
+  accompagnés d'un lien vers le site web ainsi que vers la gallerie.
+</p>
 
-  <h1 class="page-heading">Posts</h1>
+<p>
+  Dans la gallerie, vous pourrez retrouver les différentes captures
+  d'écran ainsi que les prototypes de chacun des projets effectués
+  accompagnés d'une description.
+</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<p>
+  N'hésitez pas à faire un tour sur ma page de profil pour en
+  apprendre plus sur mes motivations, mes passions et pourquoi pas me
+  contacter pour que l'on puisse échanger.
+</p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<span>Bonne visite</span>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>

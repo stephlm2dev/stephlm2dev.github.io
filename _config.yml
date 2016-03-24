@@ -6,17 +6,26 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Porfolio de Schmidely Stéphane
+email: schmidely.stephane@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Retrouver sur ce portfolio, l'ensemble de mes projets (web notamment).
+  N'hesitez pas à visiter ma page de profil pour me contacter ...
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://stephlm2dev.github.io" # the base hostname & protocol for your site
-twitter_username: stephlm2dev
-github_username:  stephlm2dev
+twitter_username: Schmidely_Steph
+github_username: stephlm2dev
 permalink: /projects/:title.html
 
 # Build settings
 markdown: kramdown
+
+# Author
+author:
+  name: Schmidely Stéphane
+  email: schmidely.stephane@outlook.com
+  github: stephlm2dev
+  twitter: Schmidely_Steph
+  viadeo: schmidely.stéphane
+  repository: stephlm2dev.github.io
+

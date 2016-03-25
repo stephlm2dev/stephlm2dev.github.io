@@ -22,10 +22,15 @@ markdown: kramdown
 
 # Author
 author:
+  age: 23
+  driving_licenses: Moto et Auto
+  degree: M2 Informatique
+  passions: Photographie, voyages ...
   name: Schmidely Stéphane
   email: schmidely.stephane@outlook.com
   github: stephlm2dev
   twitter: Schmidely_Steph
   viadeo: schmidely.stéphane
+  deviantart: stephlm2dev
   repository: stephlm2dev.github.io
 

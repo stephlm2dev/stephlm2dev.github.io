@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<h1> <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a> </h1>
+
+<article class="profile">
+  <h2> {{ site.author.name }}</h2>
+  <div class="contact_me">
+    <a target="_blank" title="Twitter" href="https://twitter.com/{{ site.author.twitter }}" class="icon twitter">
+      <i class="fa fa-twitter"></i>
+      <span class="label">Twitter</span>
+    </a>
+    <a target="_blank" title="Github" href="https://github.com/{{ site.author.github }}" class="icon github">
+      <i class="fa fa-github"></i>
+      <span class="label">Github</span>
+    </a>
+    <a target="_blank" title="Viadéo" href="http://www.viadeo.com/fr/profile/{{ site.author.viadeo }}" class="icon linkedin">
+      <i class="fa fa-linkedin"></i>
+      <span class="label">Viadéo</span>
+    </a>
+    <a target="_blank" title="Email" href="mailto:{{ site.author.email }}" class="icon mail">
+      <i class="fa fa-envelope-o"></i>
+      <span class="label">Mail</span>
+    </a>
+    <a target="_blank" title="Deviantart" href="http://{{
+      site.author.deviantart }}.deviantart.com/" class="icon deviantart">
+      <i class="fa fa-deviantart"></i>
+      <span class="label">DeviantArt</span>
+    </a>
+  </div>
+
+  <div class="me_description">
+    {{ content }}
+  </div>
+
+  <ul class="me_infos">
+    <li>
+      <span class="infos_title">Age:</span>
+      <span class="infos_value"> {{ site.author.age }} ans</span>
+    </li>
+    <li>
+      <span class="infos_title">Permis:</span>
+      <span class="infos_value"> {{ site.author.driving_licenses }}</span>
+    </li>
+    <li>
+      <span class="infos_title">Etudes:</span>
+      <span class="infos_value"> {{ site.author.degree }}</span>
+    </li>
+    <li>
+      <span class="infos_title">Passions:</span>
+      <span class="infos_value"> {{ site.author.passions }}</span>
+    </li>
+  </ul>
+
+  <div class="me_links">
+    <a title="" class="download-cv" href="/cv.pdf">Télécharger le CV</a>
+  </div>
+</article>

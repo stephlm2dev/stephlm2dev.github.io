@@ -33,5 +33,5 @@ originale des slides de [Prezi][prezi] tout en pouvant contrôler chaque diaposi
 Cet entretien a confirmé mon intérêt pour le métier de développeur et ce
 projet m’a permis de tester un nouveau style de présentation.
 
-[impress]: http://bartaz.github.io/impress.js/#/bored
+[impress]: http://impress.github.io/impress.js/#/bored
 [prezi]:   http://prezi.com/

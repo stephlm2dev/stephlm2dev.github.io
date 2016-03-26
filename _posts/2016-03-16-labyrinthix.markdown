@@ -1,4 +1,5 @@
 ---
+id: labyrinthix
 layout: project
 title:  "Labyrinthix"
 date:   2016-03-16 15:30:11 +0100
@@ -9,4 +10,8 @@ start_project: TODO
 developers: TODO
 links: TODO
 icons: TODO
+images:
+  img_1: TITLE 1 | DESCRIPTION 1
+  img_2: TITLE 2 | DESCRIPTION 2
+  img_3: TITLE 3 | DESCRIPTION 3
 ---

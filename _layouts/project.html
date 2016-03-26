@@ -6,14 +6,10 @@ layout: default
 <article class="project">
   <h2> {{ page.title }}</h2>
   <div class="project_technos">
-    <!-- TODO tags in jekyll + iter over elements Replace me -->
-    <span> <img alt="" title="" src="http://placehold.it/50x50"/> </span>
-    <span> <img alt="" title="" src="http://placehold.it/50x50"/> </span>
-    <span> <img alt="" title="" src="http://placehold.it/50x50"/> </span>
-    <span> <img alt="" title="" src="http://placehold.it/50x50"/> </span>
-    <span> <img alt="" title="" src="http://placehold.it/50x50"/> </span>
-    <span> <img alt="" title="" src="http://placehold.it/50x50"/> </span>
-    <span> <img alt="" title="" src="http://placehold.it/50x50"/> </span>
+    {% assign icons = page.icons | split: " " %}
+    {% for icon in icons %}
+      <span> <img alt="" title="" src="http://svgporn.com/logos/{{ icon }}.svg"/> </span>
+    {% endfor %}
   </div>
 
   <div class="project_description">

@@ -8,7 +8,7 @@ layout: default
   <div class="project_technos">
     {% assign icons = page.icons | split: " " %}
     {% for icon in icons %}
-      <span> <img alt="" title="" src="http://svgporn.com/logos/{{ icon }}.svg"/> </span>
+      <span> <img alt="{{ icon | capitalize }}" title="{{ icon | capitalize }}" src="/assets/logos/logos/{{ icon }}.svg"/> </span>
     {% endfor %}
   </div>
 

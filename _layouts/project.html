@@ -31,7 +31,9 @@ layout: default
     </li>
     <li>
       <span class="infos_title">Equipe:</span>
-      <span class="infos_value"> {{ page.developers }} développeurs</span>
+      <span class="infos_value">
+        {{ page.developers }} développeur{% if page.developers > 1 %}s{% endif %}
+      </span>
     </li>
   </ul>
 

@@ -20,7 +20,7 @@ images:
 ce projet, m’a contacté pour que je redesigne la page d’accueil d’Hopways.
 Auparavant, nous avions déjà travaillé ensemble sur un projet lors de mon stage
 chez Arkaz et j’avais notamment eu l’occasion de l’interviewer sur son
-[métier]({% post_url 2016-03-11-entretien %}).*
+[métier]({% post_url 2016-03-12-entretien %}).*
 
 Leur ancien site possédait des défauts et des incohérences qui n’incitait pas un
 utilisateur à utiliser et à découvrir le service proposé par Hopways. De plus,

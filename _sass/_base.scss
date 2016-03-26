@@ -2,3 +2,13 @@
 a { text-decoration: none; }
 .hidden { display: none; }
 
+blockquote {
+  background: #f9f9f9;
+  border-left: 3px solid #ccc;
+  margin: 1.5em 20px;
+  padding: 0.5em 10px;
+  p {
+    margin: 0;
+    font-style: italic;
+  }
+}

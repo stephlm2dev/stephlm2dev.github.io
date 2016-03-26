@@ -4,14 +4,33 @@ layout: project
 title:  "YepPapa !"
 date:   2016-03-09 15:30:11 +0100
 categories: projects
-context: TODO
-duration: TODO
-start_project: TODO
-developers: TODO
-links: TODO
-icons: TODO
+context: Extra - scolaire
+duration: En cours
+start_project: Novembre 2012
+developers: 1
+links: http://yepsport.com/
+icons: gulp sass jquery wordpress-icon subversion
 images:
   img_1: TITLE 1 | DESCRIPTION 1
   img_2: TITLE 2 | DESCRIPTION 2
   img_3: TITLE 3 | DESCRIPTION 3
 ---
+*A l’occasion d’un cours durant ma 2<sup>ème</sup> année de DUT Informatique,
+Julien Paroche est intervenu pour YepPapa ! afin de recruter de nouveaux
+développeurs.*
+
+Après avoir échanger avec Julien Paroche et rencontrer Mathieu Bordes, le
+responsable du projet, j’ai intégré l’équipe. Contrairement aux autres projets,
+l’équipe est composée de professionnels et d’étudiants qui veulent participer
+à l’aventure YepPapa ! en y contribuant à leur manière. Pour ma part, j’ai été
+amené à travailler sur le nouveau site.
+
+Parti du constat que les membres de YepPapa ! n’avaient pas de lieu pour se
+retrouver hors du temps de matchs, ils ont décidé de créer un site qui leur
+permettrait de se retrouver afin de partager et d’échanger sur l’actualité
+footballistique.
+
+Le projet a démarré assez doucement; le temps de mettre toute l’infrastructure
+en place (WordPress, SVN …). Une fois ces détails d’ordre techniques passées,
+le développement s’est déroulé progressivement et suivant les évolutions de la
+charte graphique.

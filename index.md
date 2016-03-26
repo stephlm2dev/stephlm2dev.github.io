@@ -1,0 +1,20 @@
+---
+layout: home
+title: Accueil
+---
+Ce site présente les différents projets (web essentiellement) sur
+lesquels j'ai été amené à travailler. Vous retrouverez dans
+chacun des projets, une description ainsi que différentes
+informations telles que la durée du projet, les technologies
+utilisées, la date de réalisation ... Ils seront aussi généralement
+accompagnés d'un lien vers le site web ainsi que vers la [gallerie](/gallery/).
+
+Dans la gallerie, vous pourrez retrouver les différentes captures
+d'écran ainsi que les prototypes de chacun des projets effectués
+accompagnés d'une description.
+
+N'hésitez pas à faire un tour sur ma [page de profil](/about/) pour en
+apprendre plus sur mes motivations, mes passions et pourquoi pas me
+contacter pour que l'on puisse échanger.
+
+<span>Bonne visite</span>

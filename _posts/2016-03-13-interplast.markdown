@@ -11,9 +11,11 @@ developers: 7
 links: http://interplast.julienp.fr/
 icons: codeigniter angular-icon bootstrap jquery subversion
 images:
-  img_1: TITLE 1 | DESCRIPTION 1
-  img_2: TITLE 2 | DESCRIPTION 2
-  img_3: TITLE 3 | DESCRIPTION 3
+  img_1: Interplast France | Home du site
+  img_2: Interplast France | Lecture d'une fiche de mission
+  img_3: Interplast France | Médias (photos des missions entre autres)
+  img_4: Interplast France | Présentation de l'association
+  img_5: Interplast France | Version mobile
 ---
 *Durant mon dernier semestre de mon DUT, nous avons eu à travailler sur un
 projet pluri-disciplinaire. Parmi les différents sujets proposés, nous avons

@@ -11,9 +11,12 @@ developers: 1
 links: http://lecarologeek.com/
 icons: wordpress-icon bootstrap jquery git
 images:
-  img_1: TITLE 1 | DESCRIPTION 1
-  img_2: TITLE 2 | DESCRIPTION 2
-  img_3: TITLE 3 | DESCRIPTION 3
+  img_1: Le Carolo Geek | Home du site
+  img_2: Le Carolo Geek | Flux des articles
+  img_3: Le Carolo Geek | Section 'Gamer'
+  img_4: Le Carolo Geek | Lecture d'un article
+  img_5: Le Carolo Geek | Flux des articles en version mobile
+  img_6: Le Carolo Geek | Lecture d'un article en version mobile
 ---
 
 *Suite à la sortie de mon premier portfolio, Mathieu Ziesing alias Le Carolo

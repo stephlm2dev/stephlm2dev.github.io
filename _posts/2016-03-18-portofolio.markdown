@@ -11,8 +11,7 @@ developers: 1
 links: /
 icons: jekyll sass gulp javascript
 images:
-  img_1: TITLE 1 | DESCRIPTION 1
-  img_2: TITLE 2 | DESCRIPTION 2
-  img_3: TITLE 3 | DESCRIPTION 3
+  img_1: Portfolio | Home du portfolio
+  img_2: Portfolio | Exemple de présentation d'un projet
 ---
 TODO

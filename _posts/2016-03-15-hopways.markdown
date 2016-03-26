@@ -11,9 +11,8 @@ developers: 1
 links: https://www.hopways.com/
 icons: angular-icon coffeescript foundation sass jquery heroku git
 images:
-  img_1: TITLE 1 | DESCRIPTION 1
-  img_2: TITLE 2 | DESCRIPTION 2
-  img_3: TITLE 3 | DESCRIPTION 3
+  img_1: Hopways | Nouvelle home du site
+  img_2: Hopways | Ancienne home du site
 ---
 
 *Au début du mois de Juillet, [Eric Cestari][cstar], principal développeur sur

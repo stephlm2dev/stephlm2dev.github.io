@@ -11,9 +11,15 @@ developers: 3
 links: /
 icons: android-icon java svg git
 images:
-  img_1: TITLE 1 | DESCRIPTION 1
-  img_2: TITLE 2 | DESCRIPTION 2
-  img_3: TITLE 3 | DESCRIPTION 3
+  img_1: Labyrinthix | Prototype - Ecran d'accueil
+  img_2: Labyrinthix | Prototype - Ecran de recherche d'itinéraire avec affichage du plan
+  img_3: Labyrinthix | Prototype - Affichage du plan en 3D
+  img_4: Labyrinthix | Prototype - Recherche des informations sur une salle (avec modélisation 3D)
+  img_5: Labyrinthix | Prototype - Accès à la Halle aux Farines
+  img_6: Labyrinthix | Ecran d'accueil
+  img_7: Labyrinthix | Ecran de recherche d'itinéraire avec affichage du plan
+  img_8: Labyrinthix | Accès à la Halle aux Farines
+
 ---
 > Labyrinthix est une application disponible sur la plate-forme Android dont le
 rôle est de permettre à son utilisateur de se repérer dans le bâtiment de la

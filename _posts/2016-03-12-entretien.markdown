@@ -11,9 +11,9 @@ developers: 1
 links: TODO
 icons: html-5 css-3 jquery git
 images:
-  img_1: TITLE 1 | DESCRIPTION 1
-  img_2: TITLE 2 | DESCRIPTION 2
-  img_3: TITLE 3 | DESCRIPTION 3
+  img_1: Entretien | Première slide d'accueil
+  img_2: Entretien | Exemple de slide
+  img_3: Entretien | Un autre exemple de slide
 ---
 
 *Dans le cadre du stage de DUT Informatique, j’ai interviewé une personne

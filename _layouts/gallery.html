@@ -15,8 +15,6 @@ style:
           {% assign img_meta = img[1] | split: "|" %}
           <img alt="{{ img_meta[0] }}" title="{{ img_meta[0] }}" src="/assets/{{ post.id }}/{{ img[0] }}.png" class="intense"
                data-title="{{ img_meta[0] }}"  data-caption="{{ img_meta[1] }}"/>
-<img alt="" title="" src="http://placehold.it/800x500" class="intense" data-title="TITLE" data-caption="DESCRIPTION"/>
-
         {% endfor %}
       </div>
     {% endfor %}

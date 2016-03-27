@@ -14,4 +14,14 @@ images:
   img_1: Portfolio | Home du portfolio
   img_2: Portfolio | Exemple de présentation d'un projet
 ---
-TODO
+Après 2 ans de bons et loyaux service de l'ancien site, voici la nouvelle
+mouture. Pour cette version, on retrouve des nouveaux projets avec un re-design
+global du site et une mise à jour de ma présentation.
+
+Côté technique, après avoir été basé sur Wordpress, ce nouveau portfolio est
+construit à partir de [Jekyll][jekyll] et 'hébergé' par Github. Les sources sont cette
+fois-ci disponible sur [mon profil Github][github]
+
+[jekyll]: http://jekyllrb.com
+[github]: https://github.com/stephlm2dev
+

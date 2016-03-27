@@ -23,11 +23,17 @@
 
 }
 
-.icon.twitter { color: $twitter; }
-.icon.github { color: $github; }
-.icon.linkedin { color: $linkedin; }
-.icon.mail { color: $mail; }
-.icon.deviantart{ color: $deviantart; }
+@each $icon, $color-light, $color-brand in
+  (twitter, $twitter, $twitter-brand-color), (github, $github, $github-brand-color),
+  (linkedin, $linkedin, $linkedin-brand-color), (mail, $mail, $mail-brand-color),
+  (deviantart, $deviantart, $deviantart-brand-color) {
+  .icon.#{$icon} {
+    color: #{$color-light};
+    &:hover {
+      color: #{$color-brand};
+    }
+  }
+}
 
 .me_links {
   display: flex;

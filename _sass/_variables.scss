@@ -4,17 +4,27 @@ $lighter-red: #f04124;
 $dark-gray: #272727;
 $light-gray: #ecf0f1;
 
-$twitter  :#55acee;
-$github  :#666666;
-$linkedin  :#0077b5;
-$mail  :#9e9e9e;
-$deviantart :#05cc47;
+// Could use mixins ...
+$twitter-brand-color: #55acee;
+$twitter: lighten($twitter-brand-color, 15%);
+
+$github-brand-color : #666666;
+$github: lighten($github-brand-color, 15%);
+
+$linkedin-brand-color: #0077b5;
+$linkedin: lighten($linkedin-brand-color, 15%);
+
+$mail-brand-color: #9e9e9e;
+$mail: lighten($mail-brand-color, 15%);
+
+$deviantart-brand-color: #05cc47;
+$deviantart: lighten($deviantart-brand-color, 15%);
 
 // Breakpoints
-$mobile: 767px;
-$min-tablet: 768px;
-$max-tablet: 992px;
-$desktop: 992px;
+$mobile      :767px;
+$min-tablet  :768px;
+$max-tablet  :992px;
+$desktop     :992px;
 
 // Fonts
 $default-font: 'Open Sans', sans-serif;

@@ -6,7 +6,7 @@
     display: inline-block;
     transition: all 0.2s ease-in-out;
     border-radius: 100%;
-    border: solid 1px rgba(51, 51, 51, 0.45); /* Variable: color */
+    border: solid 1px rgba(51, 51, 51, 0.45);
     font-size: 1.5em;
     height: 2em;
     line-height: 2em;
@@ -23,11 +23,11 @@
 
 }
 
-.icon.twitter { color: #55acee;  }
-.icon.github { color: #666666; }
-.icon.linkedin { color: #0077b5; }
-.icon.mail { color: #9e9e9e; }
-.icon.deviantart{ color: #05cc47; }
+.icon.twitter { color: $twitter; }
+.icon.github { color: $github; }
+.icon.linkedin { color: $linkedin; }
+.icon.mail { color: $mail; }
+.icon.deviantart{ color: $deviantart; }
 
 .me_links {
   display: flex;

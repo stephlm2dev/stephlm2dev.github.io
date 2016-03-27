@@ -1,7 +1,7 @@
 /* For mobile, tablets ... */
 
 /* Mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mobile) {
   body {
     flex-wrap: wrap;
     justify-content: center;
@@ -51,7 +51,7 @@
 }
 
 /* Tablets */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: $min-tablet) and (max-width: $max-tablet) {
   .projects_me {
     height: 100vh;
     position: fixed;
@@ -64,7 +64,7 @@
 }
 
 /* Desktop and more */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $desktop) {
   .projects_me {
     height: 100vh;
     position: fixed;

@@ -3,19 +3,19 @@ body {
   display: flex;
   min-height: 100vh;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #ecf0f1;
+  font-family: $default-font;
+  background-color: $light-gray;
 }
 
 .projects_me {
-  flex: 0 0 20%; /* Variable: size */
-  background-color: #272727;
+  flex: 0 0 20%;
+  background-color: $dark-gray;
   box-shadow: inset -5px 0 30px 0 rgba(0,0,0,0.55);
 }
 
 .content {
-  flex: 0 0 80%; /* Variable: size */
-  background-color: #ecf0f1;
+  flex: 0 0 80%;
+  background-color: $light-gray;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -39,7 +39,7 @@ body {
 
     span {
       display: block;
-      color: #ecf0f1; /* Variable: color */
+      color: $light-gray;
     }
   }
 
@@ -58,7 +58,7 @@ body {
 .projects_title {
   text-transform: uppercase;
   font-weight: bold;
-  color: #ecf0f1; /* Variable: color */
+  color: $light-gray;
   letter-spacing: 2px;
   margin-left: 10px;
   margin-right: 10px;
@@ -76,7 +76,7 @@ body {
   }
 
   a {
-    color: #ecf0f1; /* Variable: color */
+    color: $light-gray;
     transition: left 0.3s ease;
     &:hover {
       position: relative;

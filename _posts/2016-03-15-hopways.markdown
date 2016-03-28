@@ -38,9 +38,9 @@ qu’est née l’idée d’Hopways: mutualisons nos trajets dans notre quartier
 
 Pour ce projet, j’ai utilisé les outils déjà présents à savoir
 [Sass][sass]/[Compass][compass], [Foundation][foundation], [jQuery][jquery] ...
-que j’utilise depuis de nombreux projets et que je maîtrise de plus en plus.
-Par ailleurs, j’ai pu mettre en pratique ce que j’avais appris durant le mois
-de Juin de manière auto-didacte sur [Coffeescript][codeschool].
+que j’utilise depuis de nombreux projets. Par ailleurs, j’ai pu mettre en pratique
+ce que j’avais appris durant le mois de Juin de manière auto-didacte sur
+[Coffeescript][codeschool].
 
 Durant ces 15 jours, j’ai eu l’occasion d’échanger avec le client ce qui a
 permis de produire un travail au plus proche de leurs attentes. C’est à la

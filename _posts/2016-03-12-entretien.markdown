@@ -23,7 +23,7 @@ de pouvoir ensuite en parler aux étudiants de mon IUT.*
 Après lui avoir posé une série de questions sur sa formation et ses
 expériences professionnelles, je lui ai demandé quelques conseils et qualités
 pour un bon développeur. Une fois les réponses collectées, j’ai décidé de
-rassembler tous ensemble et de le mettre sous la forme d’un site web.
+rassembler tout ensemble et de le mettre sous la forme d’un site web.
 
 Je voulais éviter les habituelles présentations sous PowerPoint. C’est
 pourquoi j’ai cherché du côté web pour faire une présentation originale.

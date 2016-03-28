@@ -19,9 +19,9 @@ images:
   img_6: Le Carolo Geek | Lecture d'un article en version mobile
 ---
 
-*Suite à la sortie de mon premier portfolio, Mathieu Ziesing alias Le Carolo
-Geek m’a contacté via Twitter pour me demander de développer la nouvelle
-interface de son site.*
+*Suite à la sortie de mon premier portfolio, [Mathieu Ziesing][mathieu]
+alias [Le Carolo Geek][lecarologeek] m’a contacté via Twitter pour me demander
+de développer la nouvelle interface de son site.*
 
 Il cherchait quelqu’un pour «repenser et développer l’interface» de son site
 sous WordPress. C’est donc avec grand plaisir que j’ai accepté son offre. Parmi
@@ -32,13 +32,16 @@ meilleure expérience utilisateur possible. Concernant la date du livrable,
 aucune date n’avait été fixé.
 
 La mise en place du nouveau site s’est déroulé en 2 étapes : création de
-l’interface graphique via des maquettes (Gimp)et le développement du site.
+l’interface graphique via des maquettes (Gimp) et le développement du site.
 Ayant des connaissances en WordPress et étant en constant dialogue avec le
 créateur du site, le projet s’est déroulé assez rapidement.
 
 Je finirais par conclure, que ce projet a été une bonne occasion pour moi de
 consolider mes compétences en développement (notamment WordPress) mais aussi de
-pouvoir travailler avec un client. Je vous laisse [lire l’article][lecarologeek]
+pouvoir travailler avec un client. Je vous laisse [lire l’article][article]
 qu’a écrit Mathieu Ziesing sur sa nouvelle interface ...
 
-[lecarologeek]: http://lecarologeek.com/nouvelle-interface-pour-le-carolo-geek/
+[mathieu]: https://twitter.com/mathieuzie
+[lecarologeek]: https://twitter.com/lecarologeek
+[article]: http://lecarologeek.com/nouvelle-interface-pour-le-carolo-geek/
+

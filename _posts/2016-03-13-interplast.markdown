@@ -38,7 +38,7 @@ PHP open-source orienté objet. Concernant la structure de cette librairie, elle
 opte pour une architecture «Modèle Vue Controlleur». Du côté front-end, nous
 avons choisi [Bootstrap][bootstrap].
 
-Le projet s’est déroulé en différents cycles : choix du design général,
+Le projet s’est déroulé en différents cycles: choix du design général,
 définition des fonctionnalités à implémenter, développement puis recette. Pour
 le développement, nous nous sommes répartis les tâches en 3 équipes de 2
 personnes. Certaines personnes s’occupaient de la partie visible par les
@@ -50,6 +50,8 @@ programmation et notamment le développement web. De plus, j’ai dû durant ce
 projet, jouer le rôle de chef de projet pour diriger une équipe de 6 personnes
 et répartir au mieux les tâches afin de rendre le produit dans les temps.
 
+*Remarque: le site n'a toujours pas été déployé en production pour diverses
+raisons plus ou moins indépendantes de notre volonté.*
 
 [interplast]:  http://interplast.blogspot.fr/
 [codeigniter]: http://ellislab.com/codeigniter

@@ -6,7 +6,7 @@ date:   2016-03-17 15:30:11 +0100
 categories: projects
 context: Auto - entrepreneur
 duration: 1 mois / 3 semaines
-start_project: Juillet 2016 / Septembre 2016
+start_project: Juillet 2015 / Septembre 2015
 developers: 2
 links: http://www.collegedesbernardins.fr/fr/
 icons: drupal bootstrap less coffeescript aws git

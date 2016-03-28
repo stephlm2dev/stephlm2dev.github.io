@@ -12,7 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Retrouver sur ce portfolio, l'ensemble de mes projets (web notamment).
   N'hesitez pas à visiter ma page de profil pour me contacter ...
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://stephlm2dev.github.io" # the base hostname & protocol for your site
+url: "https://stephlm2dev.github.io" # the base hostname & protocol for your site
 twitter_username: Schmidely_Steph
 github_username: stephlm2dev
 permalink: /:categories/:title.html

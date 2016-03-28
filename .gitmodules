@@ -1,3 +1,3 @@
 [submodule "assets/svgporn"]
 	path = assets/svgporn
-	url = git@github.com:gilbarbara/logos.git
+	url = https://github.com/gilbarbara/logos.git

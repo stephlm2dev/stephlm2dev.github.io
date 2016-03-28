@@ -13,7 +13,7 @@ style:
       <div class="a_gallery">
         {% for img in post.images %}
           {% assign img_meta = img[1] | split: "|" %}
-          <img alt="{{ img_meta[0] }}" title="{{ img_meta[0] }}" src="/assets/{{ post.id }}/{{ img[0] }}.png" class="intense"
+          <img alt="{{ img_meta[0] }}" title="{{ img_meta[0] }}" src="{{ site.url }}/assets/{{ post.id }}/{{ img[0] }}.png" class="intense"
                data-title="{{ img_meta[0] }}"  data-caption="{{ img_meta[1] }}"/>
         {% endfor %}
       </div>

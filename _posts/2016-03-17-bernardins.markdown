@@ -11,9 +11,6 @@ developers: 2
 links: http://www.collegedesbernardins.fr/fr/
 icons: drupal bootstrap less coffeescript aws git
 images:
-  img_1: TITLE 1 | DESCRIPTION 1
-  img_2: TITLE 2 | DESCRIPTION 2
-  img_3: TITLE 3 | DESCRIPTION 3
 ---
 *Durant mes vacances universitaires, j'ai eu l'occasion de travailler
 quasiment 2 mois avec [Vincent Birebent][birebent] sur le futur site du Collège

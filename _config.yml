@@ -20,6 +20,10 @@ permalink: /:categories/:title.html
 # Build settings
 markdown: kramdown
 
+# Sitemap
+gems:
+  - jekyll-sitemap
+
 # Author
 author:
   age: 23

@@ -39,6 +39,7 @@ travailler sur ce projet jusqu'à la mise en production.
 
 J'ai donc contribué à ce projet depuis sa création jusqu'à la mise en
 production. Cette expérience a, pour moi, été l'occasion de:
+
 - suivre un projet dans son intégralité
 - effectuer des formations chez le client et les collègues
 - participer à la mise en production et l'optimisation des performances

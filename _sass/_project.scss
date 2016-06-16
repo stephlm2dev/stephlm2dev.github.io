@@ -29,6 +29,16 @@
   font-weight: 100;
 }
 
+.project_description ul {
+  list-style: none;
+  margin-bottom: 30px;
+  li:before {
+    content: '-';
+    display: inline-block;
+    margin-right: 10px;
+  }
+},
+
 .project_infos, .me_infos {
   list-style: none;
   display: flex;

@@ -1,5 +1,5 @@
 ---
-id: portfolio
+id_name: portfolio
 layout: project
 title:  "Portfolio"
 date:   2016-03-18 15:30:11 +0100
@@ -24,4 +24,3 @@ fois-ci disponible sur [mon profil Github][github]
 
 [jekyll]: http://jekyllrb.com
 [github]: https://github.com/stephlm2dev
-

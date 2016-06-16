@@ -1,5 +1,5 @@
 ---
-id: lecarologeek
+id_name: lecarologeek
 layout: project
 title:  "Le Carolo Geek"
 date:   2016-03-14 15:30:11 +0100
@@ -44,4 +44,3 @@ qu’a écrit Mathieu Ziesing sur sa nouvelle interface ...
 [mathieu]: https://twitter.com/mathieuzie
 [lecarologeek]: https://twitter.com/lecarologeek
 [article]: http://lecarologeek.com/nouvelle-interface-pour-le-carolo-geek/
-

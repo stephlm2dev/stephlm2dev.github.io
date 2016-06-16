@@ -1,5 +1,5 @@
 ---
-id: entretien
+id_name: entretien
 layout: project
 title:  "Entretien"
 date:   2016-03-12 15:30:11 +0100

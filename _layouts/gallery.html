@@ -9,11 +9,11 @@ style:
 
   <div class="project_description">
     {% for post in site.posts %}
-      <h3 id="{{ post.id }}"> {{ post.title }} </h3>
+      <h3 id="{{ post.id_name }}"> {{ post.title }} </h3>
       <div class="a_gallery">
         {% for img in post.images %}
           {% assign img_meta = img[1] | split: "|" %}
-          <img alt="{{ img_meta[0] }}" title="{{ img_meta[0] }}" src="{{ site.url }}/assets/{{ post.id }}/{{ img[0] }}.png" class="intense"
+          <img alt="{{ img_meta[0] }}" title="{{ img_meta[0] }}" src="{{ site.url }}/assets/{{ post.id_name }}/{{ img[0] }}.png" class="intense"
                data-title="{{ img_meta[0] }}"  data-caption="{{ img_meta[1] }}"/>
         {% endfor %}
       </div>

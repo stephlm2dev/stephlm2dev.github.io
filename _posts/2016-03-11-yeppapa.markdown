@@ -1,5 +1,5 @@
 ---
-id: yeppapa
+id_name: yeppapa
 layout: project
 title:  "YepPapa !"
 date:   2016-03-11 15:30:11 +0100

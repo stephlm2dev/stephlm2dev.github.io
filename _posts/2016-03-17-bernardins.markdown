@@ -8,7 +8,7 @@ context: Auto - entrepreneur
 duration: 1 mois / 3 semaines
 start_project: Juillet 2015 / Septembre 2015
 developers: 2
-links: http://www.collegedesbernardins.fr/fr/
+links: http://www.collegedesbernardins.fr/
 icons: drupal bootstrap less coffeescript aws git
 images:
 ---
@@ -34,7 +34,16 @@ de chacun ... Ce fût aussi l'occasion de m'investir de manière longue et
 durable dans un projet puisque j'ai continuer de développer par intermitence
 durant mes études.
 
-*Remarque: le site est toujours en cours de développement*
+Durant mon stage de fin d'études, j'ai eu l'opportunité de continuer à
+travailler sur ce projet jusqu'à la mise en production.
+
+J'ai donc contribué à ce projet depuis sa création jusqu'à la mise en
+production. Cette expérience a, pour moi, été l'occasion de:
+- suivre un projet dans son intégralité
+- effectuer des formations chez le client et les collègues
+- participer à la mise en production et l'optimisation des performances
+- assister à des réunions avec le client
+- travailler sur un projet Drupal
 
 [birebent]: https://fr.linkedin.com/in/vincent-birebent-91b986
 [drupal]: https://www.drupal.org

@@ -26,7 +26,7 @@
 @each $icon, $color-light, $color-brand in
   (twitter, $twitter, $twitter-brand-color), (github, $github, $github-brand-color),
   (linkedin, $linkedin, $linkedin-brand-color), (mail, $mail, $mail-brand-color),
-  (deviantart, $deviantart, $deviantart-brand-color) {
+  (px500, $px500, $px500-brand-color) {
   .icon.#{$icon} {
     color: #{$color-light};
     &:hover {

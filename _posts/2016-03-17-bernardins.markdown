@@ -11,6 +11,11 @@ developers: 2
 links: http://www.collegedesbernardins.fr/
 icons: drupal bootstrap less coffeescript aws git
 images:
+  img_1: Collège des Bernardins | Page d'accueil
+  img_2: Collège des Bernardins | Page de contenu
+  img_3: Collège des Bernardins | Publications 'Collection cahiers'
+  img_4: Collège des Bernardins | Recherche
+  img_5: Collège des Bernardins | Agenda
 ---
 *Durant mes vacances universitaires, j'ai eu l'occasion de travailler
 quasiment 2 mois avec [Vincent Birebent][birebent] sur le futur site du Collège
@@ -45,6 +50,7 @@ production. Cette expérience a, pour moi, été l'occasion de:
 - participer à la mise en production et l'optimisation des performances
 - assister à des réunions avec le client
 - travailler sur un projet Drupal
+- participer à la maintenance
 
 [birebent]: https://fr.linkedin.com/in/vincent-birebent-91b986
 [drupal]: https://www.drupal.org

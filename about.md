@@ -3,10 +3,10 @@ layout: profile
 title: A propos de moi
 permalink: /about/
 ---
-Actuellement dans ma dernière année d'études, je suis un M2 d'informatique
-à l'Université Paris Diderot spécialité 'Languages et programmation'. Avant
-d'avoir effectué mon master à Paris VII, j'ai validé mon DUT Informatique et
-la 3<sup>ème</sup> année de ma licence à l'Université Paris Descartes.
+Avant d'être embauché chez [cstar Industries](http://cstar.io) en tant que
+développeur, j'ai fais mes études d'informatique à l'IUT Paris Descartes puis
+à l'Université Paris Diderot au cours d'un master Informatique spécialité
+'Languages et programmation'.
 
 Ma passion pour l'informatique à démarré à la suite de mon obtention du Bac.
 Durant ma première année de prépa intégré à l’ESILV,  j’ai pris goût à

@@ -149,7 +149,7 @@ de vouloir continuer à explorer d'autres alternatives ([Cloud Functions][google
 [yoan]: https://fr.linkedin.com/in/yoan-dieu-821b83104
 [diouma]: http://www.dioumatraore.com/
 [cstar]: https://fr.linkedin.com/in/ecestari
-[juliette]: https://fr.linkedin.com/in/juliette-ramos-51503476
+[juliette]: https://juliette-ramos-designer.squarespace.com
 [reactnative]: https://facebook.github.io/react-native/
 [ionic]: https://ionicframework.com
 [fowler]: https://martinfowler.com/articles/serverless.html

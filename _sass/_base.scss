@@ -2,9 +2,13 @@
 a { text-decoration: none; }
 .hidden { display: none; }
 
-article p a {
- color: $red;
- font-weight: bolder;
+article {
+  p, ul {
+    a {
+      color: $red;
+      font-weight: bolder;
+    }
+  }
 }
 
 blockquote {

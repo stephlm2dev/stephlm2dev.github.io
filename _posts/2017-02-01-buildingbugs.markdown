@@ -11,8 +11,12 @@ developers: 3
 links: http://buildingbugs.com
 icons: react ios android aws pusher codepush auth0 angular-icon html-5 sass gulp git
 images:
-  img_1: Portfolio | Home du portfolio
-  img_2: Portfolio | Exemple de présentation d'un projet
+  img_1: Building Bugs | Home de l'application mobile
+  img_2: Building Bugs | Un exemple de liste de tickets
+  img_3: Building Bugs | Page d'aide
+  img_4: Building Bugs | Menu de l'application
+  img_5: Building Bugs | Interface d'administration (accueil)
+  img_6: Building Bugs | Première page de la landing page
 ---
 
 Building Bugs est, avant tout, une application mobile permettant aux locataires d'un
@@ -106,6 +110,7 @@ L'équipe pour ce projet était composée de:
 - [Stéphane Schmidely][stephlm2dev]: Lead développeur
 - [Yoan Dieu][yoan]: Développeur
 - [Diouma Traore][diouma]: Développeur junior
+- [Juliette Ramos][juliette]: Designer UI / UX Freelance
 
 Au niveau de la répartion des développements, Diouma s'est occupée de la
 landing page et de l'administration. Yoan a, quant à lui, participer au
@@ -144,6 +149,7 @@ de vouloir continuer à explorer d'autres alternatives ([Cloud Functions][google
 [yoan]: https://fr.linkedin.com/in/yoan-dieu-821b83104
 [diouma]: http://www.dioumatraore.com/
 [cstar]: https://fr.linkedin.com/in/ecestari
+[juliette]: https://fr.linkedin.com/in/juliette-ramos-51503476
 [reactnative]: https://facebook.github.io/react-native/
 [ionic]: https://ionicframework.com
 [fowler]: https://martinfowler.com/articles/serverless.html

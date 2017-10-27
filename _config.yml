@@ -26,7 +26,7 @@ gems:
 
 # Author
 author:
-  age: 24
+  age: 25
   driving_licenses: Moto et Auto
   degree: Bac +5 (Master Informatique)
   passions: Photographie, voyages ...
@@ -34,6 +34,6 @@ author:
   email: schmidely.stephane@outlook.com
   github: stephlm2dev
   twitter: Schmidely_Steph
-  viadeo: schmidely.stéphane
+  linkedin: stéphane-schmidely
   500px: stephlm2dev
   repository: stephlm2dev.github.io

@@ -26,7 +26,7 @@ plugins:
 
 # Author
 author:
-  age: 25
+  age: 26
   driving_licenses: Moto et Auto
   degree: Bac +5 (Master Informatique)
   passions: Photographie, voyages ...
@@ -35,5 +35,5 @@ author:
   github: stephlm2dev
   twitter: Schmidely_Steph
   linkedin: stéphane-schmidely
-  p500px: stephlm2dev
+  instagram: stephlm2dev
   repository: stephlm2dev.github.io

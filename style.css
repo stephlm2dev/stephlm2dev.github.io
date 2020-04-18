@@ -1,3 +1,7 @@
+body {
+  --main-bg-color: rgb(229, 77, 66);
+}
+
 h1,
 h2,
 h3 {
@@ -9,17 +13,23 @@ a {
   font-family: 'Raleway', sans-serif !important;
 }
 
+/* Override uk-* components*/
+
+a:hover {
+  color: var(--main-bg-color);
+}
+
 .uk-button-default {
-  color: rgb(229, 77, 66);
-  border-color: rgb(229, 77, 66);
+  color: var(--main-bg-color);;
+  border-color: var(--main-bg-color);
   background-color: transparent;
   transition: background-color 0.7s ease;
 }
 
 .uk-button-default:hover {
   color: white;
-  border-color: rgb(229, 77, 66);
-  background-color: rgb(229, 77, 66);
+  border-color: var(--main-bg-color);
+  background-color: var(--main-bg-color);
 }
 
 /* Hello */

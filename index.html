@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio - SCHMIDELY Stéphane</title>
-    <link
-      rel="stylesheet"
-      href="style.css">
     <!-- Google Fonts -->
     <!-- FIXME -->
     <link
@@ -19,6 +16,9 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/uikit@3.4.1/dist/css/uikit.min.css" />
+    <link
+      rel="stylesheet"
+      href="style.css">
   </head>
   <body>
     <!-- START content -->
@@ -26,11 +26,18 @@
       id="hello"
       class="uk-section uk-section-default uk-padding uk-dark"
       uk-height-viewport>
-      <div class="uk-container uk-container-small uk-align-center">
-        <h1 class="uk-heading-medium uk-text-center">
-          Bienvenue, <br>
-          Je suis Stéphane SCHMIDELY <br>
-          Développeur FullStack
+      <div class="uk-container uk-container-small">
+        <img
+          data-src="logo.png"
+          width="50"
+          height="50"
+          alt="Logo"
+          class="uk-align-center uk-margin-remove-bottom"
+          uk-img>
+        <h1 class="uk-heading-medium uk-margin-remove-top uk-text-center"><!--
+          -->Bienvenue<br><!--
+          -->Je suis Stéphane SCHMIDELY<br><!--
+          -->Développeur FullStack
         </h1>
         <p class="uk-text-lead uk-text-center uk-text-muted">
           Donec quis quam eros. Sed id urna turpis. Aenean ultrices in libero
@@ -39,11 +46,13 @@
           ornare. <br>
           Aliquam facilisis sollicitudin est auctor mollis. Nulla eget nunc velit.
         </p>
-        <a class="uk-button uk-button-primary uk-button-large"
-          href="#contact-me"
-          uk-scroll>
-          Me contacter !
-        </a>
+        <div class="uk-flex uk-flex-center uk-margin-medium-top">
+          <a href="#contact-me"
+            class="uk-button uk-button-default uk-button-large uk-text-center"
+            uk-scroll>
+            Me contacter !
+          </a>
+        </div>
       </div>
     </section>
 
@@ -52,6 +61,7 @@
       class="uk-section uk-section-muted uk-padding uk-dark"
       uk-height-viewport>
       <div class="uk-container uk-container-expand uk-align-center">
+        <h2 class="uk-heading-small uk-text-center"> Pour qui ai-je travaillé ? </h2>
         B
       </div>
     </section>
@@ -72,9 +82,9 @@
       <div class="uk-container uk-container-expand uk-align-center">
         D
         <a href="#hello"
-           class="uk-icon-button uk-button-primary scroll-to-top"
+           class="uk-icon-button uk-button-default scroll-to-top"
            uk-scroll
-           uk-icon="icon: chevron-up">
+           uk-icon="icon: chevron-up; ratio: 2">
         </a>
       </div>
     </section>

@@ -9,7 +9,27 @@ a {
   font-family: 'Raleway', sans-serif !important;
 }
 
-section {
+.uk-button-default {
+  color: rgb(229, 77, 66);
+  border-color: rgb(229, 77, 66);
+  background-color: transparent;
+  transition: background-color 0.7s ease;
+}
+
+.uk-button-default:hover {
+  color: white;
+  border-color: rgb(229, 77, 66);
+  background-color: rgb(229, 77, 66);
+}
+
+/* Hello */
+
+/* Clients */
+
+/* Projects */
+
+/* Contact me */
+section#contact-me {
   position: relative;
 }
 

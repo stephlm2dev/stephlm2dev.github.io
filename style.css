@@ -19,7 +19,6 @@ a {
 }
 
 /* Override uk-* components*/
-
 a:hover {
   color: var(--main-bg-color);
 }
@@ -36,12 +35,6 @@ a:hover {
   border-color: var(--main-bg-color);
   background-color: var(--main-bg-color);
 }
-
-/* Hello */
-
-/* Clients */
-
-/* Projects */
 
 /* Contact me */
 section#contact-me {

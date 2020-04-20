@@ -1,0 +1,48 @@
+:root {
+  --main-bg-color: rgb(229, 77, 66);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Amatic SC', cursive !important;
+}
+p,
+a {
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif !important;
+}
+
+.uk-text-medium {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/* Override uk-* components*/
+a:hover {
+  color: var(--main-bg-color);
+}
+
+.uk-button-default {
+  color: var(--main-bg-color);;
+  border-color: var(--main-bg-color);
+  background-color: transparent;
+  transition: background-color 0.7s ease;
+}
+
+.uk-button-default:hover {
+  color: white;
+  border-color: var(--main-bg-color);
+  background-color: var(--main-bg-color);
+}
+
+/* Contact me */
+section#contact-me {
+  position: relative;
+}
+
+.scroll-to-top {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}

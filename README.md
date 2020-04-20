@@ -1,8 +1,3 @@
-# Portfolio
-New theme made by me :)
+## Portfolio
 
-## Jekyll
-`bundle update`  
-`bundle exec jekyll build --safe`  
-`bundle exec jekyll serve`  
-`bundle exec jekyll serve --host=0.0.0.0`
+New theme made by me (version 2020) :)

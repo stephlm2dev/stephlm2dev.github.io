@@ -23,6 +23,15 @@ a:hover {
   color: var(--main-bg-color);
 }
 
+.uk-link-default {
+  color: var(--main-bg-color);
+}
+
+.uk-link-default:hover {
+  color: var(--main-bg-color);
+}
+
+
 .uk-button-default {
   color: var(--main-bg-color);;
   border-color: var(--main-bg-color);

@@ -1,0 +1,46 @@
+# KOVELEO - Stephane SCHMIDELY
+
+> Partenaire tech freelance pour faire grandir ton produit digital. Lead dev & referent technique base a Paris, France.
+
+## A propos
+
+KOVELEO est la structure freelance de Stephane SCHMIDELY, developpeur fullstack senior avec 10 ans d'experience. L'approche : partenaire, pas prestataire. L'objectif : reprendre, ameliorer et faire scaler des produits digitaux sans tout casser.
+
+Public cible : TPE, PME, startups et scale-ups.
+
+## Services
+
+- **Reprise & amelioration de produits existants** : audit technique complet, correction de dette tech, stabilisation pour scaler
+- **Developpement FullStack** : conception et realisation d'applications web robustes, architecture evolutive
+- **Accompagnement strategique** : referent technique, conseil architecture, formation equipes
+
+## Process
+
+1. Audit strategique (30 min offertes) : discussion produit, blocages, objectifs
+2. Plan d'action commun : priorisation par impact, roadmap claire, arbitrages transparents
+3. Execution & accompagnement : main dans la main avec l'equipe, code propre, dette maitrisee
+
+## Stack technique
+
+Langages : JavaScript, TypeScript, PHP, Python
+Frameworks : Angular, Symfony, Rails
+Bases de donnees : PostgreSQL
+Cloud : AWS, Google Cloud Platform
+Infrastructure : Kubernetes, Gitlab CI/CD
+CMS : Drupal
+
+## References clients
+
+- **Japan Experience** : CTO / apps, infra, support - 4 ans de transformation d'une infra en systeme scalable et performant
+- **Orange/Libon** : Dev FullStack, analyse de donnees operationnelles, conteneurisation, CI/CD
+- **College des Bernardins** : Dev FullStack, refonte applicative, montee en competences equipe
+- **Neuroprofiler** : Dev FullStack / apps, infra
+- **cstar Industries** : Missions variees / apps, infra, formation
+
+## Contact
+
+- Site : [https://koveleo.fr](https://koveleo.fr)
+- LinkedIn : [https://www.linkedin.com/in/stephane-schmidely/](https://www.linkedin.com/in/stephane-schmidely/)
+- GitHub : [https://github.com/stephlm2dev](https://github.com/stephlm2dev)
+- Malt : [https://www.malt.fr/profile/stephlm2dev](https://www.malt.fr/profile/stephlm2dev)
+- Prendre RDV : [https://calendar.app.google/WDP4YtX1HMT91tTZA](https://calendar.app.google/WDP4YtX1HMT91tTZA)

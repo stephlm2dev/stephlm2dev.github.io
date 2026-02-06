@@ -2,6 +2,74 @@
   --main-bg-color: rgb(229, 77, 66);
 }
 
+.hero-section {
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0.7) 100%
+  ), url('assets/background_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.photo-credit:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-section h1 {
+  color: #ffffff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-section p strong {
+  color: #ffffff;
+}
+
+.hero-section .uk-button-primary {
+  color: #ffffff;
+  border-color: var(--main-bg-color);
+  background-color: var(--main-bg-color);
+}
+
+.hero-section .uk-button-primary:hover,
+.hero-section .uk-button-primary:focus,
+.hero-section .uk-button-primary:active {
+  color: var(--main-bg-color);
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
+.hero-section .uk-button-default {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: transparent;
+}
+
+.hero-section .uk-button-default:hover,
+.hero-section .uk-button-default:focus,
+.hero-section .uk-button-default:active {
+  color: var(--main-bg-color);
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
 h1,
 h2,
 h3 {
@@ -13,12 +81,15 @@ a {
   font-family: 'Raleway', sans-serif !important;
 }
 
+p strong {
+  color: black;
+}
+
 .uk-text-medium {
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
-/* Override uk-* components*/
 a:hover {
   color: var(--main-bg-color);
 }
@@ -31,7 +102,7 @@ a:hover {
   color: var(--main-bg-color);
 }
 
-
+.uk-button-primary:hover,
 .uk-button-default {
   color: var(--main-bg-color);;
   border-color: var(--main-bg-color);
@@ -39,13 +110,130 @@ a:hover {
   transition: background-color 0.7s ease;
 }
 
+.uk-button-primary,
+.uk-button-primary:active,
+.uk-button-primary:focus,
 .uk-button-default:hover {
   color: white;
   border-color: var(--main-bg-color);
   background-color: var(--main-bg-color);
 }
 
-/* Contact me */
+.uk-button-primary:hover {
+
+}
+
+.uk-label-outline {
+  background: transparent;
+  border: 2px solid var(--main-bg-color);
+  color: var(--main-bg-color);
+  margin: 4px 6px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  border-radius: 20px;
+}
+
+.pillar-card {
+  padding: 30px 15px;
+  background: white;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.pillar-featured {
+  background: var(--main-bg-color);
+}
+
+.pillar-featured .pillar-icon,
+.pillar-featured .pillar-label,
+.pillar-featured .pillar-value {
+  color: white !important;
+}
+
+.pillar-icon {
+  color: var(--main-bg-color);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.pillar-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+  margin: 0 0 8px 0;
+}
+
+.pillar-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.service-card {
+  border-left: 4px solid var(--main-bg-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateX(8px);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.service-card-header {
+  margin-bottom: 8px;
+}
+
+.service-number {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--main-bg-color);
+  line-height: 1;
+}
+
+.service-card .uk-card-title {
+  margin: 8px 0 12px 0;
+  font-size: 1.3rem;
+}
+
+.service-example {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: rgba(229, 77, 66, 0.05);
+  border-radius: 6px;
+}
+
+.service-example .example-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--main-bg-color);
+  margin-bottom: 8px;
+}
+
+.service-example p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.service-highlight {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background: var(--main-bg-color);
+  color: white;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.service-highlight strong {
+  color: white;
+}
+
 section#contact-me {
   position: relative;
 }

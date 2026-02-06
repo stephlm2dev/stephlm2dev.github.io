@@ -1,3 +1,3 @@
 ## Portfolio
 
-New theme made by me (version 2020) :)
+New theme made by me (version 2026) :)

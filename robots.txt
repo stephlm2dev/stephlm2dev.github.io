@@ -1,0 +1,3 @@
+User-Agent: *
+
+Sitemap: https://koveleo.fr/sitemap_index.xml

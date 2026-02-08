@@ -238,6 +238,102 @@ section#contact-me {
   position: relative;
 }
 
+/* Scroll indicator */
+.scroll-indicator {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.scroll-dot {
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+  gap: 8px;
+}
+
+.scroll-dot::after {
+  content: '';
+  width: 12px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.scroll-dot.active::after {
+  width: 24px;
+  height: 4px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.scroll-dot:hover::after {
+  background: rgba(255, 255, 255, 0.7);
+  width: 18px;
+}
+
+.scroll-dot.active:hover::after {
+  background: #fff;
+  width: 24px;
+}
+
+.scroll-dot-label {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0);
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  pointer-events: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.scroll-dot:hover .scroll-dot-label,
+.scroll-dot.active .scroll-dot-label {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Adapt colors for light sections */
+.scroll-indicator.on-light .scroll-dot::after {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.scroll-indicator.on-light .scroll-dot.active::after {
+  background: var(--main-bg-color);
+  box-shadow: 0 0 8px rgba(229, 77, 66, 0.3);
+}
+
+.scroll-indicator.on-light .scroll-dot:hover::after {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.scroll-indicator.on-light .scroll-dot.active:hover::after {
+  background: var(--main-bg-color);
+}
+
+.scroll-indicator.on-light .scroll-dot-label {
+  color: rgba(0, 0, 0, 0);
+}
+
+.scroll-indicator.on-light .scroll-dot:hover .scroll-dot-label,
+.scroll-indicator.on-light .scroll-dot.active .scroll-dot-label {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .scroll-indicator {
+    display: none;
+  }
+}
+
 .scroll-to-top {
   position: absolute;
   right: 20px;

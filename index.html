@@ -744,12 +744,73 @@
       </div>
     </section>
 
+    <!-- Scroll indicator -->
+    <nav class="scroll-indicator" aria-label="Navigation sections">
+      <a href="#hello" class="scroll-dot active" data-section="hello"><span class="scroll-dot-label">Accueil</span></a>
+      <a href="#about" class="scroll-dot" data-section="about"><span class="scroll-dot-label">Pourquoi</span></a>
+      <a href="#expertise" class="scroll-dot" data-section="expertise"><span class="scroll-dot-label">Expertise</span></a>
+      <a href="#clients" class="scroll-dot" data-section="clients"><span class="scroll-dot-label">Clients</span></a>
+      <a href="#process" class="scroll-dot" data-section="process"><span class="scroll-dot-label">Process</span></a>
+      <a href="#tech" class="scroll-dot" data-section="tech"><span class="scroll-dot-label">Stack</span></a>
+      <a href="#contact-me" class="scroll-dot" data-section="contact-me"><span class="scroll-dot-label">Contact</span></a>
+    </nav>
+
     <!-- UIkit JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/uikit@3.4.1/dist/js/uikit.min.js">
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/uikit@3.4.1/dist/js/uikit-icons.min.js">
+    </script>
+
+    <script>
+      (function() {
+        var dots = document.querySelectorAll('.scroll-dot');
+        var sections = Array.from(dots).map(function(dot) {
+          return document.getElementById(dot.dataset.section);
+        });
+
+        var nav = document.querySelector('.scroll-indicator');
+        var lightSections = ['about', 'expertise', 'clients', 'process', 'tech', 'contact-me'];
+
+        function updateActive() {
+          var scrollY = window.scrollY + window.innerHeight / 3;
+          var current = 0;
+          for (var i = 0; i < sections.length; i++) {
+            if (sections[i] && sections[i].offsetTop <= scrollY) {
+              current = i;
+            }
+          }
+          dots.forEach(function(dot, i) {
+            dot.classList.toggle('active', i === current);
+          });
+          var currentId = sections[current] ? sections[current].id : '';
+          nav.classList.toggle('on-light', lightSections.indexOf(currentId) !== -1);
+        }
+
+        var ticking = false;
+        window.addEventListener('scroll', function() {
+          if (!ticking) {
+            requestAnimationFrame(function() {
+              updateActive();
+              ticking = false;
+            });
+            ticking = true;
+          }
+        });
+
+        dots.forEach(function(dot) {
+          dot.addEventListener('click', function(e) {
+            e.preventDefault();
+            var target = document.getElementById(dot.dataset.section);
+            if (target) {
+              target.scrollIntoView({ behavior: 'smooth' });
+            }
+          });
+        });
+
+        updateActive();
+      })();
     </script>
   </body>
 </html>

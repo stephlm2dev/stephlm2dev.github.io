@@ -1,41 +1,41 @@
 # KOVELEO - Stephane SCHMIDELY
 
-> Partenaire tech freelance pour faire grandir ton produit digital. Lead dev & referent technique base a Paris, France.
+> Votre partenaire technique pour reprendre le controle de votre produit. Developpeur Senior - Code, Infra & Produit. Basé à Paris, France.
 
 ## A propos
 
-KOVELEO est la structure freelance de Stephane SCHMIDELY, developpeur fullstack senior avec 10 ans d'experience. L'approche : partenaire, pas prestataire. L'objectif : reprendre, ameliorer et faire scaler des produits digitaux sans tout casser.
+KOVELEO est la structure freelance de Stéphane SCHMIDELY, développeur senior avec 10 ans d'experience (de dev a CTO). Positionnement : partenaire technique de confiance pour les dirigeants qui ont perdu la main sur leur produit technique. Vision 360 degrees (code, infra, produit) - un seul interlocuteur au lieu de trois profils.
 
-Public cible : TPE, PME, startups et scale-ups.
+Public cible : TPE, PME, startups (jusqu'a ~100 personnes). Accès direct aux decideurs.
 
 ## Services
 
-- **Reprise & amelioration de produits existants** : audit technique complet, correction de dette tech, stabilisation pour scaler
-- **Developpement FullStack** : conception et realisation d'applications web robustes, architecture evolutive
-- **Accompagnement strategique** : referent technique, conseil architecture, formation equipes
+- **Reprise en main & diagnostic** : audit technique complet, identification des blocages, plan d'action priorise selon les enjeux business
+- **Developpement & amelioration continue** : correction dette technique, nouvelles features, stabilisation, optimisation performances
+- **Accompagnement strategique** : conseil architecture, montee en competence des equipes, choix de la solution adaptee (code, automation, IA)
 
 ## Process
 
-1. Audit strategique (30 min offertes) : discussion produit, blocages, objectifs
-2. Plan d'action commun : priorisation par impact, roadmap claire, arbitrages transparents
-3. Execution & accompagnement : main dans la main avec l'equipe, code propre, dette maitrisee
+1. On echange (30 min offertes) : premier appel pour comprendre contexte et enjeux
+2. On diagnostique (2-4 semaines) : apprendre a travailler ensemble, identifier les premieres actions concretes
+3. On construit dans la duree (3-6 mois+, 2-3j/semaine) : mission longue en partenariat, acces direct, livraison continue
 
 ## Stack technique
 
-Langages : JavaScript, TypeScript, PHP, Python
-Frameworks : Angular, Symfony, Rails
-Bases de donnees : PostgreSQL
-Cloud : AWS, Google Cloud Platform
-Infrastructure : Kubernetes, Gitlab CI/CD
-CMS : Drupal
+Langages: JavaScript, TypeScript, PHP, Python, Ruby, Bash
+Frameworks: Angular, Vue.js, React, Symfony, Rails, Drupal, WordPress
+Bases de données: PostgreSQL
+Cloud: AWS, Google Cloud Platform, OVH
+Infrastructure: Kubernetes, Docker, Gitlab CI/CD, Terraform, Datadog
 
 ## References clients
 
-- **Japan Experience** : CTO / apps, infra, support - 4 ans de transformation d'une infra en systeme scalable et performant
-- **Orange/Libon** : Dev FullStack, analyse de donnees operationnelles, conteneurisation, CI/CD
-- **College des Bernardins** : Dev FullStack, refonte applicative, montee en competences equipe
-- **Neuroprofiler** : Dev FullStack / apps, infra
-- **cstar Industries** : Missions variees / apps, infra, formation
+- **Japan Experience** (~90 personnes): internalisation complete du projet technique, de lead dev a CTO. Reprise en main de la plateforme, reconstruction du lien tech/metier.
+- **Neuroprofiler** (~8 personnes): développememnt technique pendant 6 ans. Pilotage de la refonte complete, gestion directe avec les cofondateurs.
+- **Orange** : reprise d'un projet externalisé, ré-ajustement et remise en   qualité. Evolution applicative, conteneurisation, CI/CD.
+- **College des Bernardins**: développement sur refonte applicative, montée en competences équipe
+- **Libon**: evolution et maintenance applicative, apps, infra
+- **cstar Industries**: missions variées / apps, infra, formation
 
 ## Contact
 

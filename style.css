@@ -332,10 +332,243 @@ section#contact-me {
   .scroll-indicator {
     display: none;
   }
+
+  .hero-section {
+    background-attachment: scroll;
+  }
 }
 
 .scroll-to-top {
   position: absolute;
   right: 20px;
   bottom: 20px;
+}
+
+/* Expertise cards */
+.expertise-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  padding: 28px 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.expertise-card:hover {
+  border-color: var(--main-bg-color);
+  box-shadow: 0 4px 20px rgba(229, 77, 66, 0.08);
+}
+
+.expertise-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(229, 77, 66, 0.08);
+  color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.expertise-card-title {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+.expertise-card-desc {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  font-weight: 100;
+}
+
+.expertise-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 auto 0;
+}
+
+.expertise-card-list li {
+  font-size: 0.88rem;
+  color: #444;
+  padding: 5px 0 5px 18px;
+  position: relative;
+  font-weight: 100;
+  font-family: 'Raleway', sans-serif;
+}
+
+.expertise-card-list li::before {
+  content: '•';
+  color: var(--main-bg-color);
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+.expertise-card-footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #eeeeee;
+}
+
+.expertise-card-footer strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 2px;
+}
+
+.expertise-card-footer span {
+  font-size: 0.8rem;
+  color: #999;
+  font-weight: 100;
+}
+
+/* Client cards */
+.client-card {
+  border-radius: 14px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.client-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.client-card-logo {
+  background: #efefef;
+  padding: 40px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 140px;
+}
+
+.client-card-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(229, 77, 66, 0.9);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.client-card-body {
+  padding: 24px 28px 28px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.client-card-name {
+  font-family: 'Amatic SC', cursive !important;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.client-card-meta {
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0 0 16px 0;
+  font-weight: 400;
+}
+
+.client-card-desc {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+  font-weight: 100;
+}
+
+/* Process timeline */
+.timeline {
+  position: relative;
+  padding-left: 48px;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: rgba(229, 77, 66, 0.2);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 48px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -40px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--main-bg-color);
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px var(--main-bg-color);
+}
+
+.timeline-badge {
+  display: inline-block;
+  background: var(--main-bg-color);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+}
+
+.timeline-content h3 {
+  font-family: 'Amatic SC', cursive !important;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  line-height: 1.1;
+}
+
+.timeline-content p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 100;
 }

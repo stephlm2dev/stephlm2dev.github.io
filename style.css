@@ -1,5 +1,6 @@
 :root {
-  --main-bg-color: rgb(229, 77, 66);
+  --main-bg-color: rgb(192, 52, 42);
+  --accent-text: rgb(255, 110, 97);
   --bg-dark: #12131a;
   --bg-dark-elevated: #1e2028;
   --bg-dark-card: #282a36;
@@ -139,8 +140,8 @@ button:focus-visible,
 
 .uk-label-outline {
   background: transparent;
-  border: 1px solid var(--main-bg-color);
-  color: var(--main-bg-color);
+  border: 1px solid var(--accent-text);
+  color: var(--accent-text);
   margin: 4px 6px;
   padding: 6px 14px;
   font-size: 0.8rem;
@@ -184,7 +185,7 @@ button:focus-visible,
 
 .site-navbar .uk-navbar-nav > li > a:hover,
 .site-navbar .uk-navbar-nav > li > a:focus {
-  color: var(--main-bg-color);
+  color: var(--accent-text);
   background: transparent;
 }
 
@@ -304,7 +305,7 @@ button:focus-visible,
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--main-bg-color);
+  color: var(--accent-text);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -429,7 +430,7 @@ button:focus-visible,
 }
 
 .pillar-icon {
-  color: var(--main-bg-color);
+  color: var(--accent-text);
   display: block;
   margin-bottom: 16px;
 }
@@ -487,7 +488,7 @@ button:focus-visible,
   flex-shrink: 0;
 }
 
-.expertise-list-item h4 {
+.expertise-list-item h3 {
   font-family: 'Noto Serif', serif !important;
   font-size: 1.3rem;
   font-weight: 700;
@@ -646,7 +647,7 @@ blockquote footer {
 .process-step-number {
   font-family: monospace;
   font-size: 0.875rem;
-  color: var(--main-bg-color);
+  color: var(--accent-text);
   margin-bottom: 28px;
   letter-spacing: 0.05em;
 }
@@ -672,8 +673,8 @@ blockquote footer {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--main-bg-color);
-  border: 1px solid var(--main-bg-color);
+  color: var(--accent-text);
+  border: 1px solid var(--accent-text);
   padding: 4px 10px;
   border-radius: 4px;
   margin-top: 20px;
@@ -769,7 +770,7 @@ section#contact-me {
 }
 
 .site-footer a {
-  color: rgba(200, 198, 201, 0.5);
+  color: rgba(200, 198, 201, 0.75);
   font-size: 0.72rem;
   font-family: 'Raleway', sans-serif !important;
   text-transform: uppercase;
@@ -807,7 +808,7 @@ section#contact-me {
    ========================================= */
 
 .site-navbar .uk-navbar-nav > li > a.nav-active {
-  color: var(--main-bg-color);
+  color: var(--accent-text);
 }
 
 /* =========================================

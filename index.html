@@ -150,20 +150,20 @@
     <meta name="trustpilot-one-time-domain-verification-id" content="6eb5948f-58b5-470a-be98-af970e39b801"/>
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/assets/favico/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#12131a">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap">
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&display=swap">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap">
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap">
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&display=swap">
     <!-- UIkit CSS -->
     <link
       rel="stylesheet"
@@ -175,68 +175,194 @@
   </head>
   <body>
     <a href="#main-content" class="skip-link">Passer au contenu principal</a>
-    <main id="main-content">
-    <section
-      id="hello"
-      class="hero-section uk-section uk-padding uk-flex uk-flex-middle"
-      uk-height-viewport>
-      <div class="uk-container uk-container-small">
-        <img
-          data-src="assets/logo.png"
-          width="50"
-          height="50"
-          alt="Koveleo Logo"
-          class="uk-align-center uk-margin-remove-bottom"
-          uk-img>
-        <h1 class="uk-heading-medium uk-margin-remove-top uk-text-center">
-          Stéphane SCHMIDELY - KOVELEO<br>
-          Votre tech freine votre business ?
-        </h1>
-        <p class="uk-text-lead uk-text-center uk-text-muted">
-          Features qui n'avancent plus, budget tech opaque, équipes qui ne se parlent plus ?
-          <strong>Je reprends le contrôle avec vous, du diagnostic jusqu'à l'autonomie.</strong>
-        </p>
-        <div class="uk-flex uk-flex-center uk-margin-medium-top uk-grid-small" uk-grid>
-          <div>
+
+    <!-- Desktop Navbar -->
+    <nav class="site-navbar" aria-label="Navigation principale">
+      <div class="uk-navbar-left" style="display:flex; align-items:center;">
+        <a href="#hello" uk-scroll style="display:flex; align-items:center; text-decoration:none;">
+          <img src="assets/logo.png" width="32" height="32" alt="Koveleo Logo">
+          <span class="navbar-logo-text">KOVELEO</span>
+        </a>
+      </div>
+      <nav>
+        <ul class="uk-navbar-nav" style="display:flex; list-style:none; margin:0; padding:0;">
+          <li><a href="#about" uk-scroll>Pourquoi</a></li>
+          <li><a href="#expertise" uk-scroll>Expertise</a></li>
+          <li><a href="#clients" uk-scroll>Clients</a></li>
+          <li><a href="#process" uk-scroll>Process</a></li>
+          <li><a href="#tech" uk-scroll>Stack</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="#contact-me" class="navbar-cta" uk-scroll>Prendre RDV</a>
+      </div>
+    </nav>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header" aria-label="En-tête mobile">
+      <a href="#hello" uk-scroll style="display:flex; align-items:center; text-decoration:none;">
+        <img src="assets/logo.png" width="28" height="28" alt="Koveleo Logo">
+        <span class="navbar-logo-text" style="font-size:1.3rem;">KOVELEO</span>
+      </a>
+      <button
+        class="uk-icon-button"
+        type="button"
+        uk-icon="menu"
+        uk-toggle="target: #mobile-nav"
+        aria-label="Ouvrir le menu"
+        style="color: white;">
+      </button>
+    </header>
+
+    <!-- Mobile Off-canvas Nav -->
+    <div id="mobile-nav" uk-offcanvas="mode: push; overlay: true; flip: true">
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default uk-margin-large-top">
+          <li><a href="#about" uk-scroll uk-toggle="target: #mobile-nav">Pourquoi Koveleo</a></li>
+          <li><a href="#expertise" uk-scroll uk-toggle="target: #mobile-nav">Comment j'interviens</a></li>
+          <li><a href="#clients" uk-scroll uk-toggle="target: #mobile-nav">Clients</a></li>
+          <li><a href="#process" uk-scroll uk-toggle="target: #mobile-nav">Process</a></li>
+          <li><a href="#tech" uk-scroll uk-toggle="target: #mobile-nav">Stack technique</a></li>
+          <li class="uk-margin-large-top">
             <a href="#contact-me"
-               class="uk-button uk-button-primary uk-button-large"
-               uk-scroll>
+               class="uk-button uk-button-primary uk-width-1-1"
+               uk-scroll
+               uk-toggle="target: #mobile-nav">
               Prendre RDV
             </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main id="main-content">
+
+    <!-- Hero -->
+    <section
+      id="hello"
+      class="hero-section uk-section uk-padding-large">
+      <div class="uk-container uk-container-expand">
+        <div class="uk-grid uk-grid-large uk-flex-middle" uk-grid>
+          <!-- Left: text -->
+          <div class="uk-width-3-5@m">
+            <div class="hero-label">Ex-CTO &middot; Reprise de contr&ocirc;le technique pour dirigeants</div>
+            <h1 class="uk-heading-medium uk-margin-remove-top">
+              Votre tech freine votre business&nbsp;?
+            </h1>
+            <p class="uk-text-lead uk-margin-medium-top">
+              Features qui n'avancent plus, budget tech opaque, équipes qui ne se parlent plus.
+              <strong>Je reprends le contr&ocirc;le avec vous, du diagnostic jusqu'&agrave; l'autonomie.</strong>
+            </p>
+            <div class="uk-flex uk-margin-medium-top uk-grid-small" uk-grid>
+              <div>
+                <a href="#contact-me"
+                   class="uk-button uk-button-primary uk-button-large"
+                   uk-scroll>
+                  Prendre RDV
+                </a>
+              </div>
+              <div>
+                <a href="#about"
+                   class="uk-button uk-button-default uk-button-large"
+                   uk-scroll>
+                  Découvrir mon approche
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
-            <a href="#about"
-               class="uk-button uk-button-default uk-button-large"
-               uk-scroll>
-              Découvrir mon approche
+          <!-- Right: image placeholder with corner accents -->
+          <div class="uk-width-2-5@m uk-margin-top uk-margin-remove-top@m">
+            <div class="hero-image-wrapper">
+              <img
+                data-src="assets/background_1.jpg"
+                alt="Architecture technique abstraite"
+                uk-img>
+              <div class="corner-accent-tl" aria-hidden="true"></div>
+              <div class="corner-accent-br" aria-hidden="true"></div>
+            </div>
+            <a href="https://www.pexels.com/fr-fr/photo/internet-technologie-ordinateur-afficher-5380664"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="photo-credit">
+              Photo: Tima Miroshnichenko / Pexels
             </a>
           </div>
         </div>
-        <a href="https://www.pexels.com/fr-fr/photo/lumineux-leger-mur-reflet-17679996/"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="photo-credit">
-          Photo: Declan Sun / Pexels
-        </a>
       </div>
     </section>
 
+    <!-- Logo Bar -->
+    <section class="logo-bar" aria-label="Ils m'ont fait confiance">
+      <div class="uk-container">
+        <div class="logo-bar-inner">
+          <div>
+            <img
+              data-src="assets/logos/japan-experience.png"
+              height="52"
+              alt="Japan Experience"
+              uk-img>
+          </div>
+          <div>
+            <img
+              data-src="assets/logos/neuroprofiler.svg"
+              height="52"
+              alt="Neuroprofiler"
+              class="uk-preserve"
+              uk-svg>
+          </div>
+          <div>
+            <img
+              data-src="assets/logos/orange.svg"
+              height="52"
+              alt="Orange"
+              class="uk-preserve"
+              uk-svg>
+          </div>
+          <div>
+            <img
+              data-src="assets/logos/bernardins.png"
+              height="52"
+              alt="Coll&egrave;ge des Bernardins"
+              uk-img>
+          </div>
+          <div>
+            <img
+              data-src="assets/logos/libon.svg"
+              height="52"
+              alt="Libon"
+              class="uk-preserve"
+              uk-svg>
+          </div>
+          <div>
+            <img
+              data-src="assets/logos/cstar-industries.svg"
+              height="52"
+              alt="cstar Industries"
+              class="uk-preserve"
+              uk-svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
     <section
       id="about"
-      class="uk-section uk-section-muted uk-padding uk-dark"
-      uk-height-viewport>
+      class="uk-section uk-section-muted uk-padding"
+      style="border-bottom: 1px solid rgba(255,255,255,0.1);">
       <div class="uk-container uk-container-small">
         <h2 class="uk-heading-small uk-text-center">
-          Pourquoi Koveleo ?
+          Pourquoi Koveleo&nbsp;?
         </h2>
 
         <p class="uk-text-lead uk-text-center uk-margin-medium-top">
-          <strong>10 ans</strong> d'expérience, de développeur à CTO.<br>
-          Spécialisé dans un problème précis: reprendre le contrôle d'un projet technique quand il échappe à ceux qui le financent.
+          <strong>10 ans</strong> d'expérience, de développeur &agrave; CTO.<br>
+          Spécialisé dans un probl&egrave;me précis&nbsp;: reprendre le contr&ocirc;le d'un projet technique quand il échappe &agrave; ceux qui le financent.
         </p>
 
         <div class="uk-text-center uk-margin-large-top">
-          <p class="uk-text-small uk-text-uppercase uk-text-muted" style="letter-spacing: 2px;">Pour qui ?</p>
+          <p class="uk-text-small uk-text-uppercase uk-text-muted" style="letter-spacing: 2px;">Pour qui&nbsp;?</p>
           <div class="uk-margin-small-top">
             <span class="uk-label uk-label-outline">Dirigeants non-techniques</span>
             <span class="uk-label uk-label-outline">Fondateurs techniques débordés</span>
@@ -248,7 +374,7 @@
           <div>
             <div class="pillar-card">
               <span class="pillar-icon" uk-icon="icon: users; ratio: 2.5" aria-hidden="true"></span>
-              <p class="pillar-label">Diagnostic honnête</p>
+              <p class="pillar-label">Diagnostic honn&ecirc;te</p>
               <p class="pillar-value">L'état réel de votre tech,<br>pas la version polie</p>
             </div>
           </div>
@@ -263,7 +389,7 @@
             <div class="pillar-card">
               <span class="pillar-icon" uk-icon="icon: user; ratio: 2.5" aria-hidden="true"></span>
               <p class="pillar-label">Autonomie</p>
-              <p class="pillar-value">Mon objectif: que vous<br>n'ayez plus besoin de moi</p>
+              <p class="pillar-value">Mon objectif&nbsp;: que vous<br>n'ayez plus besoin de moi</p>
             </div>
           </div>
         </div>
@@ -273,89 +399,53 @@
              target="_blank"
              rel="noopener noreferrer"
              class="uk-button uk-button-default">
-            Mon actualité tech sur LinkedIn →
+            Mon actualité tech sur LinkedIn &rarr;
           </a>
         </div>
       </div>
     </section>
 
+    <!-- Expertise -->
     <section
       id="expertise"
       class="uk-section uk-section-default uk-padding"
-      uk-height-viewport>
+      style="border-bottom: 1px solid rgba(255,255,255,0.1);">
       <div class="uk-container uk-container-expand uk-padding-large">
-        <h2 class="uk-heading-small uk-text-center">
-          Comment j'interviens
-        </h2>
-        <p class="uk-text-medium uk-text-center uk-text-muted uk-margin-medium-bottom">
-          Un parcours en trois étapes - du diagnostic jusqu'à votre autonomie
-        </p>
-
-        <div class="uk-grid-medium uk-grid-match uk-child-width-1-1@s uk-child-width-1-3@m" uk-grid>
-          <div>
-            <div class="expertise-card">
-              <div class="expertise-card-icon">
-                <span uk-icon="icon: search; ratio: 1.4" aria-hidden="true"></span>
-              </div>
-              <h3 class="expertise-card-title">Diagnostic</h3>
-              <p class="expertise-card-desc">
-                Je regarde ce qui tourne vraiment - le code, l'organisation, la relation avec le presta ou la dynamique entre vos équipes. Vous repartez avec un état des lieux honnête et un plan d'action priorisé par impact business.
-              </p>
-              <ul class="expertise-card-list">
-                <li>État des lieux technique et organisationnel</li>
-                <li>Cartographie de la dette et des risques</li>
-                <li>Plan d'action priorisé</li>
-                <li>Premières recommandations</li>
-              </ul>
-              <div class="expertise-card-footer">
-                <strong>Orange</strong>
-                <span>Reprise d'un projet confié en externe qui n'allait pas dans le bon sens</span>
-              </div>
-            </div>
+        <div class="uk-grid uk-grid-large" uk-grid style="align-items: start;">
+          <!-- Left: heading + subtitle -->
+          <div class="uk-width-1-3@m">
+            <h2 class="uk-heading-small">
+              Comment j'interviens
+            </h2>
+            <p class="uk-text-medium">
+              Un parcours en trois étapes &mdash; du diagnostic jusqu'&agrave; votre autonomie
+            </p>
           </div>
-
-          <div>
-            <div class="expertise-card">
-              <div class="expertise-card-icon">
-                <span uk-icon="icon: code; ratio: 1.4" aria-hidden="true"></span>
-              </div>
-              <h3 class="expertise-card-title">Accompagnement & reprise en main</h3>
-              <p class="expertise-card-desc">
-                J'exécute le plan avec vous. Je fais le lien entre vos équipes tech et métier, je tranche les décisions techniques, je débloque ce qui freine. Les features avancent, la dette se réduit.
-              </p>
-              <ul class="expertise-card-list">
-                <li>Exécution du plan de reprise</li>
-                <li>Lien tech/métier rétabli</li>
-                <li>Décisions techniques arbitrées</li>
-                <li>Livraison continue</li>
-              </ul>
-              <div class="expertise-card-footer">
-                <strong>Japan Experience</strong>
-                <span>Structuration de l'équipe technique pendant 4 ans</span>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="expertise-card">
-              <div class="expertise-card-icon">
-                <span uk-icon="icon: bolt; ratio: 1.4" aria-hidden="true"></span>
-              </div>
-              <h3 class="expertise-card-title">Transfert & autonomie</h3>
-              <p class="expertise-card-desc">
-                Montée en compétence de vos équipes, documentation, transfert de connaissances. Quand vous comprenez ce qui tourne et que votre équipe est autonome, je pars.
-              </p>
-              <ul class="expertise-card-list">
-                <li>Formation et montée en compétence</li>
-                <li>Documentation technique</li>
-                <li>Transfert de connaissances</li>
-                <li>Sortie planifiée</li>
-              </ul>
-              <div class="expertise-card-footer">
-                <strong>Collège des Bernardins</strong>
-                <span>Accompagnement et formation d'équipes non techniques</span>
-              </div>
-            </div>
+          <!-- Right: bullet list -->
+          <div class="uk-width-2-3@m">
+            <ul class="expertise-list">
+              <li class="expertise-list-item">
+                <div class="expertise-bullet" aria-hidden="true"></div>
+                <div>
+                  <h4>Diagnostic</h4>
+                  <p>Je regarde ce qui tourne vraiment &mdash; le code, l'organisation, la relation avec le presta ou la dynamique entre vos équipes. Vous repartez avec un état des lieux honn&ecirc;te et un plan d'action priorisé par impact business.</p>
+                </div>
+              </li>
+              <li class="expertise-list-item">
+                <div class="expertise-bullet" aria-hidden="true"></div>
+                <div>
+                  <h4>Accompagnement &amp; reprise en main</h4>
+                  <p>J'exécute le plan avec vous. Je fais le lien entre vos équipes tech et métier, je tranche les décisions techniques, je débloque ce qui freine. Les features avancent, la dette se réduit.</p>
+                </div>
+              </li>
+              <li class="expertise-list-item">
+                <div class="expertise-bullet" aria-hidden="true"></div>
+                <div>
+                  <h4>Transfert &amp; autonomie</h4>
+                  <p>Montée en compétence de vos équipes, documentation, transfert de connaissances. Quand vous comprenez ce qui tourne et que votre équipe est autonome, je pars.</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -369,16 +459,17 @@
       </div>
     </section>
 
+    <!-- Clients -->
     <section
       id="clients"
       class="uk-section uk-section-muted uk-padding"
-      uk-height-viewport>
+      style="border-bottom: 1px solid rgba(255,255,255,0.1);">
       <div class="uk-container uk-container-small">
         <h2 class="uk-heading-small uk-text-center">
           Ils m'ont fait confiance
         </h2>
         <p class="uk-text-medium uk-text-center uk-text-muted">
-          À chaque fois le même mouvement: comprendre la situation, remettre de l'ordre, rendre autonome.
+          &Agrave; chaque fois le m&ecirc;me mouvement&nbsp;: comprendre la situation, remettre de l'ordre, rendre autonome.
         </p>
 
         <div class="uk-grid-medium uk-grid-match uk-child-width-1-1@s uk-child-width-1-3@m uk-margin-medium-top" uk-grid>
@@ -391,13 +482,13 @@
                   height="90"
                   alt="Logo Japan Experience"
                   uk-img>
-                <span class="client-card-badge">CTO · Lead Dev</span>
+                <span class="client-card-badge">CTO &middot; Lead Dev</span>
               </div>
               <div class="client-card-body">
                 <h3 class="client-card-name">Japan Experience</h3>
                 <p class="client-card-meta">~90 personnes</p>
                 <p class="client-card-desc">
-                  Reprise d'un écosystème entier géré par un prestataire externe. Pilotage de la passation, construction de l'équipe technique de zéro, internalisation de 4 applications.
+                  Reprise d'un écosyst&egrave;me entier géré par un prestataire externe. Pilotage de la passation, construction de l'équipe technique de zéro, internalisation de 4 applications.
                 </p>
               </div>
             </div>
@@ -413,13 +504,13 @@
                   alt="Logo Neuroprofiler"
                   class="uk-preserve"
                   uk-svg>
-                <span class="client-card-badge">Lead technique · +4 ans</span>
+                <span class="client-card-badge">Lead technique &middot; +4 ans</span>
               </div>
               <div class="client-card-body">
                 <h3 class="client-card-name">Neuroprofiler</h3>
                 <p class="client-card-meta">~6 personnes</p>
                 <p class="client-card-desc">
-                  Participation à la livraison d'une application sans équipe tech en place. Gestion directe avec les cofondateurs pendant +4 ans.
+                  Participation &agrave; la livraison d'une application sans équipe tech en place. Gestion directe avec les cofondateurs pendant +4 ans.
                 </p>
               </div>
             </div>
@@ -435,7 +526,7 @@
                   alt="Logo Orange"
                   class="uk-preserve"
                   uk-svg>
-                <span class="client-card-badge">Reprise & remise en qualité</span>
+                <span class="client-card-badge">Reprise &amp; remise en qualité</span>
               </div>
               <div class="client-card-body">
                 <h3 class="client-card-name">Orange</h3>
@@ -451,91 +542,56 @@
         <div class="uk-margin-large-top">
           <blockquote class="uk-text-lead uk-text-center uk-text-muted" lang="en">
             <p>
-            He is a top-notch specialist and full-stack developer who brings
-            great benefits to the project. He is very responsible and
-            enthusiastic about work.
+              He is a top-notch specialist and full-stack developer who brings
+              great benefits to the project. He is very responsible and
+              enthusiastic about work.
             </p>
             <footer class="uk-text-small">
               <strong>Alena Badzilouskaya</strong>, Freelance QA, Neuroprofiler mission
             </footer>
           </blockquote>
         </div>
-
-        <div class="uk-margin-large-top uk-text-center">
-          <p class="uk-text-small uk-text-uppercase uk-text-muted" style="letter-spacing: 2px;">Autres missions</p>
-          <div class="uk-flex-center uk-flex-middle uk-child-width-1-3@m uk-margin-small-top" uk-grid>
-            <div>
-              <img
-                data-src="assets/logos/bernardins.png"
-                width="80"
-                height="80"
-                alt="Logo Collège des Bernardins"
-                class="uk-align-center uk-margin-remove-bottom"
-                uk-img>
-              <p class="uk-text-center uk-text-small uk-text-muted">Collège des Bernardins</p>
-            </div>
-            <div>
-              <img
-                data-src="assets/logos/libon.svg"
-                width="80"
-                height="80"
-                alt="Logo Libon"
-                class="uk-preserve uk-align-center uk-margin-remove-bottom"
-                uk-svg>
-              <p class="uk-text-center uk-text-small uk-text-muted">Libon</p>
-            </div>
-            <div>
-              <img
-                data-src="assets/logos/cstar-industries.svg"
-                width="80"
-                height="80"
-                alt="Logo cstar Industries"
-                class="uk-preserve uk-align-center uk-margin-remove-bottom"
-                uk-svg>
-              <p class="uk-text-center uk-text-small uk-text-muted">cstar Industries</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
+    <!-- Process -->
     <section
       id="process"
       class="uk-section uk-section-default uk-padding"
-      uk-height-viewport>
+      style="border-bottom: 1px solid rgba(255,255,255,0.1);">
       <div class="uk-container uk-container-small">
-        <h2 class="uk-heading-small uk-text-center">
-          Comment on travaille ensemble
-        </h2>
-        <p class="uk-text-medium uk-text-center uk-text-muted">
-          Simple, transparent, sans engagement initial
-        </p>
+        <div class="process-header">
+          <h2 class="uk-heading-small">
+            Comment on travaille ensemble
+          </h2>
+          <p class="uk-text-lead uk-text-muted uk-flex uk-flex-middle" style="margin:0;">
+            Simple, transparent, sans engagement initial. Pas de rapports théoriques, uniquement des plans d'action exécutables.
+          </p>
+        </div>
 
-        <div class="timeline uk-margin-large-top">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-badge">30 min offertes</span>
+        <div class="process-grid">
+          <div>
+            <div class="process-step">
+              <div class="process-step-number">01.</div>
               <h3>On échange</h3>
               <p>Un premier appel pour comprendre votre contexte, vos enjeux, et voir si on est alignés.</p>
+              <span class="step-badge">30 min offertes</span>
             </div>
           </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-badge">1 à 2 semaines</span>
+          <div>
+            <div class="process-step">
+              <div class="process-step-number">02.</div>
               <h3>On diagnostique</h3>
-              <p>Je regarde ce qui tourne vraiment - code, organisation, relation presta. Vous repartez avec un état des lieux et un plan d'action priorisé.</p>
+              <p>Je regarde ce qui tourne vraiment &mdash; code, organisation, relation presta. Vous repartez avec un état des lieux et un plan d'action priorisé.</p>
+              <span class="step-badge">1 &agrave; 2 semaines</span>
             </div>
           </div>
-
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-badge">3-6 mois · 2-3j/semaine</span>
-              <h3>On reprend le contrôle</h3>
+          <div>
+            <div class="process-step">
+              <div class="process-step-number">03.</div>
+              <h3>On reprend le contr&ocirc;le</h3>
               <p>J'exécute le plan avec vous, je fais le lien tech/métier, je débloque ce qui freine. Et je repars quand votre équipe est autonome.</p>
+              <span class="step-badge">3-6 mois &middot; 2-3j/semaine</span>
             </div>
           </div>
         </div>
@@ -550,9 +606,11 @@
       </div>
     </section>
 
+    <!-- Tech Stack -->
     <section
       id="tech"
-      class="uk-section uk-section-muted uk-padding">
+      class="uk-section uk-section-muted uk-padding"
+      style="border-bottom: 1px solid rgba(255,255,255,0.1);">
       <div class="uk-container uk-container-small">
         <h2 class="uk-heading-small uk-text-center">
           Stack technique
@@ -572,7 +630,7 @@
               alt="Javascript"
               class="uk-preserve uk-align-center uk-margin-remove-bottom"
               uk-svg>
-            <p class="uk-text-center uk-text-small">JS/TS</p>
+            <p class="uk-text-center uk-text-small tech-icon-label">JS/TS</p>
           </div>
           <div>
             <img
@@ -582,7 +640,7 @@
               alt="PHP"
               class="uk-preserve uk-align-center uk-margin-remove-bottom"
               uk-svg>
-            <p class="uk-text-center uk-text-small">PHP</p>
+            <p class="uk-text-center uk-text-small tech-icon-label">PHP</p>
           </div>
           <div>
             <img
@@ -592,7 +650,7 @@
               alt="Python"
               class="uk-preserve uk-align-center uk-margin-remove-bottom"
               uk-svg>
-            <p class="uk-text-center uk-text-small">Python</p>
+            <p class="uk-text-center uk-text-small tech-icon-label">Python</p>
           </div>
           <div>
             <img
@@ -602,7 +660,7 @@
               alt="Angular"
               class="uk-preserve uk-align-center uk-margin-remove-bottom"
               uk-svg>
-            <p class="uk-text-center uk-text-small">Angular</p>
+            <p class="uk-text-center uk-text-small tech-icon-label">Angular</p>
           </div>
           <div>
             <img
@@ -612,7 +670,7 @@
               alt="Symfony"
               class="uk-preserve uk-align-center uk-margin-remove-bottom"
               uk-svg>
-            <p class="uk-text-center uk-text-small">Symfony</p>
+            <p class="uk-text-center uk-text-small tech-icon-label">Symfony</p>
           </div>
           <div>
             <img
@@ -622,7 +680,7 @@
               alt="Rails"
               class="uk-preserve uk-align-center uk-margin-remove-bottom"
               uk-svg>
-            <p class="uk-text-center uk-text-small">Rails</p>
+            <p class="uk-text-center uk-text-small tech-icon-label">Rails</p>
           </div>
           <div>
             <img
@@ -632,7 +690,7 @@
               alt="PostgreSQL"
               class="uk-preserve uk-align-center uk-margin-remove-bottom"
               uk-svg>
-            <p class="uk-text-center uk-text-small">PostgreSQL</p>
+            <p class="uk-text-center uk-text-small tech-icon-label">PostgreSQL</p>
           </div>
           <div>
             <img
@@ -642,7 +700,7 @@
               alt="AWS"
               class="uk-preserve uk-align-center uk-margin-remove-bottom"
               uk-svg>
-            <p class="uk-text-center uk-text-small">AWS</p>
+            <p class="uk-text-center uk-text-small tech-icon-label">AWS</p>
           </div>
           <div>
             <img
@@ -652,7 +710,7 @@
               alt="GCP"
               class="uk-preserve uk-align-center uk-margin-remove-bottom"
               uk-svg>
-            <p class="uk-text-center uk-text-small">GCP</p>
+            <p class="uk-text-center uk-text-small tech-icon-label">GCP</p>
           </div>
           <div>
             <img
@@ -662,7 +720,7 @@
               alt="Kubernetes"
               class="uk-preserve uk-align-center uk-margin-remove-bottom"
               uk-svg>
-            <p class="uk-text-center uk-text-small">Kubernetes</p>
+            <p class="uk-text-center uk-text-small tech-icon-label">Kubernetes</p>
           </div>
           <div>
             <img
@@ -672,7 +730,7 @@
               alt="Gitlab"
               class="uk-preserve uk-align-center uk-margin-remove-bottom"
               uk-svg>
-            <p class="uk-text-center uk-text-small">Gitlab CI/CD</p>
+            <p class="uk-text-center uk-text-small tech-icon-label">Gitlab CI/CD</p>
           </div>
           <div>
             <img
@@ -682,44 +740,45 @@
               alt="Drupal"
               class="uk-preserve uk-align-center uk-margin-remove-bottom"
               uk-svg>
-            <p class="uk-text-center uk-text-small">Drupal</p>
+            <p class="uk-text-center uk-text-small tech-icon-label">Drupal</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Contact / CTA -->
     <section
       id="contact-me"
-      class="uk-section uk-section-default uk-padding uk-dark uk-flex uk-flex-middle"
-      uk-height-viewport>
-      <div class="uk-container uk-container-small">
-        <h2 class="uk-heading-small uk-text-center">
-          Votre tech mérite d'être un accélérateur
+      class="uk-section uk-section-default uk-padding uk-flex uk-flex-middle cta-glow"
+      style="min-height: 70vh;">
+      <div class="uk-container uk-container-small uk-text-center" style="position:relative; z-index:1; width:100%;">
+        <h2 class="uk-heading-medium">
+          &Eacute;changeons sur vos ambitions techniques
         </h2>
 
-        <p class="uk-text-lead uk-text-center uk-text-muted uk-margin-medium-top">
-          Votre tech mérite d'être un accélérateur, pas un frein. <strong>Échangeons.</strong>
+        <p class="uk-text-lead uk-text-muted uk-margin-medium-top">
+          Votre tech mérite d'&ecirc;tre un accélérateur, pas un frein. <strong>&Eacute;changeons.</strong>
         </p>
 
         <div class="uk-flex uk-flex-center uk-margin-medium-top">
           <a href="https://calendar.app.google/WDP4YtX1HMT91tTZA"
              target="_blank"
              rel="noopener noreferrer"
-             class="uk-button uk-button-default uk-button-large">
-            Prendre RDV - Audit gratuit 30min
+             class="uk-button uk-button-primary uk-button-large">
+            Prendre RDV &mdash; Audit gratuit 30min
           </a>
         </div>
 
         <p class="uk-text-center uk-text-muted uk-margin-medium-top">
-          Vous pouvez aussi me retrouver sur:
+          Vous pouvez aussi me retrouver sur&nbsp;:
         </p>
 
         <div class="uk-text-center" id="lafabriquedunet-badge">
           <script src="https://www.lafabriquedunet.fr/agences/badge/koveleo/badge.js?color=dark" defer></script>
         </div>
 
-        <div class="uk-flex-center uk-flex-middle uk-grid-match
-          uk-margin-medium-top uk-child-width-1-2 uk-child-width-1-5@m"
+        <div class="uk-flex uk-flex-center uk-flex-middle uk-grid-match
+          uk-margin-medium-top uk-child-width-1-2 uk-child-width-auto@m"
           uk-grid>
           <div>
             <a href="https://linkedin.com/in/stephane-schmidely/"
@@ -729,7 +788,7 @@
                aria-label="Profil LinkedIn de Stéphane Schmidely"
                uk-icon="icon: linkedin; ratio: 3">
             </a>
-            <p class="uk-text-center uk-text-small">LinkedIn</p>
+            <p class="uk-text-center uk-text-small uk-text-muted">LinkedIn</p>
           </div>
           <div>
             <a href="https://www.malt.fr/profile/stephaneschmidely-partenairetech"
@@ -739,12 +798,12 @@
                aria-label="Profil Malt de Stéphane Schmidely"
                uk-icon="icon: user; ratio: 3">
             </a>
-            <p class="uk-text-center uk-text-small">Malt</p>
+            <p class="uk-text-center uk-text-small uk-text-muted">Malt</p>
           </div>
         </div>
 
         <a href="#hello"
-           class="uk-icon-button uk-button-default scroll-to-top"
+           class="scroll-to-top uk-icon-button"
            uk-icon="icon: chevron-up; ratio: 2"
            aria-label="Retour en haut de page"
            uk-scroll>
@@ -754,16 +813,22 @@
 
     </main>
 
-    <!-- Scroll indicator -->
-    <nav class="scroll-indicator" aria-label="Navigation sections">
-      <a href="#hello" class="scroll-dot active" data-section="hello"><span class="scroll-dot-label">Accueil</span></a>
-      <a href="#about" class="scroll-dot" data-section="about"><span class="scroll-dot-label">Pourquoi</span></a>
-      <a href="#expertise" class="scroll-dot" data-section="expertise"><span class="scroll-dot-label">Comment</span></a>
-      <a href="#clients" class="scroll-dot" data-section="clients"><span class="scroll-dot-label">Clients</span></a>
-      <a href="#process" class="scroll-dot" data-section="process"><span class="scroll-dot-label">Process</span></a>
-      <a href="#tech" class="scroll-dot" data-section="tech"><span class="scroll-dot-label">Stack</span></a>
-      <a href="#contact-me" class="scroll-dot" data-section="contact-me"><span class="scroll-dot-label">Contact</span></a>
-    </nav>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="uk-container">
+        <div class="footer-row">
+          <div class="footer-brand">KOVELEO</div>
+          <div class="footer-links">
+            <a href="https://linkedin.com/in/stephane-schmidely/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.malt.fr/profile/stephaneschmidely-partenairetech" target="_blank" rel="noopener noreferrer">Malt</a>
+            <a href="#contact-me" uk-scroll>Contact</a>
+          </div>
+        </div>
+        <div class="footer-divider">
+          <p class="footer-copyright">&copy; 2026 KOVELEO &mdash; Stéphane SCHMIDELY. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
 
     <!-- UIkit JS -->
     <script
@@ -775,51 +840,39 @@
 
     <script>
       (function() {
-        var dots = document.querySelectorAll('.scroll-dot');
-        var sections = Array.from(dots).map(function(dot) {
-          return document.getElementById(dot.dataset.section);
+        var navLinks = document.querySelectorAll('.site-navbar .uk-navbar-nav a[href^="#"]');
+        var sectionIds = Array.from(navLinks).map(function(link) {
+          return link.getAttribute('href').substring(1);
+        });
+        var sections = sectionIds.map(function(id) {
+          return document.getElementById(id);
         });
 
-        var nav = document.querySelector('.scroll-indicator');
-        var lightSections = ['about', 'expertise', 'clients', 'process', 'tech', 'contact-me'];
-
-        function updateActive() {
+        function updateNavActive() {
           var scrollY = window.scrollY + window.innerHeight / 3;
-          var current = 0;
+          var currentIdx = -1;
           for (var i = 0; i < sections.length; i++) {
             if (sections[i] && sections[i].offsetTop <= scrollY) {
-              current = i;
+              currentIdx = i;
             }
           }
-          dots.forEach(function(dot, i) {
-            dot.classList.toggle('active', i === current);
+          navLinks.forEach(function(link, i) {
+            link.classList.toggle('nav-active', i === currentIdx);
           });
-          var currentId = sections[current] ? sections[current].id: '';
-          nav.classList.toggle('on-light', lightSections.indexOf(currentId) !== -1);
         }
 
         var ticking = false;
         window.addEventListener('scroll', function() {
           if (!ticking) {
             requestAnimationFrame(function() {
-              updateActive();
+              updateNavActive();
               ticking = false;
             });
             ticking = true;
           }
         });
 
-        dots.forEach(function(dot) {
-          dot.addEventListener('click', function(e) {
-            e.preventDefault();
-            var target = document.getElementById(dot.dataset.section);
-            if (target) {
-              target.scrollIntoView({ behavior: 'smooth' });
-            }
-          });
-        });
-
-        updateActive();
+        updateNavActive();
       })();
     </script>
   </body>

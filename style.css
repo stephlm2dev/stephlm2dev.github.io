@@ -783,6 +783,12 @@ section#contact-me {
   color: var(--main-bg-color);
 }
 
+.contact-section-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
 .site-footer p {
   color: rgba(200, 198, 201, 0.6);
   font-size: 0.85rem;

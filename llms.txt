@@ -1,46 +1,52 @@
 # KOVELEO - Stephane SCHMIDELY
 
-> Votre partenaire technique pour reprendre le controle de votre produit. Developpeur Senior - Code, Infra & Produit. Basé à Paris, France.
+> Partenaire technique pour dirigeants. Je m'immerge dans le quotidien de vos équipes pour révéler ce que personne ne connecte, construire ce qui manque, et m'ancrer dans la durée.
 
 ## A propos
 
-KOVELEO est la structure freelance de Stéphane SCHMIDELY, développeur senior avec 10 ans d'experience (de dev a CTO). Positionnement : partenaire technique de confiance pour les dirigeants qui ont perdu la main sur leur produit technique. Vision 360 degrees (code, infra, produit) - un seul interlocuteur au lieu de trois profils.
+KOVELEO est la structure de Stéphane SCHMIDELY, partenaire technique pour dirigeants avec 10 ans d'expérience (de développeur à CTO), en e-commerce, tourisme, fintech, éducation. Positionnement : quelqu'un qui décode de l'intérieur ce que personne ne connecte - à l'intersection de la vision du dirigeant, de la réalité des équipes et des contraintes business.
 
-Public cible : TPE, PME, startups (jusqu'a ~100 personnes). Accès direct aux decideurs.
+Public cible : dirigeants qui ont la vision et les équipes, mais pas la position entre les deux - parce que cette position n'existe dans aucune fiche de poste.
 
-## Services
+## Offres
 
-- **Reprise en main & diagnostic** : audit technique complet, identification des blocages, plan d'action priorise selon les enjeux business
-- **Developpement & amelioration continue** : correction dette technique, nouvelles features, stabilisation, optimisation performances
-- **Accompagnement strategique** : conseil architecture, montee en competence des equipes, choix de la solution adaptee (code, automation, IA)
+- **Révéler - Comprendre avant d'agir** (2 à 4 semaines, prix fixe) : J'échange avec vos équipes, vos clients, vous. Vous repartez avec une vue d'ensemble claire : ce qui bloque, ce qui s'ouvre, et un plan d'action priorisé.
+- **Forger - Construire ce qui manque** (durée projet, prix projet) : À partir de ce qu'on a révélé ensemble ou de ce que vous savez déjà, je construis - un outil, un process, un produit - en cycles courts, avec vos équipes.
+- **Ancrer - S'inscrire dans la durée** (3 mois renouvelables, 2-3 jours/semaine) : Je deviens votre partenaire technique au quotidien. Je construis, j'anticipe, je fais monter vos équipes en autonomie.
 
-## Process
+## La méthode : IMMERSION · RADAR · IMPACT
 
-1. On echange (30 min offertes) : premier appel pour comprendre contexte et enjeux
-2. On diagnostique (2-4 semaines) : apprendre a travailler ensemble, identifier les premieres actions concretes
-3. On construit dans la duree (3-6 mois+, 2-3j/semaine) : mission longue en partenariat, acces direct, livraison continue
+- **IMMERSION** : Je me projette dans le quotidien de chacun. Pas pour auditer, pour comprendre.
+- **RADAR** : Ce qui bloque, ce qui s'ouvre, ce que personne ne voit parce que tout le monde est dedans.
+- **IMPACT** : Si ça ne change rien de concret dans votre quotidien, ça ne vaut rien.
+
+## Résultats - Japan Experience (~100 personnes)
+
+- Produit lancé en 5 mois
+- 8h/semaine économisées pour les équipes opérationnelles
+- Temps de chargement divisé par 8
+- 4 applications internalisées
+- Équipe technique construite de zéro
 
 ## Stack technique
 
-Langages: JavaScript, TypeScript, PHP, Python, Ruby, Bash
-Frameworks: Angular, Vue.js, React, Symfony, Rails, Drupal, WordPress
-Bases de données: PostgreSQL
-Cloud: AWS, Google Cloud Platform, OVH
-Infrastructure: Kubernetes, Docker, Gitlab CI/CD, Terraform, Datadog
+Langages : JavaScript, TypeScript, PHP, Python
+Frameworks : Symfony, Rails, Angular, Drupal
+Base de données : PostgreSQL
+Cloud : Google Cloud Platform, AWS
+Infrastructure : Kubernetes, Gitlab CI/CD
 
 ## References clients
 
-- **Japan Experience** (~90 personnes): internalisation complete du projet technique, de lead dev a CTO. Reprise en main de la plateforme, reconstruction du lien tech/metier.
-- **Neuroprofiler** (~8 personnes): développememnt technique pendant 6 ans. Pilotage de la refonte complete, gestion directe avec les cofondateurs.
-- **Orange** : reprise d'un projet externalisé, ré-ajustement et remise en   qualité. Evolution applicative, conteneurisation, CI/CD.
-- **College des Bernardins**: développement sur refonte applicative, montée en competences équipe
-- **Libon**: evolution et maintenance applicative, apps, infra
-- **cstar Industries**: missions variées / apps, infra, formation
+- **Japan Experience** (~100 personnes) : partenaire technique de 0 à 1, de lead dev à CTO. Lien tech/métier reconstruit, équipe technique construite. Transformation du digital de "poids mort" à "pilier central" (mots du CEO).
+- **Neuroprofiler** (4+ ans) : développement technique, pilotage de la refonte complète, gestion directe avec les cofondateurs.
+- **Orange** : reprise d'un projet externalisé, remise en qualité, conteneurisation, CI/CD.
+- **Collège des Bernardins** : développement sur refonte applicative, montée en compétences équipe, formation à l'autonomie.
+- **Libon** : évolution et maintenance applicative.
 
 ## Contact
 
-- Site : [https://koveleo.fr](https://koveleo.fr)
-- LinkedIn : [https://www.linkedin.com/in/stephane-schmidely/](https://www.linkedin.com/in/stephane-schmidely/)
-- GitHub : [https://github.com/stephlm2dev](https://github.com/stephlm2dev)
-- Malt : [https://www.malt.fr/profile/stephlm2dev](https://www.malt.fr/profile/stephlm2dev)
-- Prendre RDV : [https://calendar.app.google/WDP4YtX1HMT91tTZA](https://calendar.app.google/WDP4YtX1HMT91tTZA)
+- Site : https://koveleo.fr
+- LinkedIn : https://www.linkedin.com/in/stephane-schmidely/
+- Malt : https://www.malt.fr/profile/stephaneschmidely-partenairetech
+- Prendre RDV : https://calendar.app.google/WDP4YtX1HMT91tTZA

@@ -83,7 +83,7 @@
 
   /* ---- Active nav link on scroll ---- */
   var navLinks = document.querySelectorAll('.nav-link');
-  var sectionIds = ['constat', 'approche', 'offres', 'preuves'];
+  var sectionIds = ['constat', 'approche', 'offres', 'resultats'];
 
   var sectionObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
@@ -108,7 +108,7 @@
 
   if (!prefersReducedMotion) {
     var revealTargets = document.querySelectorAll(
-      '.card, .offre-card, .metric, .verbatim, .pillar, .faq-item'
+      '.card, .offre-card, .metric, .verbatim, .pillar, .faq-item, .transformation-card'
     );
 
     revealTargets.forEach(function (el) {

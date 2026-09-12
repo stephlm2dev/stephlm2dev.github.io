@@ -15,6 +15,10 @@
   --accent-hover: #E86B3E;
   --accent-accessible: #C94B2C;
   --accent-accessible-hover: #B03D22;
+  --accent-soft: #E88257;
+  --bg-coral-wash-pale: #F7EAE1;
+  --bg-coral-wash: #F9E1D1;
+  --bg-ember-mid: #1E362E;
   --text-primary: #FFFFFF;
   --text-secondary: #E1E1E1;
   --text-muted: #A3BDB8;
@@ -756,7 +760,7 @@ a.nav-cta {
    ============================================================ */
 .section-offres {
   padding: var(--space-section) 0;
-  background: #FFFFFF;
+  background: var(--bg-warm);
   color: var(--text-dark);
 }
 
@@ -776,13 +780,11 @@ a.nav-cta {
 }
 
 .offre-card {
-  background: #FFFFFF;
-  border: 1px solid rgba(7, 37, 31, 0.10);
-  border-left-width: 4px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  border: 1px solid transparent;
   transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
@@ -791,9 +793,56 @@ a.nav-cta {
   box-shadow: 0 8px 24px rgba(255, 127, 80, 0.12);
 }
 
-.offre-reveler { border-left-color: var(--accent); }
-.offre-forger  { border-left-color: var(--accent); }
-.offre-ancrer  { border-left-color: var(--accent); }
+/* Heat ladder: three flush cards, escalating warmth — no elevation trick at rest */
+
+/* Révéler — the quiet first step: barely-warm, same coral family as Forger */
+.offre-reveler {
+  background: var(--bg-coral-wash-pale);
+  border-color: rgba(192, 75, 44, 0.3);
+}
+.offre-reveler .offre-badge {
+  background: transparent;
+  color: var(--accent-accessible-hover);
+  border: 1px solid rgba(192, 75, 44, 0.4);
+}
+.offre-reveler .offre-title { color: var(--text-dark); }
+.offre-reveler .offre-subtitle { color: var(--accent-accessible-hover); }
+.offre-reveler .offre-desc { color: var(--text-dark-muted); }
+
+/* Forger — the one hot moment: solid coral earns it as the flagship */
+.offre-forger {
+  padding-block: 2.25rem;
+  background: var(--bg-coral-wash);
+  border-color: rgba(192, 75, 44, 0.45);
+}
+.offre-forger .offre-badge {
+  background: var(--accent-accessible);
+  color: #FFFFFF;
+}
+.offre-forger .offre-title { color: var(--text-dark); }
+.offre-forger .offre-subtitle { color: var(--accent-accessible-hover); }
+.offre-forger .offre-desc { color: #4A392F; }
+
+/* Ancrer — deepest commitment, one step short of full forge-black: the bridge, not the cliff */
+.offre-ancrer {
+  padding-block: 2.5rem;
+  background: var(--bg-ember-mid);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.offre-ancrer .offre-badge {
+  background: transparent;
+  color: var(--accent-soft);
+  border: 1px solid rgba(232, 130, 87, 0.5);
+}
+.offre-ancrer .offre-title { color: #FFFFFF; }
+.offre-ancrer .offre-subtitle { color: var(--accent-soft); }
+.offre-ancrer .offre-desc { color: var(--text-muted); }
+.offre-ancrer .offre-details { border-top-color: rgba(255, 255, 255, 0.14); }
+.offre-ancrer .offre-details-toggle,
+.offre-ancrer .offre-details-toggle::before { color: var(--accent-soft); }
+.offre-ancrer .offre-concret-body { color: var(--text-muted); }
+.offre-reveler .offre-concret-body,
+.offre-forger .offre-concret-body { color: #6B5548; }
 
 .offre-badge {
   display: inline-block;
@@ -801,9 +850,6 @@ a.nav-cta {
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--accent-accessible);
-  background: rgba(201, 75, 44, 0.08);
-  border: 1px solid rgba(201, 75, 44, 0.25);
   padding: 0.3rem 0.75rem;
   align-self: flex-start;
   white-space: nowrap;
@@ -812,21 +858,18 @@ a.nav-cta {
 .offre-title {
   font-family: var(--font-heading);
   font-size: clamp(1.8rem, 1.4rem + 1.2vw, 2.5rem);
-  color: var(--text-dark);
   line-height: 1;
   margin-top: 0.5rem;
 }
 
 .offre-subtitle {
   font-size: 0.9rem;
-  color: var(--accent-accessible);
   font-weight: 600;
   letter-spacing: 0.03em;
 }
 
 .offre-desc {
   font-size: 0.95rem;
-  color: var(--text-dark-muted);
   line-height: 1.7;
   margin-top: 0.5rem;
 }
@@ -844,7 +887,7 @@ a.nav-cta {
 .offre-details-toggle {
   font-size: 0.8rem;
   font-family: var(--font-body);
-  color: var(--accent-accessible);
+  color: var(--accent-accessible-hover);
   cursor: pointer;
   list-style: none;
   display: flex;
@@ -862,7 +905,7 @@ a.nav-cta {
   content: '⊕';
   font-size: 1.05rem;
   line-height: 1;
-  color: var(--accent-accessible);
+  color: var(--accent-accessible-hover);
 }
 
 .offre-details[open] .offre-details-toggle::before {

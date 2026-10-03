@@ -1,52 +1,46 @@
-# KOVELEO - Stephane SCHMIDELY
+# KOVELEO - Stéphane SCHMIDELY
 
-> Partenaire technique pour dirigeants. Je m'immerge dans le quotidien de vos équipes pour révéler ce que personne ne connecte, construire ce qui manque, et m'ancrer dans la durée.
+> Ex-CTO. Je m'assure que les projets tech d'une PME servent vraiment les objectifs du dirigeant : pas seulement qu'ils tournent, mais qu'ils produisent le résultat business attendu. Je m'immerge avec les équipes, je comprends leur quotidien, puis je construis ou je pilote ce qui manque.
 
 ## A propos
 
-KOVELEO est la structure de Stéphane SCHMIDELY, partenaire technique pour dirigeants avec 10 ans d'expérience (de développeur à CTO), en e-commerce, tourisme, fintech, éducation. Positionnement : quelqu'un qui décode de l'intérieur ce que personne ne connecte - à l'intersection de la vision du dirigeant, de la réalité des équipes et des contraintes business.
+Conseil tech pour dirigeants de PME, Paris et à distance. Mis à jour : 2026-10-13.
 
-Public cible : dirigeants qui ont la vision et les équipes, mais pas la position entre les deux - parce que cette position n'existe dans aucune fiche de poste.
+KOVELEO est la structure de Stéphane SCHMIDELY, ex-CTO avec 10 ans d'expérience (de développeur à directeur technique) dans le voyage, la fintech, la télécom, la formation et l'édition. Basé à Paris. Public cible : dirigeants de PME de 20 à 250 personnes dont l'activité repose en partie sur des outils, et qui veulent quelqu'un de leur côté de la table.
 
 ## Offres
 
-- **Révéler - Comprendre avant d'agir** (2 à 4 semaines, prix fixe) : J'échange avec vos équipes, vos clients, vous. Vous repartez avec une vue d'ensemble claire : ce qui bloque, ce qui s'ouvre, et un plan d'action priorisé.
-- **Forger - Construire ce qui manque** (durée projet, prix projet) : À partir de ce qu'on a révélé ensemble ou de ce que vous savez déjà, je construis - un outil, un process, un produit - en cycles courts, avec vos équipes.
-- **Ancrer - S'inscrire dans la durée** (3 mois renouvelables, 2-3 jours/semaine) : Je deviens votre partenaire technique au quotidien. Je construis, j'anticipe, je fais monter vos équipes en autonomie.
+- **Révéler** (à partir de 4 000 € HT, prix variable selon le nombre d'équipes et la nature de l'objectif, 1 à 3 semaines) : une carte claire de ce qui bloque, de ce qui peut avancer vite et de ce qui peut changer l'activité. Un document qui tient seul : situation de chaque équipe, pistes retenues et écartées avec la raison, coût pour construire et pour faire tourner, prochaines étapes.
+- **Forger** (prix fixé au projet, de quelques semaines à plusieurs mois selon le livrable) : une solution qui tourne dans le quotidien des équipes (sites web, scripts et automatisations, API et intégrations, infrastructure et hébergement). Pas d'application mobile. Une démonstration de 5 à 10 minutes et un point de 30 minutes chaque semaine.
+- **Ancrer** (7 500 € HT par mois, 2 à 3 jours par semaine, périodes de 3 mois renouvelables) : quelqu'un qui porte les objectifs du dirigeant auprès des équipes sur la durée. Un seul client Ancrer à la fois.
 
-## La méthode : IMMERSION · RADAR · IMPACT
+## Engagements
 
-- **IMMERSION** : Je me projette dans le quotidien de chacun. Pas pour auditer, pour comprendre.
-- **RADAR** : Ce qui bloque, ce qui s'ouvre, ce que personne ne voit parce que tout le monde est dedans.
-- **IMPACT** : Si ça ne change rien de concret dans votre quotidien, ça ne vaut rien.
+- Aucune commission d'un prestataire, aucune agence derrière moi
+- Tout ce qui est produit appartient au client (documents, dépôts, accès, documentation)
+- Aucun engagement au-delà du trimestre en cours sur Ancrer, ni au-delà du projet sur Révéler et Forger
 
-## Résultats - Japan Experience (~100 personnes)
+## Cas client : Japan Experience (environ 90 personnes, 90 % du chiffre d'affaires en ligne, quatre ans, mission en cours)
 
-- Produit lancé en 5 mois
-- 8h/semaine économisées pour les équipes opérationnelles
-- Temps de chargement divisé par 8
-- 4 applications internalisées
-- Équipe technique construite de zéro
+- Dashboard interne : mises à jour en 1 jour au lieu d'une semaine ; route ouverte en moins d'1 jour contre 4 à 5 jours (dont environ 90 % faits par les équipes)
+- Nouveau type de produit lancé en 6 mois, avant la haute saison
+- Vérification des commandes : de 45 minutes à 2 minutes
+- Permis de conduire : feuille de traductions quotidienne de 1 h à 25 min ; traitement d'une commande de 5-7 min à 1-4 min
+- Plus de 200 demandes triées et priorisées avec les équipes, le CEO et le CPO
+- Temps de chargement de 8 secondes à 1,5 seconde ; bascule tarifaire en 2 heures sans commande perdue
+- 4 applications reprises en interne, équipe tech recrutée de zéro
 
-## Stack technique
+## Références clients
 
-Langages : JavaScript, TypeScript, PHP, Python
-Frameworks : Symfony, Rails, Angular, Drupal
-Base de données : PostgreSQL
-Cloud : Google Cloud Platform, AWS
-Infrastructure : Kubernetes, Gitlab CI/CD
-
-## References clients
-
-- **Japan Experience** (~100 personnes) : partenaire technique de 0 à 1, de lead dev à CTO. Lien tech/métier reconstruit, équipe technique construite. Transformation du digital de "poids mort" à "pilier central" (mots du CEO).
-- **Neuroprofiler** (4+ ans) : développement technique, pilotage de la refonte complète, gestion directe avec les cofondateurs.
-- **Orange** : reprise d'un projet externalisé, remise en qualité, conteneurisation, CI/CD.
-- **Collège des Bernardins** : développement sur refonte applicative, montée en compétences équipe, formation à l'autonomie.
-- **Libon** : évolution et maintenance applicative.
+- **Japan Experience** : voyagiste sur mesure, quatre ans, plateforme et équipe tech. Le digital est passé de "poids mort" à "pilier central" (mots du CEO, 2024).
+- **Neuroprofiler** : fintech sans équipe tech interne, feuille de route et livraison.
+- **Orange / Libon** : reprise et recadrage d'un projet confié en externe.
+- **Collège des Bernardins** : site repris et confié à des équipes non techniques, formées pour l'utiliser seules.
 
 ## Contact
 
 - Site : https://koveleo.fr
+- Mentions légales : https://koveleo.fr/mentions-legales.html
 - LinkedIn : https://www.linkedin.com/in/stephane-schmidely/
 - Malt : https://www.malt.fr/profile/stephaneschmidely-partenairetech
-- Prendre RDV : https://calendar.app.google/WDP4YtX1HMT91tTZA
+- Faire le point (30 minutes en visio) : https://calendar.app.google/WDP4YtX1HMT91tTZA

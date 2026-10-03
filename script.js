@@ -83,7 +83,7 @@
 
   /* ---- Active nav link on scroll ---- */
   var navLinks = document.querySelectorAll('.nav-link');
-  var sectionIds = ['constat', 'approche', 'offres', 'resultats'];
+  var sectionIds = ['cas-client', 'offres', 'faq'];
 
   var sectionObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
@@ -102,32 +102,6 @@
     var el = document.getElementById(id);
     if (el) sectionObserver.observe(el);
   });
-
-  /* ---- Scroll reveal ---- */
-  var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  if (!prefersReducedMotion) {
-    var revealTargets = document.querySelectorAll(
-      '.card, .offre-card, .metric, .verbatim, .pillar, .faq-item, .transformation-card'
-    );
-
-    revealTargets.forEach(function (el) {
-      el.classList.add('reveal');
-    });
-
-    var revealObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: '0px 0px -60px 0px' });
-
-    revealTargets.forEach(function (el) {
-      revealObserver.observe(el);
-    });
-  }
 
   /* ---- FAQ exclusive accordion (close others on open) ---- */
   var faqItems = document.querySelectorAll('.faq-item');
@@ -158,5 +132,28 @@
       if (tickerLabel) tickerLabel.textContent = isPaused ? 'Reprendre' : 'Pause';
     });
   }
+
+  /* ---- Offer cards: (i) flips to the back face, "Retour" flips back ---- */
+  document.querySelectorAll('.offer').forEach(function (offer) {
+    var front = offer.querySelector('.offer-front');
+    var back = offer.querySelector('.offer-back');
+    var openBtn = front.querySelector('.offer-flip');
+    var closeBtn = back.querySelector('.offer-flip');
+
+    function show(flipped) {
+      offer.classList.toggle('is-flipped', flipped);
+      front.inert = flipped;
+      back.inert = !flipped;
+      openBtn.setAttribute('aria-expanded', String(flipped));
+      (flipped ? closeBtn : openBtn).focus();
+    }
+
+    openBtn.hidden = false;
+    closeBtn.hidden = false;
+    offer.classList.add('is-ready');
+    back.inert = true;
+    openBtn.addEventListener('click', function () { show(true); });
+    closeBtn.addEventListener('click', function () { show(false); });
+  });
 
 })();

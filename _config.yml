@@ -1,0 +1,1 @@
+exclude: [README.md, package.json, style.css, script.js]

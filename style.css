@@ -499,21 +499,75 @@ a.nav-cta {
   color: var(--text-dark);
 }
 
-.case-context {
-  max-width: 60ch;
-  margin-top: 1rem;
+.case-client {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 70ch;
+  margin-bottom: 1rem;
   font-size: 0.9rem;
   font-weight: 600;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--accent-accessible-hover);
 }
 
-.case-before {
-  margin-top: 2.5rem;
-  max-width: 680px;
-  font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.2rem);
-  line-height: 1.7;
+.case-client strong {
   color: var(--text-dark);
+}
+
+.case-client img {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.term {
+  position: relative;
+  cursor: help;
+  text-decoration: underline dotted var(--accent-accessible);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+.term-def {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  width: max-content;
+  max-width: min(320px, 80vw);
+  margin-top: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--duration-fast, 150ms);
+  pointer-events: none;
+}
+
+.term:hover .term-def,
+.term:focus .term-def {
+  opacity: 1;
+  visibility: visible;
+}
+
+.case-before {
+  margin-top: 1.5rem;
+  max-width: 68ch;
+  font-size: clamp(1rem, 0.95rem + 0.2vw, 1.0625rem);
+  line-height: 1.7;
+  color: var(--text-dark-muted);
+}
+
+.case-before p + p {
+  margin-top: 0.9rem;
 }
 
 .case-scroll { margin-top: 3rem; }

@@ -1,38 +1,48 @@
 # KOVELEO - Stéphane SCHMIDELY
 
-> Ex-CTO. Je m'assure que les projets tech d'une PME servent vraiment les objectifs du dirigeant : pas seulement qu'ils tournent, mais qu'ils produisent le résultat business attendu. Je m'immerge avec les équipes, je comprends leur quotidien, puis je construis ou je pilote ce qui manque.
+> Ex-CTO. Je construis avec les équipes d'une PME des outils qui collent à leur réalité, pour accélérer la vision du dirigeant là où elle compte, et il voit où en est chaque projet. Je m'immerge avec les équipes, je comprends leur quotidien, puis je construis ou je pilote ce qui manque.
 
 ## A propos
 
-Conseil tech pour dirigeants de PME, Paris et à distance. Mis à jour : 2026-10-13.
+Conseil tech pour dirigeants de PME, Paris et à distance. Mis à jour : 2026-10-25.
 
-KOVELEO est la structure de Stéphane SCHMIDELY, ex-CTO avec 10 ans d'expérience (de développeur à directeur technique) dans le voyage, la fintech, la télécom, la formation et l'édition. Basé à Paris. Public cible : dirigeants de PME de 20 à 250 personnes dont l'activité repose en partie sur des outils, et qui veulent quelqu'un de leur côté de la table.
+KOVELEO est la structure de Stéphane SCHMIDELY, ex-CTO avec 10 ans d'expérience (de développeur à directeur technique) dans le voyage, la fintech, la télécom, la formation et l'édition. Basé à Paris, il intervient partout en France. Public cible : dirigeants de PME de 20 à 250 personnes dont le produit digital est central et qui ont décidé d'avancer.
+
+## Méthode
+
+1. **Immersion** : croiser ce que le dirigeant, les managers et les équipes vivent et visent.
+2. **Radar** : chiffrer ce qu'il faut pour construire et faire tourner, et dire quand il vaut mieux ne pas construire.
+3. **Impact** : construire petit et montrer. Une démonstration de 5 à 10 minutes et un point de 30 minutes chaque semaine, avec les équipes qui testent au fur et à mesure.
+
+Les trois étapes se suivent et chacune reste indépendante.
 
 ## Offres
 
-- **Révéler** (à partir de 4 000 € HT, prix variable selon le nombre d'équipes et la nature de l'objectif, 1 à 3 semaines) : une carte claire de ce qui bloque, de ce qui peut avancer vite et de ce qui peut changer l'activité. Un document qui tient seul : situation de chaque équipe, pistes retenues et écartées avec la raison, coût pour construire et pour faire tourner, prochaines étapes.
-- **Forger** (prix fixé au projet, de quelques semaines à plusieurs mois selon le livrable) : une solution qui tourne dans le quotidien des équipes (sites web, scripts et automatisations, API et intégrations, infrastructure et hébergement). Pas d'application mobile. Une démonstration de 5 à 10 minutes et un point de 30 minutes chaque semaine.
-- **Ancrer** (7 500 € HT par mois, 2 à 3 jours par semaine, périodes de 3 mois renouvelables) : quelqu'un qui porte les objectifs du dirigeant auprès des équipes sur la durée. Un seul client Ancrer à la fois.
+- **Révéler** (à partir de 4 000 € HT, prix variable selon le nombre d'équipes et la nature de l'objectif, 2 à 4 semaines) : une carte claire de ce qui bloque, de ce qui peut avancer vite et de ce qui peut changer l'activité. Un document qui tient seul : situation de chaque équipe, pistes retenues et écartées avec la raison, coût pour construire et pour faire tourner, prochaines étapes.
+- **Forger** (prix fixé au projet, chiffré dans le document de Révéler avant tout engagement, de quelques semaines à plusieurs mois selon le livrable) : une solution construite avec les équipes, qui tourne dans leur quotidien (sites web, scripts et automatisations, API et intégrations, infrastructure et hébergement). Pas d'application mobile. Une démonstration de 5 à 10 minutes et un point de 30 minutes chaque semaine.
+- **Ancrer** (7 500 € HT par mois, 2 à 3 jours par semaine fixés au contrat, périodes de 3 mois renouvelables) : quelqu'un qui porte les objectifs du dirigeant auprès des équipes sur la durée, pour qu'il pilote chaque projet en visibilité. Une seule mission Ancrer à la fois.
 
 ## Engagements
 
-- Aucune commission d'un prestataire, aucune agence derrière moi
+- Le client garde la main à chaque étape : il choisit de continuer avec Stéphane, avec son équipe ou avec quelqu'un d'autre
 - Tout ce qui est produit appartient au client (documents, dépôts, accès, documentation)
-- Aucun engagement au-delà du trimestre en cours sur Ancrer, ni au-delà du projet sur Révéler et Forger
+- Engagement sur la réussite du projet : qu'il apporte de la valeur, pas seulement qu'il soit livré
+- Une seule mission Ancrer à la fois
 
-## Cas client : Japan Experience (environ 90 personnes, 90 % du chiffre d'affaires en ligne, quatre ans, mission en cours)
+## Cas client : Japan Experience (voyagiste sur mesure, environ 90 personnes)
 
-- Dashboard interne : mises à jour en 1 jour au lieu d'une semaine ; route ouverte en moins d'1 jour contre 4 à 5 jours (dont environ 90 % faits par les équipes)
-- Nouveau type de produit lancé en 6 mois, avant la haute saison
-- Vérification des commandes : de 45 minutes à 2 minutes
-- Permis de conduire : feuille de traductions quotidienne de 1 h à 25 min ; traitement d'une commande de 5-7 min à 1-4 min
-- Plus de 200 demandes triées et priorisées avec les équipes, le CEO et le CPO
-- Temps de chargement de 8 secondes à 1,5 seconde ; bascule tarifaire en 2 heures sans commande perdue
-- 4 applications reprises en interne, équipe tech recrutée de zéro
+Stéphane y a été CTO de 2022 à 2025, puis bras droit opérationnel du nouveau CTO avec Koveleo depuis janvier 2026.
+
+- Laisser les équipes ajouter seules un trajet au catalogue : de 4 à 5 jours à moins d'1 jour ; mises à jour mensuelles de 1 semaine à 1 jour, avec plus de tests
+- Lancer un produit plus abordable avant la haute saison (après une hausse de 70 % du Japan Rail Pass) : 6 mois, 22 produits lancés dès le départ, 1 mise en production par semaine
+- Voir les commandes en retard d'un coup d'œil (tableau de bord Looker Studio) : vérification de 45 minutes à 2 minutes
+- Traiter les permis de conduire sans tout contrôler à la main : feuille de traductions quotidienne de 1 h à 25 min ; traitement d'une commande de 5-7 min à 1-4 min
+- Aussi : plus de 200 demandes triées et priorisées avec les équipes, le CEO et le CPO ; équipe tech recrutée de zéro et 4 applications reprises en interne ; temps de chargement de 8 secondes à 1,5 seconde ; bascule tarifaire en 2 heures sans commande perdue
+- Mot du CEO, Thierry Maincent, 2024 : « Le Digital est passé du statut d'un poids mort à un pilier central du développement de l'entreprise. »
 
 ## Références clients
 
-- **Japan Experience** : voyagiste sur mesure, quatre ans, plateforme et équipe tech. Le digital est passé de "poids mort" à "pilier central" (mots du CEO, 2024).
+- **Japan Experience** : voyagiste sur mesure, plateforme et équipe tech.
 - **Neuroprofiler** : fintech sans équipe tech interne, feuille de route et livraison.
 - **Orange / Libon** : reprise et recadrage d'un projet confié en externe.
 - **Collège des Bernardins** : site repris et confié à des équipes non techniques, formées pour l'utiliser seules.
@@ -43,4 +53,4 @@ KOVELEO est la structure de Stéphane SCHMIDELY, ex-CTO avec 10 ans d'expérienc
 - Mentions légales : https://koveleo.fr/mentions-legales.html
 - LinkedIn : https://www.linkedin.com/in/stephane-schmidely/
 - Malt : https://www.malt.fr/profile/stephaneschmidely-partenairetech
-- Faire le point (30 minutes en visio) : https://calendar.app.google/WDP4YtX1HMT91tTZA
+- Parlons-en (30 minutes en visio) : https://calendar.app.google/WDP4YtX1HMT91tTZA

@@ -1,38 +1,12 @@
 /* ============================================================
-   KOVELEO — Design System
-   Palette: #07251F (dark green) · #FF7F50 (coral) · #E1E1E1
-   Fonts: DM Serif Display (headlines) · Inter (body)
+   KOVELEO - site. Marque, couleurs, polices: design system (brand/).
    ============================================================ */
 
-/* ---- Design Tokens ---- */
+@import "brand/tokens.css";
+
+/* Tokens: source unique dans le design system (brand/tokens.css, copié par `just site`). */
 :root {
-  --bg-primary: #07251F;
-  --bg-dark-alt: #041A15;
-  --bg-pillar: #F7F5F0;
-  --bg-warm: #EFE9DF;
-  --bg-warm-card: #FFFFFF;
-  --accent: #FF7F50;
-  --accent-hover: #E86B3E;
-  --accent-accessible: #C94B2C;
-  --accent-accessible-hover: #B03D22;
-  --accent-soft: #E88257;
-  --bg-coral-wash-pale: #F7EAE1;
-  --bg-coral-wash: #F9E1D1;
-  --bg-ember-mid: #1E362E;
-  --text-primary: #FFFFFF;
-  --text-secondary: #E1E1E1;
-  --text-muted: #A3BDB8;
-  --text-dark: #1A1A1A;
-  --text-dark-muted: #4A4A4A;
-  --border-subtle: rgba(255, 255, 255, 0.10);
-  --border-warm: rgba(0, 0, 0, 0.10);
-  --font-heading: 'DM Serif Display', Georgia, serif;
-  --font-body: 'Inter', system-ui, sans-serif;
-  --space-section: clamp(3.5rem, 2.5rem + 4vw, 6rem);
-  --container-max: 1200px;
-  --container-pad: clamp(1.25rem, 5vw, 3rem);
-  --header-height: 68px;
-  --radius-none: 2px;
+  --header-height: 68px; /* propre au site tant que l'en-tête n'est pas le composant .site-header */
 }
 
 /* ---- Reset ---- */
@@ -73,7 +47,7 @@ a {
   top: -100%;
   left: 1rem;
   background: var(--accent-accessible);
-  color: #fff;
+  color: var(--text-primary);
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   font-family: var(--font-body);
@@ -140,7 +114,7 @@ h3 {
 
 .btn-coral {
   background: var(--accent-accessible);
-  color: #fff;
+  color: var(--text-primary);
   border-color: var(--accent-accessible);
 }
 .btn-coral:hover,
@@ -168,7 +142,7 @@ h3 {
 .btn-outline-dark {
   background: transparent;
   color: var(--text-dark);
-  border-color: rgba(0, 0, 0, 0.25);
+  border-color: var(--border-warm-strong);
 }
 .btn-outline-dark:hover,
 .btn-outline-dark:focus-visible {
@@ -184,7 +158,7 @@ h3 {
   top: 0;
   z-index: 100;
   height: var(--header-height);
-  background: #010907;
+  background: var(--bg-primary-deep);
   border-bottom: 1px solid rgba(255, 127, 80, 0.30);
   transition: background 0.3s;
 }
@@ -592,7 +566,7 @@ a.nav-cta {
 .case-project {
   height: 100%;
   padding: 1.75rem;
-  background: var(--bg-warm-card);
+  background: var(--bg-white);
   border-top: 2px solid var(--accent);
 }
 
@@ -658,14 +632,6 @@ a.nav-cta {
   .case-projects { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
 }
 
-.case-todo {
-  padding: 0 0.3em;
-  background: #FFE9A8;
-  color: var(--text-dark);
-  font-family: var(--font-body);
-  font-size: 0.85em;
-}
-
 .case-extra {
   margin-top: 1.5rem;
   max-width: 72ch;
@@ -678,7 +644,7 @@ a.nav-cta {
   margin-top: 4rem;
   padding: clamp(2rem, 4vw, 3rem);
   background: var(--bg-primary);
-  color: #FFFFFF;
+  color: var(--text-primary);
 }
 
 .case-quote blockquote {
@@ -704,7 +670,7 @@ a.nav-cta {
    ============================================================ */
 .section-scenarios {
   padding: var(--space-section) 0;
-  background: var(--bg-warm-card);
+  background: var(--bg-white);
   color: var(--text-dark);
 }
 
@@ -1044,28 +1010,28 @@ a.nav-cta {
 
 .offer-reveler {
   background: var(--bg-coral-wash-pale);
-  border-color: rgba(192, 75, 44, 0.3);
+  border-color: var(--border-tint-pale);
 }
 .offer-reveler p { color: var(--text-dark-muted); }
 .offer-reveler .offer-price { color: var(--accent-accessible-hover); }
 
 .offer-forger {
   background: var(--bg-coral-wash);
-  border-color: rgba(192, 75, 44, 0.45);
+  border-color: var(--border-tint-warm);
 }
-.offer-forger p { color: #4A392F; }
+.offer-forger p { color: var(--text-on-coral); }
 .offer-forger .offer-price { color: var(--accent-accessible-hover); }
 
 .offer-ancrer {
   background: var(--bg-ember-mid);
   border-color: rgba(255, 255, 255, 0.12);
-  color: #FFFFFF;
+  color: var(--text-primary);
 }
 .offer-ancrer p { color: var(--text-secondary); }
 .offer-ancrer .offer-price { color: var(--accent-soft); }
 
 .offer-reveler .offer-price span { color: var(--text-dark-muted); }
-.offer-forger .offer-price span { color: #4A392F; }
+.offer-forger .offer-price span { color: var(--text-on-coral); }
 .offer-ancrer .offer-price span { color: var(--text-secondary); }
 
 .offer-reveler .offer-title,
@@ -1079,7 +1045,7 @@ a.nav-cta {
 
 .offer-ancrer .offer-title,
 .offer-ancrer .offer-promise,
-.offer-ancrer .offer-back-title { color: #FFFFFF; }
+.offer-ancrer .offer-back-title { color: var(--text-primary); }
 
 .offer-flag {
   margin-bottom: 0.5rem;
@@ -1095,7 +1061,7 @@ a.nav-cta {
    ============================================================ */
 .section-compare {
   padding: var(--space-section) 0;
-  background: var(--bg-warm-card);
+  background: var(--bg-white);
   color: var(--text-dark);
 }
 
@@ -1426,7 +1392,7 @@ a.nav-cta {
   width: clamp(290px, 30vw, 400px);
   margin: 0;
   padding: 1.75rem;
-  background: #FFFFFF;
+  background: var(--bg-white);
   border: 1px solid rgba(7, 37, 31, 0.10);
   border-top: 2px solid var(--accent-accessible);
   display: flex;
@@ -1528,7 +1494,7 @@ a.quote-source:focus-visible { outline: 2px solid var(--accent-accessible); outl
    ============================================================ */
 .section-faq {
   padding: var(--space-section) 0;
-  background: var(--bg-warm-card);
+  background: var(--bg-white);
 }
 
 .section-faq h2 {

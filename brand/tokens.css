@@ -1,0 +1,193 @@
+/* Tokens Koveleo: seule source des valeurs de marque (couleurs, polices, échelle, cadre).
+   Règles d'usage: DESIGN.md. Ordre de chargement: tokens.css, components.css, un seul media/*.css.
+   Le site (style.css) charge ce fichier tel quel; les valeurs web sont donc le défaut de :root.
+   Les autres supports se déclarent avec <html data-medium="deck|carousel|a4"> et surchargent l'échelle. */
+:root {
+  /* Fonds */
+  --bg-primary: #07251f;
+  --bg-primary-deep: #041a15;
+  --bg-ember-mid: #1e362e;
+  --bg-warm: #efe9df;
+  --bg-white: #ffffff;
+  --bg-pillar: #f7f5f0;
+  --bg-coral-wash-pale: #f7eae1;
+  --bg-coral-wash: #f9e1d1;
+  --bg-screen: #cfd3d1;
+  --surface-subtle: rgba(255, 255, 255, 0.04);
+
+  /* Coral */
+  --accent: #ff7f50;
+  --accent-accessible: #c94b2c;
+  --accent-accessible-hover: #b03d22;
+  --accent-soft: #e88257;
+
+  /* Texte */
+  --text-primary: #ffffff;
+  --text-secondary: #e1e1e1;
+  --text-muted: #a3bdb8;
+  --text-dark: #1a1a1a;
+  --text-dark-muted: #4a4a4a;
+  --text-on-coral: #4a392f;
+  --text-on-accent: rgba(7, 37, 31, 0.9);
+
+  /* Filets et bordures */
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --border-warm: rgba(0, 0, 0, 0.1);
+  --border-warm-strong: rgba(0, 0, 0, 0.25);
+  --border-tint-pale: rgba(201, 75, 44, 0.3);
+  --border-tint-warm: rgba(201, 75, 44, 0.45);
+
+  /* Polices et formes */
+  --font-heading: 'DM Serif Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; /* pile système, rien à charger: reste à deux familles */
+  --radius-none: 2px;
+  --radius-photo: 0.75rem;
+
+  /* Statuts: restent dans la palette de marque (pas de vert, ambre, rouge ou bleu sémantiques) */
+  --status-done: var(--bg-primary);
+  --status-progress: var(--accent-soft);
+  --status-blocked: var(--accent-accessible);
+  --status-neutral: var(--text-muted);
+
+  /* Séries de graphique, dans l'ordre d'usage. Une seule série en coral: la première */
+  --chart-1: var(--accent-accessible);
+  --chart-2: var(--bg-primary);
+  --chart-3: var(--text-muted);
+  --chart-4: var(--text-dark-muted);
+  --chart-5: var(--bg-ember-mid);
+  --chart-scale: 1; /* multiplicateur de la taille des textes et des hauteurs de graphique, relevé en carrousel */
+
+  /* Mouvement et focus (les breakpoints 768 / 1024 / 419 px ne passent pas par des variables) */
+  --dur-fast: 0.2s;
+  --dur-normal: 0.3s;
+  --dur-slow: 0.6s;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --focus-ring: 2px solid var(--accent);
+  --focus-ring-light: 2px solid var(--accent-accessible);
+  --focus-offset: 3px;
+
+  /* Tailles d'icône (trait de 1,5 px, voir icons/) */
+  --icon-s: 16px;
+  --icon-m: 20px;
+  --icon-l: 24px;
+
+  /* Échelle typographique (défaut: web, fluide) */
+  --fs-base: 1rem;
+  --lh-base: 1.65;
+  --fs-h1: clamp(2.2rem, 1rem + 4.5vw, 4rem);
+  --fs-h2: clamp(1.75rem, 1rem + 2.5vw, 2.75rem);
+  --fs-h3: clamp(1.1rem, 0.9rem + 0.7vw, 1.35rem);
+  --fs-lead: clamp(1rem, 0.9rem + 0.4vw, 1.15rem);
+  --fs-statement: clamp(1.5rem, 0.8rem + 1.3vw, 2rem);
+  --fs-small: 0.875rem;
+  --fs-label: 0.8rem;
+  --fs-footer: 0.8rem;
+  --ls-label: 0.06em;
+
+  /* Signature: le K en filigrane, ton sur ton. Grand (couverture) et petit (citation, CTA); right = x, top = y, négatifs = rogné par le cadre */
+  --watermark-color: var(--bg-ember-mid);
+  --watermark-size: clamp(14rem, 36vw, 36rem);
+  --watermark-x: -3rem;
+  --watermark-y: -5rem;
+  --watermark-size-s: clamp(7rem, 16vw, 14rem);
+  --watermark-x-s: 1rem;
+  --watermark-y-s: -1.5rem;
+
+  /* Espacement (défaut: web). --u est l'unité des composants: calc(var(--u) * n) */
+  --u: 0.5rem;
+  --space-section: clamp(3.5rem, 2.5rem + 4vw, 6rem);
+  --container-max: 1200px;
+  --container-pad: clamp(1.25rem, 5vw, 3rem);
+}
+
+/* Slides 16:9, 1280x720 */
+[data-medium='deck'] {
+  --u: 8px;
+  --watermark-size: calc(var(--page-h) * 1.556);
+  --watermark-x: calc(var(--page-w) * -0.069);
+  --watermark-y: calc(var(--page-h) * -0.256);
+  --watermark-size-s: calc(var(--page-h) * 0.556);
+  --watermark-x-s: calc(var(--page-w) * 0.019);
+  --watermark-y-s: calc(var(--page-h) * -0.067);
+  --page-w: 1280px;
+  --page-h: 720px;
+  --pad-top: 56px;
+  --pad-x: 72px;
+  --pad-bottom: 76px;
+  --foot-bottom: 26px;
+  --fs-base: 20px;
+  --lh-base: 1.6;
+  --fs-h1: 44px;
+  --fs-h2: 26px;
+  --fs-h3: 21px;
+  --fs-lead: 21px;
+  --fs-statement: 36px;
+  --fs-small: 16px;
+  --fs-label: 13px;
+  --fs-footer: 13px;
+  --icon-s: 20px;
+  --icon-m: 28px;
+  --icon-l: 40px;
+}
+
+/* Carrousel LinkedIn, 1080x1350 (4:5): lu à ~36 % de sa taille sur mobile */
+[data-medium='carousel'] {
+  --u: 14px;
+  --watermark-size: calc(var(--page-h) * 1.11);
+  --watermark-x: calc(var(--page-w) * -0.174);
+  --watermark-y: calc(var(--page-h) * -0.194);
+  --watermark-size-s: calc(var(--page-h) * 0.5);
+  --watermark-x-s: calc(var(--page-w) * 0.02);
+  --watermark-y-s: calc(var(--page-h) * -0.07);
+  --page-w: 1080px;
+  --page-h: 1350px;
+  --pad-top: 100px;
+  --pad-x: 88px;
+  --pad-bottom: 170px;
+  --foot-bottom: 54px;
+  --fs-base: 36px;
+  --lh-base: 1.5;
+  --fs-h1: 84px;
+  --fs-h2: 52px;
+  --fs-h3: 46px;
+  --fs-lead: 40px;
+  --fs-statement: 64px;
+  --fs-small: 30px;
+  --fs-label: 32px;
+  --fs-footer: 30px;
+  --chart-scale: 1.35;
+  --icon-s: 36px;
+  --icon-m: 52px;
+  --icon-l: 72px;
+}
+
+/* Document A4 portrait, 794x1123 (valeurs proposées, à valider sur le catalogue) */
+[data-medium='a4'] {
+  --u: 6px;
+  --watermark-size: calc(var(--page-h) * 0.8);
+  --watermark-x: calc(var(--page-w) * -0.09);
+  --watermark-y: calc(var(--page-h) * -0.1);
+  --watermark-size-s: calc(var(--page-h) * 0.36);
+  --watermark-x-s: calc(var(--page-w) * 0.02);
+  --watermark-y-s: calc(var(--page-h) * -0.05);
+  --page-w: 794px;
+  --page-h: 1123px;
+  --pad-top: 64px;
+  --pad-x: 64px;
+  --pad-bottom: 88px;
+  --foot-bottom: 32px;
+  --fs-base: 15px;
+  --lh-base: 1.6;
+  --fs-h1: 30px;
+  --fs-h2: 20px;
+  --fs-h3: 16px;
+  --fs-lead: 16px;
+  --fs-statement: 24px;
+  --fs-small: 12px;
+  --fs-label: 11px;
+  --fs-footer: 11px;
+  --icon-s: 14px;
+  --icon-m: 18px;
+  --icon-l: 24px;
+}

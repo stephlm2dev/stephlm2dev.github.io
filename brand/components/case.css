@@ -28,6 +28,16 @@
 .case-project dd { margin: 0 0 calc(var(--u) * 1.5); font-size: calc(var(--fs-base) * 0.85); line-height: 1.6; color: var(--text-dark-muted); }
 .case-project .case-impact dt { color: var(--accent-accessible-hover); }
 .case-project .delta { font-size: var(--fs-h1); }
+.case-project .label { margin-bottom: calc(var(--u) * 1.2); color: var(--accent-accessible-hover); }
+.case-extra { max-width: 72ch; font-size: calc(var(--fs-base) * 0.95); line-height: 1.6; color: var(--text-dark-muted); }
+
+/* Web: texte de lecture plus grand que sur un support projeté */
+html:not([data-medium]) .case-period { font-size: clamp(1rem, 0.95rem + 0.2vw, 1.0625rem); }
+html:not([data-medium]) .case-period-label { font-size: calc(var(--fs-label) * 0.94); }
+html:not([data-medium]) .case-project :is(h2, h3) { font-size: clamp(1.4rem, 1.15rem + 0.9vw, 1.9rem); }
+html:not([data-medium]) .case-project dd { font-size: calc(var(--fs-base) * 0.95); }
+html:not([data-medium]) .case-project .delta { font-size: clamp(1.75rem, 1.3rem + 1.4vw, 2.4rem); }
+html:not([data-medium]) .case-project { padding: calc(var(--u) * 3.5); }
 
 /* ---- Bande de transition: une phrase en serif, la fin en coral ---- */
 .bridge { font-family: var(--font-heading); font-size: var(--fs-statement); line-height: 1.2; text-wrap: balance; color: var(--text-primary); }

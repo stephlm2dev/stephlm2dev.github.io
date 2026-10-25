@@ -20,6 +20,7 @@ html:not([data-medium]) .plots { grid-template-columns: 1fr; }
 .delta del { font-size: 0.6em; color: var(--text-dark-muted); text-decoration-thickness: 1px; }
 .delta .delta-arrow { font-family: var(--font-body); font-size: 0.6em; color: var(--accent-accessible-hover); }
 .delta strong { font-weight: 400; color: var(--accent-accessible-hover); }
+.delta-caption + .delta { margin-top: calc(var(--u) * 2.5); }
 .delta + .delta-caption { margin-top: calc(var(--u) * 1); font-size: var(--fs-small); line-height: 1.4; color: var(--text-dark-muted); }
 .slide:not(.warm):not(.white) .delta { color: var(--text-primary); }
 .slide:not(.warm):not(.white) .delta del { color: var(--text-muted); }

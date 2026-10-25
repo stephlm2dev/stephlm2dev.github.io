@@ -12,3 +12,4 @@
 .slide:not(.warm):not(.white) .label { color: var(--text-muted); }
 .source { margin-top: calc(var(--u) * 2.5); font-size: var(--fs-small); line-height: 1.4; color: var(--text-muted); }
 .warm .source, .white .source { color: var(--text-dark-muted); }
+.nowrap { white-space: nowrap; }

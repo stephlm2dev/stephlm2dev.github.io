@@ -9,6 +9,7 @@
 :where(html:not([data-medium]) *::before),
 :where(html:not([data-medium]) *::after) { box-sizing: border-box; margin: 0; padding: 0; }
 :where(html:not([data-medium])) body { background-color: var(--bg-primary); color: var(--text-primary); font: 400 var(--fs-base)/var(--lh-base) var(--font-body); overflow-x: hidden; }
+:where(html:not([data-medium])) :is(ul, ol) { list-style: none; }
 :where(html:not([data-medium])) img { display: block; max-width: 100%; height: auto; }
 :where(html:not([data-medium])) a { color: inherit; text-decoration: none; }
 :where(html:not([data-medium])) :focus-visible { outline: var(--focus-ring); outline-offset: var(--focus-offset); }

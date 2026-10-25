@@ -49,3 +49,8 @@ html:not([data-medium]) .step > p:not(.step-marker):not(.step-case) { font-size:
 html:not([data-medium]) .step-case { font-size: calc(var(--fs-base) * 0.9); }
 html:not([data-medium]) .steps { margin-top: calc(var(--u) * 6); }
 html:not([data-medium]) .step { gap: calc(var(--u) * 1.5); }
+html:not([data-medium]) .commitments { max-width: 62ch; }
+html:not([data-medium]) .commitments li { padding: calc(var(--u) * 3) 0; }
+html:not([data-medium]) .commitments li::before { font-size: 2rem; }
+html:not([data-medium]) .commitment-lead { font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.6rem); }
+html:not([data-medium]) .commitment-detail { font-size: var(--fs-base); line-height: 1.6; }

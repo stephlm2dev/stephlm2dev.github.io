@@ -80,143 +80,6 @@ h3 {
 }
 
 /* ============================================================
-   7 — ENGAGEMENTS (manifeste numéroté + qui je suis)
-   ============================================================ */
-.section-engagements {
-  padding: var(--space-section) 0;
-  background: var(--bg-warm);
-  color: var(--text-dark);
-}
-
-.section-engagements h2 {
-  color: var(--text-dark);
-}
-
-.engagements-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-}
-
-.commitments {
-  margin-top: 2rem;
-  list-style: none;
-  counter-reset: commitment;
-  max-width: 62ch;
-}
-
-.commitments li {
-  counter-increment: commitment;
-  display: grid;
-  grid-template-columns: 3rem 1fr;
-  column-gap: 1rem;
-  padding: 1.5rem 0;
-  border-top: 1px solid var(--border-warm);
-}
-
-.commitments li:last-child {
-  border-bottom: 1px solid var(--border-warm);
-}
-
-.commitments li::before {
-  content: counter(commitment, decimal-leading-zero);
-  grid-row: 1 / span 2;
-  font-family: var(--font-heading);
-  font-size: 2rem;
-  line-height: 1.1;
-  font-variant-numeric: tabular-nums;
-  color: var(--accent-accessible);
-}
-
-.commitment-lead {
-  grid-column: 2;
-  font-family: var(--font-heading);
-  font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.6rem);
-  line-height: 1.3;
-  color: var(--text-dark);
-}
-
-.commitment-detail {
-  grid-column: 2;
-  margin-top: 0.5rem;
-  color: var(--text-dark-muted);
-  line-height: 1.6;
-}
-
-.engagements-who {
-  padding: clamp(1.75rem, 3vw, 2.5rem);
-  background: var(--bg-primary);
-  color: var(--text-primary);
-}
-
-.engagements-who h3 {
-  font-size: 1.5rem;
-  color: var(--text-primary);
-}
-
-.engagements-who p {
-  margin-top: 1rem;
-  color: var(--text-secondary);
-  line-height: 1.7;
-}
-
-.engagements-who .engagements-who-out {
-  font-family: var(--font-heading);
-  font-size: 1.35rem;
-  line-height: 1.35;
-  color: var(--text-primary);
-}
-/* ============================================================
-   8 — QUI JE SUIS (fond sombre)
-   ============================================================ */
-.section-humain {
-  padding: var(--space-section) 0;
-  background: var(--bg-primary);
-}
-
-.humain-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-  align-items: start;
-}
-
-.humain-facts > div {
-  padding: 1.25rem 0;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.humain-facts dt {
-  font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 1.3rem + 1.5vw, 2.5rem);
-  line-height: 1.1;
-  color: var(--text-primary);
-}
-
-.humain-facts dd {
-  margin-top: 0.4rem;
-  color: var(--text-muted);
-  max-width: 34ch;
-}
-
-.humain-text {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.humain-text h2 {
-  color: var(--text-primary);
-}
-
-.humain-text p {
-  color: var(--text-secondary);
-  font-size: clamp(1rem, 0.9rem + 0.3vw, 1.1rem);
-  line-height: 1.75;
-  max-width: 640px;
-}
-
-/* ============================================================
    9 — TÉMOIGNAGES (fond clair, bandeau de recommandations)
    ============================================================ */
 .section-temoignages {
@@ -447,36 +310,6 @@ a.quote-source:focus-visible { outline: 2px solid var(--accent-accessible); outl
   color: var(--text-secondary);
 }
 
-/* Social links — section humain (fond sombre) */
-.social-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 2rem;
-}
-
-.social-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 1.1rem;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: var(--text-secondary);
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: border-color 0.2s, color 0.2s;
-}
-
-.social-btn:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-.social-btn svg {
-  flex-shrink: 0;
-}
-
 .footer-links a,
 .footer-link-disabled {
   font-size: 0.8rem;
@@ -496,18 +329,6 @@ a.quote-source:focus-visible { outline: 2px solid var(--accent-accessible); outl
 
 .footer-link-externe:hover {
   color: var(--accent);
-}
-
-/* ============================================================
-   RESPONSIVE — DESKTOP (1024px+)
-   ============================================================ */
-@media (min-width: 1024px) {
-
-  .humain-grid { grid-template-columns: 1.3fr 1fr; gap: 5rem; }
-  .humain-facts { margin-top: 3.5rem; }
-
-  .engagements-grid { grid-template-columns: 1.35fr 1fr; gap: 5rem; align-items: start; }
-  .engagements-who { position: sticky; top: calc(var(--header-height) + 2rem); margin-top: 3.5rem; }
 }
 
 /* ============================================================

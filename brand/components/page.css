@@ -37,3 +37,10 @@
 /* Texte secondaire: précision courte sous une action ou un titre */
 .note { max-width: 44ch; font-size: calc(var(--fs-base) * 0.9); line-height: 1.6; color: var(--text-muted); }
 .warm .note, .white .note, .pillar .note { color: var(--text-dark-muted); }
+
+/* Variante sombre des faits et de la prose sur une section web de fond vert */
+.section:not(.warm):not(.white):not(.pillar) .facts > div { border-top-color: var(--border-subtle); }
+.section:not(.warm):not(.white):not(.pillar) .facts dt { color: var(--text-primary); }
+.section:not(.warm):not(.white):not(.pillar) .facts dd { color: var(--text-muted); }
+.section:not(.warm):not(.white):not(.pillar) .prose p { color: var(--text-secondary); }
+.section:not(.warm):not(.white):not(.pillar) .prose h2 { color: var(--text-primary); }

@@ -55,3 +55,9 @@ html:not([data-medium]) .hero .btn { align-self: flex-start; margin-top: var(--u
   html:not([data-medium]) .hero .photo { max-width: none; }
   html:not([data-medium]) .hero .photo img { max-height: calc(100svh - var(--header-height) - 7rem); }
 }
+
+/* Web: faits à l'échelle de lecture du site */
+html:not([data-medium]) .facts dt { font-size: clamp(1.75rem, 1.3rem + 1.5vw, 2.5rem); }
+html:not([data-medium]) .facts dd { max-width: 34ch; font-size: var(--fs-base); }
+html:not([data-medium]) .prose { gap: calc(var(--u) * 2.5); }
+html:not([data-medium]) .prose p { max-width: 640px; font-size: clamp(1rem, 0.9rem + 0.3vw, 1.1rem); line-height: 1.75; }

@@ -38,6 +38,8 @@ html:not([data-medium]) .btn.large { padding: calc(var(--u) * 2) calc(var(--u) *
 /* Bouton de réseau social: contour clair et logo avant le texte */
 .btn.social { margin-top: 0; padding: calc(var(--u) * 1.25) calc(var(--u) * 2.25); font-size: var(--fs-small); }
 .btn.social .icon { margin: 0 var(--u) 0 0; }
+
+.btn.social { display: inline-flex; align-items: center; gap: var(--u); }
 @media (prefers-reduced-motion: reduce) {
   .btn { transition: none; }
   .btn:active { transform: none; }

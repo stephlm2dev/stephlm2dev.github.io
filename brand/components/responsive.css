@@ -129,3 +129,11 @@ html:not([data-medium]) .matrix.legend-grid .mrow > [data-label]::before,
 }
 [data-medium='carousel'] .shot-pair .shot .placeholder,
 [data-medium='carousel'] .shot-pair .shot img { height: calc(var(--page-h) * 0.2); }
+
+/* ---- Contenu et encadré côte à côte (web): une colonne sous 1024 px, l'encadré reste en vue au défilement ---- */
+html:not([data-medium]) .split.aside { grid-template-columns: 1fr; row-gap: calc(var(--u) * 6); align-items: start; }
+@media (min-width: 1024px) {
+  html:not([data-medium]) .split.aside { grid-template-columns: 1.35fr 1fr; column-gap: calc(var(--u) * 10); }
+  html:not([data-medium]) .split.aside > :last-child { margin-top: calc(var(--u) * 7); }
+  html:not([data-medium]) .split.aside > .callout { position: sticky; top: calc(var(--header-height) + calc(var(--u) * 4)); }
+}

@@ -129,6 +129,38 @@
     })
   }
 
+  // Onglets: clic, flèches, Début et Fin; un seul onglet actif, les autres panneaux sont masqués
+  function tabs() {
+    document.querySelectorAll('.tabs').forEach(function (root) {
+      var list = Array.prototype.slice.call(root.querySelectorAll('[role="tab"]'))
+      if (!list.length) return
+      function activate(i, focus) {
+        list.forEach(function (tab, k) {
+          var on = k === i
+          tab.setAttribute('aria-selected', String(on))
+          tab.tabIndex = on ? 0 : -1
+          var panel = document.getElementById(tab.getAttribute('aria-controls'))
+          if (panel) panel.hidden = !on
+        })
+        if (focus) list[i].focus()
+      }
+      list.forEach(function (tab, i) {
+        tab.addEventListener('click', function () { activate(i, false) })
+        tab.addEventListener('keydown', function (e) {
+          var n = list.length
+          var k = null
+          if (e.key === 'ArrowRight') k = (i + 1) % n
+          else if (e.key === 'ArrowLeft') k = (i - 1 + n) % n
+          else if (e.key === 'Home') k = 0
+          else if (e.key === 'End') k = n - 1
+          if (k === null) return
+          e.preventDefault()
+          activate(k, true)
+        })
+      })
+    })
+  }
+
   // Infobulle: Échap la ferme sans quitter l'élément; elle revient au prochain survol ou focus
   function tooltips() {
     var terms = document.querySelectorAll('.term')
@@ -140,5 +172,5 @@
     })
   }
 
-  ready(function () { mobileNav(); stickyHeader(); activeLinks(); faqExclusive(); tickerPause(); flipCards(); tooltips() })
+  ready(function () { mobileNav(); stickyHeader(); activeLinks(); faqExclusive(); tickerPause(); flipCards(); tabs(); tooltips() })
 })()

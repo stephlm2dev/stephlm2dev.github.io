@@ -1,0 +1,39 @@
+/* Média: image et texte sur la même ligne. .media = 1/3 - 2/3; .half = 1/2 - 1/2; .reverse = image à droite.
+   L'image est un .photo (ou une capture); une suite de .media peut alterner avec .reverse.
+   Une colonne en carrousel et sous 768 px (web). Chargé par components.css. Tokens uniquement: voir DESIGN.md. */
+
+.media { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: calc(var(--u) * 6); align-items: center; }
+.media.half { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.media.reverse > :first-child { order: 2; }
+.media .photo { position: static; width: 100%; max-width: none; height: auto; }
+.media .photo img,
+.media .photo .placeholder { width: 100%; height: auto; border-radius: var(--radius-photo); }
+.media.wide .photo img,
+.media.wide .photo .placeholder { aspect-ratio: 16 / 10; }
+.media .photo figcaption { margin-top: var(--u); font-size: var(--fs-small); color: var(--text-dark-muted); }
+.media h2,
+.media h3 { margin: calc(var(--u) * 0.75) 0 calc(var(--u) * 1.25); font-family: var(--font-heading); font-size: calc(var(--fs-h2) * 0.7); font-weight: 400; line-height: 1.2; color: var(--text-dark); }
+.media p:not(.label) { max-width: 54ch; font-size: var(--fs-base); line-height: 1.6; color: var(--text-dark-muted); }
+.media-link { display: inline-block; margin-top: calc(var(--u) * 1.5); font-weight: 600; color: var(--accent-accessible-hover); text-decoration: underline; text-underline-offset: 0.25em; }
+.media-stack > * + * { margin-top: calc(var(--u) * 8); }
+.slide:not(.warm):not(.white) .media :is(h2, h3),
+.section:not(.warm):not(.white):not(.pillar) .media :is(h2, h3) { color: var(--text-primary); }
+.slide:not(.warm):not(.white) .media p:not(.label),
+.section:not(.warm):not(.white):not(.pillar) .media p:not(.label) { color: var(--text-secondary); }
+.slide:not(.warm):not(.white) .media-link,
+.section:not(.warm):not(.white):not(.pillar) .media-link { color: var(--accent-soft); }
+
+@media (max-width: 767px) {
+  html:not([data-medium]) .media,
+  html:not([data-medium]) .media.half { grid-template-columns: 1fr; gap: calc(var(--u) * 3); }
+  html:not([data-medium]) .media.reverse > :first-child { order: 0; }
+  html:not([data-medium]) .media .photo { max-width: calc(var(--u) * 35); }
+  html:not([data-medium]) .media.wide .photo { max-width: none; }
+}
+[data-medium='carousel'] .media,
+[data-medium='carousel'] .media.half { grid-template-columns: 1fr; gap: calc(var(--u) * 2.5); }
+[data-medium='carousel'] .media.reverse > :first-child { order: 0; }
+[data-medium='carousel'] .media .photo { max-width: calc(var(--u) * 20); }
+[data-medium='carousel'] .media.wide .photo { max-width: none; }
+.media.half .photo img,
+.media.half .photo .placeholder { aspect-ratio: 4 / 3; }

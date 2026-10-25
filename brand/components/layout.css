@@ -16,14 +16,14 @@
 /* ---- Colonnes à filet haut ---- */
 .cols { display: grid; grid-template-columns: repeat(var(--n, 3), 1fr); gap: calc(var(--u) * 5); }
 .col { padding-top: calc(var(--u) * 2.5); border-top: 2px solid var(--bg-primary); }
-.col h2 { font-size: var(--fs-h2); }
+.col :is(h2, h3) { font-size: var(--fs-h2); }
 .col p { margin-top: calc(var(--u) * 1.75); font-size: calc(var(--fs-base) * 0.9); line-height: 1.55; color: var(--text-dark-muted); }
 .col p strong { color: var(--text-dark); font-weight: 600; }
 .col .tag { margin-top: 0; margin-bottom: var(--u); }
 .col ul li { padding: calc(var(--u) * 1.5) 0; border-top: 1px solid var(--border-warm); font-size: calc(var(--fs-base) * 0.95); line-height: 1.45; color: var(--text-dark-muted); }
 .col ul li:first-child { border-top: 0; padding-top: 0; }
 .cols.grid-2x2 { --n: 2; margin-top: calc(var(--u) * 5); row-gap: calc(var(--u) * 4.5); }
-.cols.grid-2x2 .col h2 { font-size: calc(var(--fs-base) * 1.2); }
+.cols.grid-2x2 .col :is(h2, h3) { font-size: calc(var(--fs-base) * 1.2); }
 
 /* ---- Encadré sombre (titre, texte, phrase forte en serif) ---- */
 .callout { padding: calc(var(--u) * 4); background: var(--bg-primary); color: var(--text-primary); }

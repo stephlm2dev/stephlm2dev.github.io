@@ -21,7 +21,9 @@ html:not([data-medium]) .figures li,
 [data-medium='carousel'] .cols { gap: calc(var(--u) * 3); }
 html:not([data-medium]) .panel { min-height: calc(var(--u) * 28); padding: calc(var(--u) * 4) calc(var(--u) * 4) calc(var(--u) * 5); }
 html:not([data-medium]) .panels-slide { justify-content: flex-start; }
-html:not([data-medium]) .col h2 { font-size: var(--fs-h3); }
+html:not([data-medium]) .col :is(h2, h3) { max-width: 26ch; font-size: clamp(1.25rem, 1.05rem + 0.7vw, 1.55rem); }
+html:not([data-medium]) .col p { font-size: var(--fs-base); line-height: 1.7; }
+html:not([data-medium]) .col { padding-top: calc(var(--u) * 3); }
 
 /* ---- Tableau en cartes: chaque cellule porte data-label, repris comme étiquette ---- */
 [data-medium='carousel'] .matrix .mrow { grid-template-columns: 1fr; gap: calc(var(--u) * 0.5); }
@@ -41,6 +43,7 @@ html:not([data-medium]) .matrix .mrow > [data-label]::before { content: attr(dat
 
 /* ---- Web, 768 px et plus: deux colonnes ---- */
 @media (min-width: 768px) {
+  html:not([data-medium]) .cols { gap: calc(var(--u) * 6) calc(var(--u) * 8); }
   html:not([data-medium]) .cols,
   html:not([data-medium]) .cards,
   html:not([data-medium]) .quote-cards { grid-template-columns: repeat(2, 1fr); }

@@ -72,112 +72,6 @@ h3 {
 }
 
 /* ============================================================
-   3 — SCÉNARIOS (fond clair)
-   ============================================================ */
-.section-scenarios {
-  padding: var(--space-section) 0;
-  background: var(--bg-white);
-  color: var(--text-dark);
-}
-
-.section-scenarios h2 {
-  color: var(--text-dark);
-}
-
-.section-scenarios .section-intro {
-  color: var(--text-dark-muted);
-}
-
-.scenarios-grid {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-  align-items: start;
-}
-
-.scenario {
-  padding-top: 1.5rem;
-  border-top: 2px solid var(--bg-primary);
-}
-
-.scenario h3 {
-  color: var(--text-dark);
-  font-size: clamp(1.25rem, 1.05rem + 0.7vw, 1.55rem);
-  max-width: 26ch;
-}
-
-.scenario-lead {
-  margin-top: 1rem;
-  color: var(--text-dark-muted);
-  line-height: 1.7;
-  max-width: 56ch;
-}
-
-.scenario-more summary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  min-height: 44px;
-  cursor: pointer;
-  list-style: none;
-  font-weight: 600;
-  color: var(--accent-accessible-hover);
-  text-decoration: underline;
-  text-underline-offset: 0.25em;
-}
-
-.scenario-more summary::-webkit-details-marker { display: none; }
-
-.scenario-more summary::after {
-  content: '';
-  flex: none;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: translateY(-0.1rem) rotate(45deg);
-}
-
-.scenario-more[open] summary::after { transform: translateY(0.1rem) rotate(-135deg); }
-
-.scenario-more summary:focus-visible {
-  outline: 2px solid var(--accent-accessible);
-  outline-offset: 4px;
-}
-
-.scenario-more p {
-  margin-top: 0.75rem;
-  max-width: 56ch;
-  color: var(--text-dark-muted);
-  line-height: 1.7;
-}
-
-.scenario-more .scenario-seen {
-  color: var(--text-dark);
-}
-
-.scenario-seen strong {
-  color: var(--accent-accessible-hover);
-}
-
-/* Transition offres -> comparatif */
-.section-bridge {
-  padding: var(--space-section) 0;
-  background: var(--bg-primary);
-}
-
-.bridge-statement {
-  font-family: var(--font-heading);
-  font-size: clamp(1.5rem, 0.8rem + 1.3vw, 2rem);
-  line-height: 1.2;
-  text-wrap: balance;
-  color: var(--text-primary);
-}
-
-.bridge-accent { color: var(--accent); }
-
-/* ============================================================
    4b — MÉTHODE : IMMERSION · RADAR · IMPACT (fond vert, montée en puissance)
    ============================================================ */
 .highlight {
@@ -1030,15 +924,6 @@ a.quote-source:focus-visible { outline: 2px solid var(--accent-accessible); outl
 
 .footer-link-externe:hover {
   color: var(--accent);
-}
-
-/* ============================================================
-   RESPONSIVE — TABLET (768px+)
-   ============================================================ */
-@media (min-width: 768px) {
-
-  .scenarios-grid { grid-template-columns: repeat(2, 1fr); gap: 3rem 4rem; }
-  .scenarios-grid .scenario:last-child:nth-child(odd) { grid-column: 1 / -1; max-width: calc(50% - 2rem); }
 }
 
 /* ============================================================

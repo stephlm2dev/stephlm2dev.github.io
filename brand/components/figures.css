@@ -1,0 +1,57 @@
+/* Chiffres, chiffre héros, faits, prose, capture d'écran. Chargé par components.css. Tokens uniquement: voir DESIGN.md. */
+
+/* ---- Liste de chiffres (fond sombre) et chiffre héros ---- */
+.figures li { display: grid; grid-template-columns: calc(var(--u) * 31.25) 1fr; gap: calc(var(--u) * 3); align-items: center; padding: calc(var(--u) * 1.875) 0; border-top: 1px solid var(--border-subtle); }
+.figures li:last-child { border-bottom: 1px solid var(--border-subtle); }
+.figures .figure { font-family: var(--font-heading); font-size: calc(var(--fs-h1) * 0.86); line-height: 1.1; color: var(--text-primary); }
+.figures p { font-size: calc(var(--fs-base) * 0.95); line-height: 1.45; color: var(--text-secondary); }
+/* Exception déclarée: chiffre héros à 4 fois h1 */
+.big { font-family: var(--font-heading); font-size: calc(var(--fs-h1) * 4); line-height: 0.95; color: var(--text-primary); }
+.big-label { margin-top: calc(var(--u) * 1.5); font-family: var(--font-heading); font-size: calc(var(--fs-h1) * 0.76); line-height: 1.15; }
+/* ---- Faits et prose ---- */
+.facts > div { padding: calc(var(--u) * 2.25) 0; border-top: 1px solid var(--border-warm); }
+.facts dt { font-family: var(--font-heading); font-size: calc(var(--fs-h1) * 0.82); line-height: 1.1; color: var(--text-dark); }
+.facts dd { margin-top: calc(var(--u) * 0.5); font-size: calc(var(--fs-base) * 0.9); color: var(--text-dark-muted); }
+.prose { display: flex; flex-direction: column; gap: calc(var(--u) * 2.25); }
+.prose p { max-width: 34em; font-size: var(--fs-lead); line-height: 1.6; color: var(--text-dark-muted); }
+/* ---- Capture d'écran: image réelle ou cadre à remplir, bordure seule, sans ombre ---- */
+.shot { margin-top: calc(var(--u) * 4); }
+.shot img,
+.shot .placeholder { display: block; width: 100%; height: calc(var(--page-h) * 0.47); border: 1px solid var(--border-warm); border-radius: var(--radius-none); object-fit: cover; object-position: top; }
+.shot .placeholder { display: flex; align-items: center; justify-content: center; border: 3px dashed var(--text-dark-muted); font-size: calc(var(--fs-base) * 0.9); text-align: center; color: var(--text-dark-muted); }
+.shot figcaption { margin-top: calc(var(--u) * 1.5); font-size: var(--fs-small); line-height: 1.4; color: var(--text-dark-muted); }
+
+/* Variante claire (fond sable ou blanc): chiffre héros et liste de chiffres passent en texte sombre */
+.warm .big, .white .big { color: var(--text-dark); }
+.warm .figures li, .white .figures li { border-top-color: var(--border-warm); }
+.warm .figures li:last-child, .white .figures li:last-child { border-bottom-color: var(--border-warm); }
+.warm .figures .figure, .white .figures .figure { color: var(--text-dark); }
+.warm .figures p, .white .figures p { color: var(--text-dark-muted); }
+
+/* ---- Photo cadrée (portrait 4/5), image ou cadre à remplir ---- */
+.photo { max-width: calc(var(--u) * 42.5); }
+.photo img,
+.photo .placeholder { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; border-radius: var(--radius-photo); object-fit: cover; object-position: top; }
+.photo .placeholder { display: flex; align-items: center; justify-content: center; border: 3px dashed var(--text-muted); font-size: var(--fs-small); text-align: center; color: var(--text-muted); }
+.warm .photo .placeholder,
+.white .photo .placeholder { border-color: var(--text-dark-muted); color: var(--text-dark-muted); }
+/* Couverture sur un support à cadre fixe: la photo se pose en bas à droite */
+.cover .photo { position: absolute; right: var(--pad-x); bottom: 0; height: 76%; max-width: none; }
+.cover .photo img,
+.cover .photo .placeholder { height: 100%; width: auto; border-radius: var(--radius-photo) var(--radius-photo) 0 0; }
+/* Couverture en flux (web): texte et photo côte à côte dès 768 px */
+.hero { display: grid; grid-template-columns: 1fr; gap: calc(var(--u) * 5); align-items: center; }
+.hero .label { color: var(--accent-soft); }
+.hero h1 { max-width: 24ch; text-wrap: balance; line-height: 1.1; }
+/* Hero web: texte en colonne, photo à droite dès 768 px */
+html:not([data-medium]) .hero > div { display: flex; flex-direction: column; gap: calc(var(--u) * 3); }
+html:not([data-medium]) .hero { gap: calc(var(--u) * 5); }
+html:not([data-medium]) .hero .label { margin-bottom: calc(var(--u) * 2); }
+html:not([data-medium]) .hero h1 { font-size: clamp(2.3rem, 1rem + 4vw, 3.75rem); }
+html:not([data-medium]) .hero .lead { margin-top: 0; max-width: 52ch; font-size: clamp(1.05rem, 0.95rem + 0.5vw, 1.3rem); line-height: 1.55; color: var(--text-secondary); }
+html:not([data-medium]) .hero .btn { align-self: flex-start; margin-top: var(--u); }
+@media (min-width: 768px) {
+  html:not([data-medium]) .hero { grid-template-columns: 2fr 1fr; gap: calc(var(--u) * 8); }
+  html:not([data-medium]) .hero .photo { max-width: none; }
+  html:not([data-medium]) .hero .photo img { max-height: calc(100svh - var(--header-height) - 7rem); }
+}

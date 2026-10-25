@@ -1,0 +1,55 @@
+/* Schémas SVG, pastilles et étiquettes, marques, panneau de code, chemin de fichier, paire de captures.
+   Chargé par components.css. Tokens uniquement: voir DESIGN.md. */
+
+/* ---- Kit de schémas: boîtes teintées, zone en pointillés, lignes à flèche ----
+   HTML: <svg class="diagram" viewBox="0 0 800 300"> avec <defs><marker id="kv-arrow">…</marker></defs>, puis .box, .zone, .ln, text. */
+.diagram { display: block; width: 100%; height: auto; font-family: var(--font-body); }
+.diagram text { font-size: 22px; fill: var(--text-dark); }
+.diagram text.muted { fill: var(--text-dark-muted); font-size: 18px; }
+.diagram text.on-dark { fill: var(--text-primary); }
+.diagram .box { fill: var(--bg-white); stroke: var(--border-warm-strong); stroke-width: 1.5; }
+.diagram .box.pale { fill: var(--bg-coral-wash-pale); stroke: var(--border-tint-pale); }
+.diagram .box.warm { fill: var(--bg-coral-wash); stroke: var(--border-tint-warm); }
+.diagram .box.ember { fill: var(--bg-ember-mid); stroke: none; }
+.diagram .box.dark { fill: var(--bg-primary); stroke: none; }
+.diagram .zone { fill: none; stroke: var(--text-dark-muted); stroke-width: 1.5; stroke-dasharray: 7 6; }
+.diagram .ln { fill: none; stroke: var(--text-dark); stroke-width: 1.5; marker-end: url(#kv-arrow); }
+.diagram .ln.dash { stroke-dasharray: 6 5; }
+.diagram .ln.accent { stroke: var(--accent-accessible); }
+.diagram marker path { fill: var(--text-dark); }
+
+/* ---- Pastilles de statut et étiquettes d'audience (carrés à 2 px, jamais de pastille ronde) ---- */
+.pill { display: inline-flex; align-items: center; padding: calc(var(--u) * 0.4) calc(var(--u) * 1.25); border: 1px solid var(--border-warm-strong); border-radius: var(--radius-none); font-size: var(--fs-label); font-weight: 600; letter-spacing: var(--ls-label); text-transform: uppercase; line-height: 1.2; color: var(--text-dark-muted); }
+.pill[data-status='done'] { background: var(--status-done); border-color: var(--status-done); color: var(--text-primary); }
+.pill[data-status='progress'] { background: var(--status-progress); border-color: var(--status-progress); color: var(--text-dark); }
+.pill[data-status='blocked'] { background: var(--status-blocked); border-color: var(--status-blocked); color: var(--text-primary); }
+.tag { display: inline-block; padding: calc(var(--u) * 0.3) var(--u); border: 1px solid currentColor; border-radius: var(--radius-none); font-size: var(--fs-label); font-weight: 600; letter-spacing: var(--ls-label); text-transform: uppercase; line-height: 1.2; color: var(--text-dark-muted); }
+.tag.accent { color: var(--accent-accessible-hover); }
+.slide:not(.warm):not(.white) .tag,
+.dark .tag { color: var(--text-muted); }
+.slide:not(.warm):not(.white) .tag.accent,
+.dark .tag.accent { color: var(--accent-soft); }
+
+/* ---- Marques d'un tableau de couverture: carré plein = usage principal, carré creux = usage occasionnel ---- */
+.mark { display: inline-block; width: calc(var(--u) * 1.5); height: calc(var(--u) * 1.5); border: 1.5px solid var(--text-dark); border-radius: var(--radius-none); vertical-align: middle; }
+.mark.full { background: var(--text-dark); }
+.legend { display: flex; flex-wrap: wrap; gap: calc(var(--u) * 3); margin-top: calc(var(--u) * 2); font-size: var(--fs-small); color: var(--text-dark-muted); }
+.legend .mark { margin-right: var(--u); }
+.matrix.legend-grid .mrow { grid-template-columns: var(--cols, 1.6fr repeat(4, 1fr)); }
+.matrix.legend-grid .mrow > :not(:first-child) { text-align: center; }
+
+/* ---- Panneau de code et terminal (pile monospace système, couleurs de la palette) ---- */
+.code { margin: 0; padding: calc(var(--u) * 2.5) calc(var(--u) * 3); background: var(--bg-primary-deep); border-radius: var(--radius-none); font-family: var(--font-mono); font-size: var(--fs-small); line-height: 1.6; color: var(--text-secondary); overflow: hidden; white-space: pre-wrap; }
+.code .k { color: var(--accent-soft); }
+.code .s { color: var(--text-primary); }
+.code .c { color: var(--text-muted); font-style: italic; }
+.code .p { color: var(--accent); user-select: none; }
+.path { display: inline-block; padding: 0 var(--u); border: 1px solid var(--border-warm-strong); border-radius: var(--radius-none); font-family: var(--font-mono); font-size: 0.9em; line-height: 1.6; color: var(--text-dark); }
+.slide:not(.warm):not(.white) .path,
+.dark .path { border-color: var(--border-subtle); color: var(--text-secondary); }
+
+/* ---- Paire de captures côte à côte ---- */
+.shot-pair { display: grid; grid-template-columns: repeat(2, 1fr); gap: calc(var(--u) * 3); margin-top: calc(var(--u) * 4); }
+.shot-pair .shot { margin-top: 0; }
+.shot-pair .shot img,
+.shot-pair .shot .placeholder { height: calc(var(--page-h) * 0.28); }

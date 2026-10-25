@@ -1,0 +1,48 @@
+/* CTA centré, boutons, contacts. Chargé par components.css. Tokens uniquement: voir DESIGN.md. */
+
+/* ---- CTA centré ---- */
+.cta { align-items: center; text-align: center; }
+/* Exception déclarée: titre de CTA plus grand que h1 */
+.cta h1 { font-size: calc(var(--fs-h1) * 1.36); }
+.cta .lead { margin: calc(var(--u) * 2.25) auto 0; max-width: 40em; font-size: calc(var(--fs-lead) * 1.05); color: var(--text-secondary); }
+.btn { display: inline-block; margin-top: calc(var(--u) * 3.75); padding: calc(var(--u) * 2) calc(var(--u) * 4.5); background: var(--accent-accessible); border: 2px solid var(--accent-accessible); border-radius: var(--radius-none); color: var(--text-primary); font-size: calc(var(--fs-base) * 0.95); font-weight: 600; letter-spacing: 0.02em; text-decoration: none; }
+.contacts { margin-top: calc(var(--u) * 4.25); display: flex; align-items: center; justify-content: center; gap: calc(var(--u) * 4.5); }
+.contacts ul { text-align: left; }
+.cta .contacts ul { text-align: center; }
+.cta .contacts:has(img) ul { text-align: left; }
+.contacts li { font-size: calc(var(--fs-base) * 0.9); line-height: 1.7; color: var(--text-secondary); }
+.contacts li strong { font-weight: 600; color: var(--text-primary); }
+.contacts img { width: calc(var(--u) * 13.5); border-radius: var(--radius-none); }
+.contacts figcaption { margin-top: calc(var(--u) * 0.75); font-size: var(--fs-footer); text-align: center; color: var(--text-muted); }
+
+/* ---- États et variantes des boutons (le bouton par défaut est plein, coral accessible) ---- */
+.btn { font-family: var(--font-body); text-align: center; cursor: pointer; transition: background var(--dur-fast), color var(--dur-fast), border-color var(--dur-fast); }
+.btn:hover,
+.btn:focus-visible { background: var(--accent-accessible-hover); border-color: var(--accent-accessible-hover); }
+.btn:focus-visible { outline: var(--focus-ring); outline-offset: var(--focus-offset); }
+.btn:active { background: var(--accent-accessible-hover); border-color: var(--accent-accessible-hover); transform: translateY(1px); }
+.btn.large { padding: calc(var(--u) * 2.5) calc(var(--u) * 6); font-size: var(--fs-base); }
+/* Contour clair, sur fond sombre */
+.btn.outline { background: transparent; color: var(--text-secondary); border-color: var(--border-subtle); }
+.btn.outline:hover,
+.btn.outline:focus-visible,
+.btn.outline:active { background: transparent; border-color: var(--accent-soft); color: var(--accent-soft); }
+/* Contour sombre, sur fond clair: le texte passe en coral accessible au survol (jamais #FF7F50 en texte sur clair) */
+.btn.outline-dark { background: transparent; color: var(--text-dark); border-color: var(--border-warm-strong); }
+.btn.outline-dark:hover,
+.btn.outline-dark:focus-visible,
+.btn.outline-dark:active { background: transparent; border-color: var(--accent-accessible-hover); color: var(--accent-accessible-hover); }
+/* Web: le bouton est plus compact que sur un support projeté */
+html:not([data-medium]) .btn { padding: calc(var(--u) * 1.6) calc(var(--u) * 3.5); font-size: calc(var(--fs-base) * 0.9); }
+html:not([data-medium]) .btn.large { padding: calc(var(--u) * 2) calc(var(--u) * 5); font-size: var(--fs-base); }
+/* Bouton de réseau social: contour clair et logo avant le texte */
+.btn.social { margin-top: 0; padding: calc(var(--u) * 1.25) calc(var(--u) * 2.25); font-size: var(--fs-small); }
+.btn.social .icon { margin: 0 var(--u) 0 0; }
+@media (prefers-reduced-motion: reduce) {
+  .btn { transition: none; }
+  .btn:active { transform: none; }
+}
+
+/* Rangée de boutons: alignés, sans la marge haute du bouton de CTA */
+.btn-row { display: flex; flex-wrap: wrap; align-items: center; gap: calc(var(--u) * 2); }
+.btn-row .btn { margin-top: 0; }

@@ -1,0 +1,128 @@
+/* Adaptation de la disposition au support. Chargé par components.css.
+   Deux cas partagent les mêmes règles de mise en colonne: le web petit écran (mobile d'abord) et le carrousel
+   (page étroite lue à grande échelle). Le deck (16:9) et l'A4 gardent la disposition de base.
+   Le web seul passe par les seuils du site, qui ne peuvent pas être des variables: 768 px (deux colonnes),
+   1024 px (--n colonnes), 419 px (très petit écran). Les supports à cadre fixe portent data-medium. */
+
+/* ---- Une colonne: web sous 768 px et carrousel ---- */
+html:not([data-medium]) .cols,
+html:not([data-medium]) .cards,
+html:not([data-medium]) .panels,
+html:not([data-medium]) .quote-cards,
+html:not([data-medium]) .split,
+[data-medium='carousel'] .cols,
+[data-medium='carousel'] .cards,
+[data-medium='carousel'] .quote-cards,
+[data-medium='carousel'] .split { grid-template-columns: 1fr; }
+html:not([data-medium]) .split,
+[data-medium='carousel'] .split { row-gap: calc(var(--u) * 3); }
+html:not([data-medium]) .figures li,
+[data-medium='carousel'] .figures li { grid-template-columns: 1fr; gap: calc(var(--u) * 0.5); }
+[data-medium='carousel'] .cols { gap: calc(var(--u) * 3); }
+html:not([data-medium]) .panel { min-height: calc(var(--u) * 28); padding: calc(var(--u) * 4) calc(var(--u) * 4) calc(var(--u) * 5); }
+html:not([data-medium]) .panels-slide { justify-content: flex-start; }
+html:not([data-medium]) .col h2 { font-size: var(--fs-h3); }
+
+/* ---- Tableau en cartes: chaque cellule porte data-label, repris comme étiquette ---- */
+[data-medium='carousel'] .matrix .mrow { grid-template-columns: 1fr; gap: calc(var(--u) * 0.5); }
+[data-medium='carousel'] .matrix .mrow.mhead { display: none; }
+[data-medium='carousel'] .matrix .mrow > [data-label]::before,
+html:not([data-medium]) .matrix .mrow > [data-label]::before { content: attr(data-label); display: block; font-size: var(--fs-label); font-weight: 600; letter-spacing: var(--ls-label); text-transform: uppercase; color: var(--text-dark-muted); }
+[data-medium='carousel'] .matrix.compare .mrow > *:nth-child(4) { margin: 0; padding: calc(var(--u) * 1.5); }
+@media (max-width: 767px) {
+  html:not([data-medium]) .matrix .mrow { grid-template-columns: 1fr; gap: calc(var(--u) * 0.5); }
+  html:not([data-medium]) .matrix .mrow.mhead { display: none; }
+  html:not([data-medium]) .matrix.compare .mrow > *:nth-child(4) { margin: 0; padding: calc(var(--u) * 1.5); }
+}
+/* Dès 768 px le tableau reprend ses colonnes: l'étiquette de cellule n'est plus utile */
+@media (min-width: 768px) {
+  html:not([data-medium]) .matrix .mrow > [data-label]::before { content: none; }
+}
+
+/* ---- Web, 768 px et plus: deux colonnes ---- */
+@media (min-width: 768px) {
+  html:not([data-medium]) .cols,
+  html:not([data-medium]) .cards,
+  html:not([data-medium]) .quote-cards { grid-template-columns: repeat(2, 1fr); }
+  html:not([data-medium]) .split { grid-template-columns: 5fr 7fr; }
+  html:not([data-medium]) .figures li { grid-template-columns: calc(var(--u) * 31.25) 1fr; gap: calc(var(--u) * 3); }
+}
+
+/* ---- Web, 1024 px et plus: le nombre de colonnes du composant (--n, trois par défaut) ---- */
+@media (min-width: 1024px) {
+  html:not([data-medium]) .cols,
+  html:not([data-medium]) .cards,
+  html:not([data-medium]) .panels { grid-template-columns: repeat(var(--n, 3), 1fr); }
+  html:not([data-medium]) .panel { min-height: calc(var(--u) * 40); }
+}
+
+/* ---- Carrousel: la page est étroite et lue de loin, les empilements et les cartes se resserrent ---- */
+[data-medium='carousel'] .stack > * + * { margin-top: calc(var(--u) * 3); }
+[data-medium='carousel'] .card { padding: calc(var(--u) * 2.25) calc(var(--u) * 2.5); gap: var(--u); }
+[data-medium='carousel'] .card-title { font-size: calc(var(--fs-base) * 0.9); }
+[data-medium='carousel'] .card .promise { font-size: calc(var(--fs-base) * 0.9); }
+[data-medium='carousel'] .card .price strong { font-size: var(--fs-h3); }
+[data-medium='carousel'] .card .price span { font-size: var(--fs-small); }
+[data-medium='carousel'] .matrix .mrow .name { font-size: var(--fs-h3); }
+
+/* ---- Nouveaux composants: une colonne en carrousel et sur le web étroit ---- */
+html:not([data-medium]) .logo-list { grid-template-columns: repeat(2, 1fr); }
+html:not([data-medium]) .case-periods,
+html:not([data-medium]) .case-projects,
+html:not([data-medium]) .steps,
+[data-medium='carousel'] .case-periods,
+[data-medium='carousel'] .case-projects,
+[data-medium='carousel'] .steps { grid-template-columns: 1fr; }
+[data-medium='carousel'] .logo-list { grid-template-columns: repeat(2, 1fr); }
+[data-medium='carousel'] .cover .photo { height: 46%; }
+html:not([data-medium]) .logo-list img { max-width: min(200px, 100%); }
+@media (min-width: 768px) {
+  html:not([data-medium]) .logo-list img { height: calc(var(--u) * 8); max-width: min(220px, 100%); }
+  html:not([data-medium]) .logo-pair { gap: calc(var(--u) * 2); }
+  html:not([data-medium]) .logo-pair img { height: calc(var(--u) * 7); }
+  html:not([data-medium]) .case-periods,
+  html:not([data-medium]) .case-projects { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  html:not([data-medium]) .logo-list { grid-template-columns: repeat(var(--n, 4), 1fr); }
+  /* Logos: titre à gauche, liste en ligne à droite */
+  html:not([data-medium]) .logos { flex-direction: row; align-items: center; gap: calc(var(--u) * 6); }
+  html:not([data-medium]) .logos > .label { flex: none; white-space: nowrap; text-align: left; line-height: 1.5; }
+  html:not([data-medium]) .logos .logo-list { flex: 1; display: flex; justify-content: flex-start; align-items: center; gap: calc(var(--u) * 6); }
+  html:not([data-medium]) .steps { grid-template-columns: repeat(var(--n, 3), 1fr); }
+}
+
+/* ---- Carrousel: étapes, couverture avec photo ---- */
+[data-medium='carousel'] .step { padding: calc(var(--u) * 1.25) 0; gap: calc(var(--u) * 0.75); }
+[data-medium='carousel'] .step-num { font-size: calc(var(--fs-h1) * 0.7); }
+[data-medium='carousel'] .c-cover .photo { max-width: calc(var(--u) * 20); margin-bottom: auto; margin-top: calc(var(--u) * 9); }
+
+/* ---- Composants génériques: une colonne en carrousel et sur le web étroit ---- */
+html:not([data-medium]) .shot-pair,
+[data-medium='carousel'] .shot-pair { grid-template-columns: 1fr; }
+html:not([data-medium]) .flow,
+[data-medium='carousel'] .flow { grid-template-columns: 1fr; }
+html:not([data-medium]) .flow li,
+[data-medium='carousel'] .flow li { padding: 0 0 calc(var(--u) * 3) calc(var(--u) * 6); }
+html:not([data-medium]) .flow li::after,
+[data-medium='carousel'] .flow li::after { top: calc(var(--u) * 5); bottom: var(--u); left: calc(var(--u) * 2); right: auto; width: 1px; height: auto; }
+html:not([data-medium]) .matrix.legend-grid .mrow > :not(:first-child),
+[data-medium='carousel'] .matrix.legend-grid .mrow > :not(:first-child) { text-align: left; }
+[data-medium='carousel'] .rail { flex-direction: column; align-items: flex-start; }
+@media (min-width: 768px) {
+  html:not([data-medium]) .shot-pair { grid-template-columns: repeat(2, 1fr); }
+  html:not([data-medium]) .flow { grid-template-columns: repeat(var(--n, 4), 1fr); }
+  html:not([data-medium]) .flow li { padding: calc(var(--u) * 6) calc(var(--u) * 2) 0 0; }
+  html:not([data-medium]) .flow li::after { top: calc(var(--u) * 2); bottom: auto; left: calc(var(--u) * 5); right: var(--u); width: auto; height: 1px; }
+  html:not([data-medium]) .matrix.legend-grid .mrow > :not(:first-child) { text-align: center; }
+}
+/* Matrice à marques en cartes: l'étiquette et la marque se suivent sur une ligne */
+html:not([data-medium]) .matrix.legend-grid .mrow > [data-label],
+[data-medium='carousel'] .matrix.legend-grid .mrow > [data-label] { display: flex; align-items: center; gap: var(--u); }
+html:not([data-medium]) .matrix.legend-grid .mrow > [data-label]::before,
+[data-medium='carousel'] .matrix.legend-grid .mrow > [data-label]::before { display: inline; }
+@media (min-width: 768px) {
+  html:not([data-medium]) .matrix.legend-grid .mrow > [data-label] { display: block; }
+}
+[data-medium='carousel'] .shot-pair .shot .placeholder,
+[data-medium='carousel'] .shot-pair .shot img { height: calc(var(--page-h) * 0.2); }

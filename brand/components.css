@@ -1,0 +1,26 @@
+/* Composants Koveleo communs à tous les supports (deck 16:9, carrousel, A4).
+   Aucune valeur de marque ici: tout passe par tokens.css. Tailles de texte en --fs-* (ou un ratio),
+   espacements en calc(var(--u) * n), pour que chaque composant suive l'échelle du support.
+   Charger après tokens.css et avant media/*.css. Règles d'usage: DESIGN.md.
+   Contrat de rendu: une page = <section class="slide">; la couverture ajoute .cover. */
+
+@import url('components/base.css');
+@import url('components/watermark.css');
+@import url('components/typography.css');
+@import url('components/layout.css');
+@import url('components/panels.css');
+@import url('components/tables.css');
+@import url('components/figures.css');
+@import url('components/quotes.css');
+@import url('components/cards.css');
+@import url('components/steps.css');
+@import url('components/case.css');
+@import url('components/charts.css');
+@import url('components/buttons.css');
+@import url('components/icons.css');
+@import url('components/interactive.css');
+@import url('components/site.css');
+@import url('components/page.css');
+@import url('components/navigation.css');
+@import url('components/diagram.css');
+@import url('components/responsive.css');

@@ -1,0 +1,14 @@
+/* Titres, texte d'introduction, labels, source. Chargé par components.css. Tokens uniquement: voir DESIGN.md. */
+
+/* ---- Typographie ---- */
+.slide h1,
+.slide h2 { font-family: var(--font-heading); font-weight: 400; line-height: 1.15; text-wrap: balance; }
+.slide h1 { font-size: var(--fs-h1); }
+.slide h2 { font-size: var(--fs-h2); line-height: 1.2; }
+.warm h1, .white h1, .warm h2, .white h2 { color: var(--text-dark); }
+.lead { margin-top: calc(var(--u) * 1.75); max-width: 62ch; font-size: var(--fs-lead); line-height: 1.5; color: var(--text-muted); }
+.warm .lead, .white .lead { color: var(--text-dark-muted); }
+.label { font-size: var(--fs-label); font-weight: 600; letter-spacing: var(--ls-label); text-transform: uppercase; color: var(--text-dark-muted); }
+.slide:not(.warm):not(.white) .label { color: var(--text-muted); }
+.source { margin-top: calc(var(--u) * 2.5); font-size: var(--fs-small); line-height: 1.4; color: var(--text-muted); }
+.warm .source, .white .source { color: var(--text-dark-muted); }

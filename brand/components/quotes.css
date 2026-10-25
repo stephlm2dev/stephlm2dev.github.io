@@ -1,0 +1,32 @@
+/* Citations (bloc, cartes, plate). Chargé par components.css. Tokens uniquement: voir DESIGN.md. */
+
+/* ---- Citations ---- */
+.quote-block { padding: calc(var(--u) * 4.25) calc(var(--u) * 5.5); background: var(--bg-primary); color: var(--text-primary); }
+.quote-block blockquote { max-width: calc(var(--u) * 117.5); font-family: var(--font-heading); font-size: calc(var(--fs-h1) * 0.66); line-height: 1.35; }
+.quote-block blockquote::before,
+.quote-block blockquote::after,
+.quote-flat blockquote::before,
+.quote-flat blockquote::after { content: '"'; color: var(--accent); }
+.quote-block figcaption { margin-top: calc(var(--u) * 1.75); font-size: var(--fs-small); color: var(--text-muted); }
+.quote-cards { display: grid; grid-template-columns: 1fr 1fr; gap: calc(var(--u) * 3); }
+.quote-card { padding: calc(var(--u) * 2.75) calc(var(--u) * 3.25); background: var(--bg-white); border: 1px solid var(--border-warm); border-top: 2px solid var(--accent-accessible); }
+.quote-card blockquote { font-family: var(--font-heading); font-size: var(--fs-base); line-height: 1.4; color: var(--text-dark); }
+.quote-card blockquote::before,
+.quote-card blockquote::after { content: '"'; color: var(--accent-accessible-hover); }
+.quote-card figcaption { margin-top: calc(var(--u) * 1.5); font-size: calc(var(--fs-small) * 0.875); line-height: 1.4; color: var(--text-dark-muted); }
+.quote-flat { margin-top: calc(var(--u) * 3.5); padding-top: calc(var(--u) * 2.75); border-top: 1px solid var(--border-subtle); }
+.quote-flat blockquote { font-family: var(--font-heading); font-size: calc(var(--fs-base) * 1.15); line-height: 1.4; }
+.quote-flat figcaption { margin-top: calc(var(--u) * 1.25); font-size: calc(var(--fs-small) * 0.875); color: var(--text-muted); }
+
+/* Variante claire de la citation plate */
+.warm .quote-flat, .white .quote-flat { border-top-color: var(--border-warm); }
+.warm .quote-flat blockquote, .white .quote-flat blockquote { color: var(--text-dark); }
+.warm .quote-flat figcaption, .white .quote-flat figcaption { color: var(--text-dark-muted); }
+
+/* Citation avec auteur, fonction et badge de source (par exemple un profil en ligne) */
+.quote-card figcaption strong { display: block; font-weight: 600; font-size: calc(var(--fs-small) * 0.95); color: var(--text-dark); }
+.quote-role { display: block; }
+.quote-source { display: inline-flex; align-items: center; gap: calc(var(--u) * 0.5); margin-top: calc(var(--u) * 1.5); padding: calc(var(--u) * 0.4) calc(var(--u) * 0.8); font-size: calc(var(--fs-small) * 0.85); font-weight: 600; color: var(--bg-primary); background: var(--bg-pillar); border: 1px solid var(--border-warm); text-decoration: none; }
+.quote-source .icon { width: var(--icon-s); height: var(--icon-s); margin: 0; }
+a.quote-source:hover { border-color: var(--accent-accessible); color: var(--accent-accessible-hover); }
+a.quote-source:focus-visible { outline: var(--focus-ring-light); outline-offset: 2px; }

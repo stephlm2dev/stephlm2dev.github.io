@@ -1,0 +1,42 @@
+/* Compositions (split, stack), couverture, colonnes à filet haut. Chargé par components.css. Tokens uniquement: voir DESIGN.md. */
+
+/* ---- Composition: titre à gauche, contenu à droite ---- */
+.split { display: grid; grid-template-columns: 5fr 7fr; column-gap: calc(var(--u) * 9); align-items: center; }
+.split .body { max-width: 30em; font-size: calc(var(--fs-base) * 1.2); line-height: 1.7; }
+.stack > * + * { margin-top: calc(var(--u) * 5); }
+/* ---- Couverture ---- */
+.cover > div:not(.watermark) { max-width: calc(var(--page-w) * 0.55); }
+.wordmark { position: absolute; top: calc(var(--u) * 5.5); left: var(--pad-x); font-size: calc(var(--fs-base) * 0.9); font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; }
+.cover .hero-lead { font-size: calc(var(--fs-lead) * 1.05); line-height: 1.3; color: var(--text-muted); }
+/* Exception déclarée: titre de couverture un peu plus grand que h1 */
+.cover h1 { margin-top: calc(var(--u) * 1.25); font-size: calc(var(--fs-h1) * 1.05); line-height: 1.2; }
+.cover .hero-sub { margin-top: calc(var(--u) * 2.75); max-width: 46ch; font-size: var(--fs-lead); line-height: 1.55; color: var(--text-secondary); }
+.cover .meta { margin-top: calc(var(--u) * 3.25); font-size: var(--fs-footer); letter-spacing: var(--ls-label); color: var(--text-muted); }
+.hero-img { position: absolute; right: calc(var(--u) * 13.75); bottom: 0; height: 76%; width: auto; }
+/* ---- Colonnes à filet haut ---- */
+.cols { display: grid; grid-template-columns: repeat(var(--n, 3), 1fr); gap: calc(var(--u) * 5); }
+.col { padding-top: calc(var(--u) * 2.5); border-top: 2px solid var(--bg-primary); }
+.col h2 { font-size: var(--fs-h2); }
+.col p { margin-top: calc(var(--u) * 1.75); font-size: calc(var(--fs-base) * 0.9); line-height: 1.55; color: var(--text-dark-muted); }
+.col p strong { color: var(--text-dark); font-weight: 600; }
+.col .tag { margin-top: 0; margin-bottom: var(--u); }
+.col ul li { padding: calc(var(--u) * 1.5) 0; border-top: 1px solid var(--border-warm); font-size: calc(var(--fs-base) * 0.95); line-height: 1.45; color: var(--text-dark-muted); }
+.col ul li:first-child { border-top: 0; padding-top: 0; }
+.cols.grid-2x2 { --n: 2; margin-top: calc(var(--u) * 5); row-gap: calc(var(--u) * 4.5); }
+.cols.grid-2x2 .col h2 { font-size: calc(var(--fs-base) * 1.2); }
+
+/* ---- Encadré sombre (titre, texte, phrase forte en serif) ---- */
+.callout { padding: calc(var(--u) * 4); background: var(--bg-primary); color: var(--text-primary); }
+.callout :is(h2, h3) { font-family: var(--font-heading); font-size: var(--fs-h3); font-weight: 400; line-height: 1.2; color: var(--text-primary); }
+.callout p { margin-top: calc(var(--u) * 2); line-height: 1.7; color: var(--text-secondary); }
+.callout .callout-strong { font-family: var(--font-heading); font-size: calc(var(--fs-base) * 1.15); line-height: 1.35; color: var(--text-primary); }
+
+/* Variante sombre des faits et de la prose (fond vert profond) */
+.dark .facts > div,
+.slide:not(.warm):not(.white) .facts > div { border-top-color: var(--border-subtle); }
+.dark .facts dt,
+.slide:not(.warm):not(.white) .facts dt { color: var(--text-primary); }
+.dark .facts dd,
+.slide:not(.warm):not(.white) .facts dd { color: var(--text-muted); }
+.dark .prose p,
+.slide:not(.warm):not(.white) .prose p { color: var(--text-secondary); }

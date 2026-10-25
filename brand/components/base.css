@@ -1,0 +1,49 @@
+/* Cadre de page, pied de page et pagination. Chargé par components.css. Tokens uniquement: voir DESIGN.md. */
+
+[data-medium],
+[data-medium] * { box-sizing: border-box; margin: 0; padding: 0; }
+[data-medium] ul,
+[data-medium] ol { list-style: none; }
+html[data-medium] { background: var(--bg-screen); counter-reset: page-n; }
+
+/* ---- Contrat de page: taille fixe, une page = une feuille ---- */
+.slide {
+  --foot: var(--text-muted);
+  position: relative;
+  width: var(--page-w);
+  height: var(--page-h);
+  margin: calc(var(--u) * 3) auto;
+  padding: var(--pad-top) var(--pad-x) var(--pad-bottom);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font: 400 var(--fs-base)/var(--lh-base) var(--font-body);
+  break-after: page;
+  page-break-after: always;
+  counter-increment: page-n;
+}
+.slide.warm { background: var(--bg-warm); color: var(--text-dark); --foot: var(--text-dark-muted); }
+.slide.white { background: var(--bg-white); color: var(--text-dark); --foot: var(--text-dark-muted); }
+@media print {
+  html[data-medium] { background: none; }
+  .slide { margin: 0; }
+}
+/* ---- Pied de page et pagination (pas de pagination sur la couverture) ---- */
+.slide::before,
+.slide::after {
+  position: absolute;
+  bottom: var(--foot-bottom);
+  font-size: var(--fs-footer);
+  line-height: 1;
+  color: var(--foot);
+  z-index: 3;
+}
+.slide::before { content: 'Stéphane SCHMIDELY · Fondateur de KOVELEO'; left: var(--pad-x); }
+.slide::after { content: counter(page-n) ' / ' attr(data-total); right: var(--pad-x); }
+.slide.cover::after { content: none; }
+
+/* Chaque page forme son propre contexte d'empilement: le filigrane (z-index -1) passe sous le contenu mais au-dessus du fond */
+.slide { isolation: isolate; }

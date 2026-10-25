@@ -1,0 +1,38 @@
+/* Logos avec contexte, cas client, bande de transition. Chargé par components.css. Tokens uniquement: voir DESIGN.md. */
+
+/* ---- Logos avec contexte ---- */
+.logos { display: flex; flex-direction: column; gap: calc(var(--u) * 3); }
+.logos > .label { text-align: center; }
+.logo-list { display: grid; grid-template-columns: repeat(var(--n, 4), 1fr); gap: calc(var(--u) * 3) calc(var(--u) * 2.5); align-items: center; justify-items: center; }
+.logo-list img,
+.logo-list .placeholder { height: calc(var(--u) * 7); width: auto; max-width: 100%; object-fit: contain; }
+.logo-list .placeholder { display: flex; align-items: center; justify-content: center; padding: 0 calc(var(--u) * 2); border: 2px dashed var(--text-dark-muted); font-size: var(--fs-small); color: var(--text-dark-muted); }
+.logo-pair { display: flex; align-items: center; gap: calc(var(--u) * 1.5); }
+.logo-pair img,
+.logo-pair .placeholder { height: calc(var(--u) * 6); }
+
+/* ---- Cas client: client, deux périodes, projets avec chiffres avant → après ---- */
+.case > * + * { margin-top: calc(var(--u) * 2.5); }
+.case-client { display: flex; align-items: center; gap: calc(var(--u) * 1.5); font-size: var(--fs-small); font-weight: 600; line-height: 1.5; letter-spacing: 0.02em; color: var(--accent-accessible-hover); }
+.case-client strong { color: var(--text-dark); }
+.case-client img,
+.case-client .placeholder { flex: none; width: calc(var(--u) * 4.5); height: calc(var(--u) * 4.5); object-fit: contain; }
+.case-client .placeholder { border: 2px dashed var(--text-dark-muted); }
+.case-periods { display: grid; grid-template-columns: repeat(var(--n, 2), 1fr); gap: calc(var(--u) * 4); }
+.case-period { padding-top: calc(var(--u) * 1.75); border-top: 2px solid var(--accent); font-size: calc(var(--fs-base) * 0.9); line-height: 1.7; color: var(--text-dark-muted); }
+.case-period-label { margin-bottom: var(--u); font-size: var(--fs-label); font-weight: 600; letter-spacing: var(--ls-label); text-transform: uppercase; color: var(--accent-accessible-hover); }
+.case-projects { display: grid; grid-template-columns: repeat(var(--n, 2), 1fr); gap: calc(var(--u) * 3); }
+.case-project { height: 100%; padding: calc(var(--u) * 2.5) calc(var(--u) * 3); background: var(--bg-white); border-top: 2px solid var(--accent); }
+.case-project :is(h2, h3) { margin-bottom: calc(var(--u) * 2); font-family: var(--font-heading); font-size: var(--fs-h3); font-weight: 400; line-height: 1.2; color: var(--bg-primary); }
+.case-project dt { margin-bottom: calc(var(--u) * 0.5); font-size: var(--fs-label); font-weight: 600; letter-spacing: var(--ls-label); text-transform: uppercase; color: var(--text-dark-muted); }
+.case-project dd { margin: 0 0 calc(var(--u) * 1.5); font-size: calc(var(--fs-base) * 0.85); line-height: 1.6; color: var(--text-dark-muted); }
+.case-project .case-impact dt { color: var(--accent-accessible-hover); }
+.case-project .delta { font-size: var(--fs-h1); }
+
+/* ---- Bande de transition: une phrase en serif, la fin en coral ---- */
+.bridge { font-family: var(--font-heading); font-size: var(--fs-statement); line-height: 1.2; text-wrap: balance; color: var(--text-primary); }
+.bridge-accent { color: var(--accent); }
+.warm .bridge,
+.white .bridge { color: var(--text-dark); }
+.warm .bridge-accent,
+.white .bridge-accent { color: var(--accent-accessible-hover); }

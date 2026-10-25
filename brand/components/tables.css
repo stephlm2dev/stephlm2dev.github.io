@@ -1,0 +1,22 @@
+/* Tableaux à filets (standard, comparatif, dense). Chargé par components.css. Tokens uniquement: voir DESIGN.md. */
+
+/* ---- Tableau à filets ---- */
+.matrix { margin-top: calc(var(--u) * 3.75); }
+.mrow { display: grid; grid-template-columns: var(--cols, 1.1fr 1.4fr 1.2fr); gap: calc(var(--u) * 4); padding: calc(var(--u) * 1.5) 0; border-top: 1px solid var(--border-warm); align-items: baseline; }
+.mrow.mhead { border-top: 0; padding: calc(var(--u) * 0.5) 0 calc(var(--u) * 1.25); }
+.mrow p { font-size: calc(var(--fs-base) * 0.9); line-height: 1.45; color: var(--text-dark-muted); }
+.mrow .name { font-family: var(--font-heading); font-size: calc(var(--fs-base) * 1.2); line-height: 1.2; color: var(--text-dark); }
+.mrow .figure { font-family: var(--font-heading); font-size: var(--fs-h2); line-height: 1.15; color: var(--bg-primary); }
+.mrow .ours { color: var(--text-dark); }
+.mrow.mhead .ours { color: var(--accent-accessible-hover); }
+/* Variante comparatif: la 4e colonne (la nôtre) est teintée */
+.matrix.compare .mrow { gap: calc(var(--u) * 3); }
+.matrix.compare .mrow > *:nth-child(4) { align-self: stretch; margin: calc(var(--u) * -1.5) 0; padding: calc(var(--u) * 1.5) calc(var(--u) * 2.25); background: var(--bg-coral-wash-pale); }
+.matrix.compare .mhead > *:nth-child(4) { margin-bottom: calc(var(--u) * -1.25); padding-bottom: calc(var(--u) * 1.25); }
+.matrix.compare .mrow p { font-size: var(--fs-small); }
+.matrix.compare .mhead .name { font-size: var(--fs-h3); }
+/* Variante dense: remplace les tableaux copiés dans les livrables, tailles prises sur l'échelle */
+.matrix.dense { margin-top: calc(var(--u) * 2); }
+.matrix.dense .mrow { gap: calc(var(--u) * 2); padding: var(--u) 0; }
+.matrix.dense .mrow p { font-size: var(--fs-small); line-height: 1.4; }
+.matrix.dense .mrow .name { font-size: var(--fs-base); }

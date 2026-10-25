@@ -38,7 +38,7 @@
 [data-medium='carousel'] .card.flip { padding: 0; gap: 0; }
 .flip-inner { flex: 1; display: grid; }
 .flip-face { position: relative; grid-area: 1 / 1; display: flex; flex-direction: column; gap: calc(var(--u) * 1.5); padding: calc(var(--u) * 3.5) calc(var(--u) * 3.5) calc(var(--u) * 3.25); }
-.flip-open { position: absolute; top: calc(var(--u) * 2.5); right: calc(var(--u) * 3); }
+.flip-open { position: absolute; top: calc(var(--u) * 2.5); right: calc(var(--u) * 3); border-radius: 50%; }
 .flip-open[hidden],
 .flip-close[hidden] { display: none; }
 .card.flip .flip-close { align-self: flex-start; margin-top: auto; }

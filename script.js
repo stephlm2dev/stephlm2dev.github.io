@@ -33,27 +33,4 @@
     });
   }
 
-  /* ---- Offer cards: (i) flips to the back face, "Retour" flips back ---- */
-  document.querySelectorAll('.offer').forEach(function (offer) {
-    var front = offer.querySelector('.offer-front');
-    var back = offer.querySelector('.offer-back');
-    var openBtn = front.querySelector('.offer-flip');
-    var closeBtn = back.querySelector('.offer-flip');
-
-    function show(flipped) {
-      offer.classList.toggle('is-flipped', flipped);
-      front.inert = flipped;
-      back.inert = !flipped;
-      openBtn.setAttribute('aria-expanded', String(flipped));
-      (flipped ? closeBtn : openBtn).focus();
-    }
-
-    openBtn.hidden = false;
-    closeBtn.hidden = false;
-    offer.classList.add('is-ready');
-    back.inert = true;
-    openBtn.addEventListener('click', function () { show(true); });
-    closeBtn.addEventListener('click', function () { show(false); });
-  });
-
 })();

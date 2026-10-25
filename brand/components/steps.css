@@ -41,3 +41,11 @@
 .warm .step-case, .white .step-case { border-top-color: var(--border-warm); color: var(--text-dark-muted); }
 .warm .step-case strong, .white .step-case strong { color: var(--accent-accessible-hover); }
 .warm .step-case del, .white .step-case del { text-decoration-color: var(--accent-accessible); }
+
+/* Web: étapes à l'échelle de lecture du site */
+html:not([data-medium]) .step-num { font-size: 2.75rem; }
+html:not([data-medium]) .step :is(h2, h3) { font-size: clamp(1.35rem, 1.1rem + 0.8vw, 1.6rem); }
+html:not([data-medium]) .step > p:not(.step-marker):not(.step-case) { font-size: var(--fs-base); }
+html:not([data-medium]) .step-case { font-size: calc(var(--fs-base) * 0.9); }
+html:not([data-medium]) .steps { margin-top: calc(var(--u) * 6); }
+html:not([data-medium]) .step { gap: calc(var(--u) * 1.5); }

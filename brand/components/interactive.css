@@ -107,3 +107,7 @@
   .card.flip.is-ready.is-flipped .flip-front { opacity: 0; visibility: hidden; }
   .card.flip.is-ready.is-flipped .flip-back { opacity: 1; visibility: visible; }
 }
+
+/* Web: liste de questions à l'échelle de lecture du site */
+html:not([data-medium]) .faq { max-width: none; margin-top: calc(var(--u) * 5); }
+html:not([data-medium]) .faq-item summary { line-height: 1.65; }

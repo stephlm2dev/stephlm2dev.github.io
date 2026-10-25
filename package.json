@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "minify:css": "npx clean-css-cli style.css -o style.min.css",
-    "minify:js": "npx terser script.js -o script.min.js --compress --mangle",
-    "minify": "npm run minify:css && npm run minify:js"
+    "minify": "npx clean-css-cli style.css -o style.min.css"
   }
 }

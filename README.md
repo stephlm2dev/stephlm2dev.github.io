@@ -2,7 +2,7 @@
 
 Site one-page pour **koveleo.fr** — partenaire technique pour dirigeants.
 
-Stack : HTML · CSS · Vanilla JS · GitHub Pages
+Stack : HTML · CSS · GitHub Pages. Le CSS et le JS viennent du design system Koveleo (`brand/`).
 
 ---
 
@@ -10,16 +10,15 @@ Stack : HTML · CSS · Vanilla JS · GitHub Pages
 
 ```
 index.html        — page unique
-style.css         — source CSS (éditable)
-style.min.css     — CSS minifié (servi en production)
-script.js         — source JS (éditable)
-script.min.js     — JS minifié (servi en production)
+style.css         — deux @import: brand/tokens.css puis brand/components.css (aucun CSS propre au site)
+style.min.css     — CSS minifié, @import inlinés (servi en production)
+brand/            — copie du design system (ne pas éditer ici, voir ci-dessous)
 assets/           — images, logos, favicons
-DESIGN.md         — système de design (tokens, typographie, palette)
+DESIGN.md         — renvoi vers le design system
 ```
 
-> `index.html` charge `style.min.css` et `script.min.js`.
-> Modifier `style.css` / `script.js`, puis relancer `npm run minify`.
+> `index.html` charge `style.min.css` et `brand/behaviours.js` (menu, liste de questions, cartes retournables, défilement).
+> Source de vérité: `COWORK/projets/koveleo-design-system/`. Pour mettre à jour le site: `just site` dans ce dossier (copie vers `brand/`), puis `npm run minify` ici.
 
 ---
 
@@ -36,17 +35,11 @@ Ouvrir http://localhost:8080
 ## Commandes
 
 ```bash
-# Minifier le CSS (style.css → style.min.css)
-npm run minify:css
-
-# Minifier le JS (script.js → script.min.js)
-npm run minify:js
-
-# Tout minifier d'un coup
+# Minifier le CSS (style.css + brand/ → style.min.css)
 npm run minify
 ```
 
-Prérequis : Node.js — les outils (`terser`, `clean-css-cli`) s'exécutent via `npx`, aucune installation préalable.
+Prérequis : Node.js — `clean-css-cli` s'exécute via `npx`, aucune installation préalable.
 
 ---
 
@@ -70,7 +63,7 @@ Le site est déployé automatiquement via GitHub Pages sur la branche `master`.
 Domaine custom : `koveleo.fr` (configuré dans `CNAME`).
 
 Workflow :
-1. Éditer `style.css` et/ou `script.js`
+1. Modifier le design system (`just site`) ou le HTML
 2. `npm run minify`
 3. Commiter les fichiers sources **et** minifiés
 4. Push sur `master` → déploiement automatique

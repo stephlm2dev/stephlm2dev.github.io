@@ -100,6 +100,7 @@
     button.addEventListener('click', function () {
       var paused = ticker.classList.toggle('is-paused')
       button.classList.toggle('is-paused', paused)
+      button.setAttribute('aria-pressed', String(paused))
       if (label) label.textContent = paused ? 'Reprendre' : 'Pause'
     })
   }

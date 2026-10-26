@@ -1,2 +1,4 @@
 .DS_Store
 .impeccable/review/
+brand/*
+!brand/behaviours.js

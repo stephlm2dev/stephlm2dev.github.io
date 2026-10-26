@@ -1,8 +1,0 @@
-/* Signature: le K en filigrane. Chargé par components.css. Tokens uniquement: voir DESIGN.md, section Signature.
-   HTML: premier enfant d'une page sombre: <div class="watermark" aria-hidden="true"><span>K</span></div>
-   Variante .s (petite) pour citation et CTA. Sur le web, le conteneur sombre porte .has-watermark.
-   La boîte découpe le K: il est rogné par le cadre sans élargir la page (pas de faux débordement). */
-.watermark { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; user-select: none; }
-.watermark > span { position: absolute; right: var(--watermark-x); top: var(--watermark-y); font-family: var(--font-heading); font-size: var(--watermark-size); font-weight: 400; line-height: 1; color: var(--watermark-color); }
-.watermark.s > span { right: var(--watermark-x-s); top: var(--watermark-y-s); font-size: var(--watermark-size-s); }
-html:not([data-medium]) .has-watermark { position: relative; overflow: hidden; isolation: isolate; }

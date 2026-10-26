@@ -12,7 +12,7 @@ Stack : HTML · CSS · GitHub Pages. Le CSS et le JS viennent du design system K
 index.html        — page unique
 style.css         — deux @import: brand/tokens.css puis brand/components.css (aucun CSS propre au site)
 style.min.css     — CSS minifié, @import inlinés (servi en production)
-brand/            — copie du design system (ne pas éditer ici, voir ci-dessous)
+brand/            — copie locale du design system, non versionnée sauf behaviours.js (ne pas éditer ici, voir ci-dessous)
 assets/           — images, logos, favicons
 DESIGN.md         — renvoi vers le design system
 ```

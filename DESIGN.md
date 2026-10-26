@@ -23,7 +23,7 @@ La page est une suite de sections en bandes (`.section`), chacune sur un fond de
 
 - Un besoin qui n'existe pas dans le design system s'ajoute au design system, jamais dans une feuille de style du site
 - Pas de couleur, de taille ni d'espacement écrits en dur: tokens uniquement
-- `brand/` est une copie, on ne l'édite pas ici. Mise à jour: `just site` dans `COWORK/projets/koveleo-design-system/`, puis `npm run minify`
+- `brand/` est une copie locale, non versionnée (sauf `behaviours.js`, servi par GitHub Pages), on ne l'édite pas ici. Mise à jour: `just site` dans `COWORK/projets/koveleo-design-system/`, puis `npm run minify`
 - Le contenu (textes, identifiants de section, JSON-LD) se modifie dans les fichiers HTML
 
 ## Écarts avec le site d'avant la migration

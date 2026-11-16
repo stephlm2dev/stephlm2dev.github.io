@@ -4,32 +4,7 @@
     <meta charset="utf-8">
     <!-- tarteaucitron.js - Cookie consent manager -->
     <script src="https://cdn.jsdelivr.net/npm/tarteaucitronjs@1.29.0/tarteaucitron.min.js" integrity="sha384-xfgEtxZR6ik10569teR/z/SaQuFGK0oKPm+EF0UsiKkmsT7YMEl/DmDAdmK5bq9Z" crossorigin="anonymous" defer></script>
-    <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', function () {
-        tarteaucitron.init({
-          "privacyUrl": "",
-          "bodyPosition": "top",
-          "hashtag": "#tarteaucitron",
-          "cookieName": "tarteaucitron",
-          "orientation": "banner",
-          "groupServices": true,
-          "showDetailsOnClick": true,
-          "serviceDefaultState": "wait",
-          "closePopup": true,
-          "showIcon": true,
-          "iconPosition": "BottomRight",
-          "DenyAllCta": true,
-          "AcceptAllCta": true,
-          "highPrivacy": true,
-          "mandatory": true,
-          "googleConsentMode": true
-        });
-
-        // Google Analytics 4
-        tarteaucitron.user.gtagUa = 'G-DQMRX1LCMG';
-        (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-      });
-    </script>
+    <script src="consent.js" defer></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Conseil tech pour dirigeants de PME à Paris | Koveleo</title>
